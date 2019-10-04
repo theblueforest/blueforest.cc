@@ -1,4 +1,5 @@
 import { React, WebPage } from "kiwi-bundle"
+import { RackCanvas } from "../canvas/Rack"
 import "./Home.scss"
 
 export default class Home extends WebPage {
@@ -17,8 +18,8 @@ export default class Home extends WebPage {
   moduleHeight: number = 200
 
   racks: any = {
-    one: [ {}, {}, {}, {} ],
-    two: [ {}, {} ],
+    dropin: [ {}, {}, {}, {} ],
+    kiwiBundle: [ {}, {} ],
     three: [ {}, {}, {} ],
   }
 
@@ -32,13 +33,16 @@ export default class Home extends WebPage {
     const context = this.canvas.getContext("2d")
 
     Object.keys(this.racks).forEach((rackId, rackIndex) => {
-      const rack: any = this.racks[rackId]
+      const rackModules = this.racks[rackId]
+      const rackWidth = this.moduleMargin + rackModules.length * (this.moduleWidth + this.moduleMargin)
+      const rackHeight = this.moduleHeight + 2 * this.moduleMargin + this.rackBorder * 2
+      const rackX = this.rackMargin + (this.rackBorder / 2)
+      const rackY = this.rackMargin + (this.rackBorder / 2) + rackIndex * (this.rackBorder + rackHeight + this.rackMargin)
+      new RackCanvas(context, rackX, rackY, rackModules)
+
+      /*const rack: any = this.racks[rackId]
 
       // Values
-      const rackWidth = this.moduleMargin + rack.length * (this.moduleWidth + this.moduleMargin)
-      const rackHeight = this.moduleHeight + 2 * this.moduleMargin + this.rackBorder * 2
-      const rackLeft = this.rackMargin + (this.rackBorder / 2)
-      const rackTop = this.rackMargin + (this.rackBorder / 2) + rackIndex * (this.rackBorder + rackHeight + this.rackMargin)
 
       // Rack
       context.lineWidth = this.rackBorder
@@ -54,7 +58,7 @@ export default class Home extends WebPage {
         const moduleTop = rackTop + this.rackBorder + this.moduleMargin
         context.rect(moduleLeft, moduleTop, this.moduleWidth, this.moduleHeight)
         context.stroke()
-      })
+      })*/
     })
   }
 
