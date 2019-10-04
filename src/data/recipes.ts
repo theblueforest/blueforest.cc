@@ -1,5 +1,5 @@
 
-export const dropinRackData = {
+export const DROPinStackData = {
   recipes: [
     {
       id: "forestry-kit",
