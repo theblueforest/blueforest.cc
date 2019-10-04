@@ -1,0 +1,16 @@
+{
+  "name": "blueforest-website",
+  "version": "0.0.0",
+  "author": {
+    "name": "Nazim Lachter",
+    "email": "nazim@blueforest.fr"
+  },
+  "license": "Apache-2",
+  "scripts": {
+    "start": "kiwi-bundle start",
+    "build": "kiwi-bundle build"
+  },
+  "dependencies": {
+    "kiwi-bundle": "^2.7.3"
+  }
+}

@@ -1,0 +1,41 @@
+
+.waves {
+  position: relative;
+  align-items: center;
+  height: 250px;
+  background-color: #3c51eb;
+  overflow: hidden;
+
+  $size: 300vw;
+
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    min-width: $size;
+    min-height: $size;
+    background-color: #fff;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  &::before {
+    bottom: 10vh;
+    border-radius: 45%;
+    animation-duration: 10s;
+  }
+
+  &::after {
+    bottom: 4vh;
+    opacity: 0.5;
+    border-radius: 47%;
+    animation-duration: 10s;
+  }
+}
+
+@keyframes rotate {
+  0% { transform: translate(-50%, 0) rotateZ(0deg); }
+  50% { transform: translate(-50%, -2%) rotateZ(180deg); }
+  100% { transform: translate(-50%, 0%) rotateZ(360deg); }
+}

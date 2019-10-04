@@ -1,0 +1,13 @@
+version: 1
+
+project:
+  title: Blue Forest
+  description: Cultivons ensemble vos idées
+  author: Blue Forest
+  lang: fr-FR
+
+platforms:
+  web:
+    devHost: localhost
+    devPort: 8045
+    buildDir: ./dist

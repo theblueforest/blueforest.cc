@@ -1,0 +1,7 @@
+{
+  "extends": "./node_modules/kiwi-bundle/etc/typescript/config.json",
+  "include": [ "./src/**/*" ],
+  "compilerOptions": {
+    "typeRoots": [ "./node_modules/kiwi-bundle/node_modules/@types" ]
+  }
+}
