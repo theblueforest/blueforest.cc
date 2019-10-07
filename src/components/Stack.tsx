@@ -39,13 +39,22 @@ export class Stack extends WebComponent<Props> {
       [ 80, 60 ],
     ]
     this.context.beginPath()
+    this.context.lineWidth = 10
     let previous
     points.forEach((point, index) => {
       if(index === 0) {
         this.context.moveTo(point[0], point[1])
       } else {
 
-        let yShiftPrevious
+        const middleMinY = 50
+        const middleMaxY = 150
+        const middleMaxX = 10
+
+        const middlepointX = ((previous[0] + point[0]) / 2) + (Math.random() * middleMaxX * (previous[1] < point[1] ? 1 : -1))
+        const middlepointY = ((previous[1] + point[1]) / 2) + (Math.random() * (middleMaxY - middleMinY) + middleMinY)
+        this.context.quadraticCurveTo(middlepointX, middlepointY, point[0], point[1])
+
+        /*let yShiftPrevious
         let yShiftCurrent
         if(previous[1] > point[1]) {
           yShiftPrevious = previous[1] + (previous[1] - point[1])
@@ -63,7 +72,7 @@ export class Stack extends WebComponent<Props> {
           previous[0] + xShiftPrevious, yShiftPrevious,
           point[0] + xShiftCurrent, yShiftCurrent,
           point[0], point[1],
-        )
+        )*/
       }
       previous = point
     })
