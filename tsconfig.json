@@ -1,7 +1,16 @@
 {
-  "extends": "./node_modules/kiwi-bundle/etc/typescript/config.json",
-  "include": [ "./src/**/*" ],
+  "extends": "./node_modules/kiwi-bundle/.models/ts/react.json",
   "compilerOptions": {
-    "typeRoots": [ "./node_modules/kiwi-bundle/node_modules/@types" ]
-  }
+    "baseUrl": ".",
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx"
+  ]
 }

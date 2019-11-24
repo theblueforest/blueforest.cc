@@ -1,16 +1,31 @@
 {
-  "name": "blueforest-website",
-  "version": "0.0.0",
-  "author": {
-    "name": "Nazim Lachter",
-    "email": "nazim@blueforest.fr"
-  },
-  "license": "Apache-2",
+  "name": "blueforest.cc",
+  "version": "1.2.0",
+  "author": "Nazim Lachter <nazim@blueforest.cc>",
+  "repository": "git@github.com:theblueforest/blueforest.cc.git",
+  "license": "Apache-2.0",
   "scripts": {
-    "start": "kiwi-bundle start",
-    "build": "kiwi-bundle build"
+    "start": "kiwi start",
+    "test": "kiwi test",
+    "build": "kiwi build"
+  },
+  "bundles": {
+    "kiwi-bundle": {
+      "app": {
+        "name": "Blue Forest",
+        "author": "Blue Forest"
+      },
+      "dev": {
+        "webHost": "localhost",
+        "webPort": 8042
+      }
+    }
   },
   "dependencies": {
-    "kiwi-bundle": "^2.7.3"
+    "dropin-recipes": "^1.7.1",
+    "kiwi-bundle-react": "^1.0.0"
+  },
+  "devDependencies": {
+    "kiwi-bundle": "^3.0.1"
   }
 }

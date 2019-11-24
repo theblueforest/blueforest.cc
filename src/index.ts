@@ -1,4 +1,4 @@
-import { Client } from "kiwi-bundle"
+import { Client } from "kiwi-bundle-react"
 import router from "./router"
 import "./main.scss"
 

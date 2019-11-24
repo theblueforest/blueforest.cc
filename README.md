@@ -1,1 +1,1 @@
-blueforest.fr
+https://blueforest.cc

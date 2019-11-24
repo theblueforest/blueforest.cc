@@ -1,4 +1,4 @@
-import { Router, Route } from "kiwi-bundle"
+import { Router, Route } from "kiwi-bundle-react"
 import Home from "./pages/Home"
 
 export enum PAGES {

@@ -1,4 +1,4 @@
-import { React, WebPage } from "kiwi-bundle"
+import { React, WebPage } from "kiwi-bundle-react"
 import { Stack } from "../components/Stack"
 import { DROPinStackData } from "../data/recipes"
 import "./Home.scss"
