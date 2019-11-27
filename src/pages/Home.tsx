@@ -1,29 +1,21 @@
-import { React, WebPage } from "kiwi-bundle-react"
-import { Stack } from "../components/Stack"
-import { DROPinStackData } from "../data/recipes"
-import "./Home.scss"
+import { React, WebPage, Text } from "kiwi-bundle-react"
+import { i18nTechnologies } from "../i18n/technologies"
 
 export default class Home extends WebPage {
-  state = { width: 700, height: 800 }
-
-  getTitle() {
-    return "Home"
-  }
 
   render() {
-    /*return <div>
-      <div className="waves"></div>
-      <div className="waves reverse"></div>
-    </div>*/
-    return <Stack
-      data={DROPinStackData}
-      width={this.state.width}
-      height={this.state.height}
-      rackBorders={10}
-      rackMargins={20}
-      moduleBorders={5}
-      moduleMargins={10}
-    />
+    return <div>
+      <ul>
+        {i18nTechnologies.dropinDescription(new Date().getFullYear() - 2015).map((desc, index) => {
+          return <li key={`tech-desc-${index}`}>
+            <Text keyPrefix={`tech-desc-${index}`} i18n={desc}/>
+          </li>
+        })}
+        <li>
+          <Text keyPrefix={`tech-cln`} i18n={i18nTechnologies.dropinConclusion}/>
+        </li>
+      </ul>
+    </div>
   }
 
 }
