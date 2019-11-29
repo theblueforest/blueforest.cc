@@ -3,7 +3,7 @@ import { Stack } from "../components/Stack"
 export class Rack {
 
   constructor(stack: Stack, x: number, y: number, width: number, height: number) {
-    stack.context.lineWidth = stack.props.rackBorders
+    /*stack.context.lineWidth = stack.props.rackBorders
     stack.context.beginPath()
     stack.context.moveTo(20, 10)
     stack.context.lineTo(80, 10)
@@ -14,7 +14,7 @@ export class Rack {
     stack.context.quadraticCurveTo(10, 90, 10, 80)
     stack.context.lineTo(10, 20)
     stack.context.quadraticCurveTo(10, 10, 20, 10)
-    stack.context.stroke()
+    stack.context.stroke()*/
   }
 
 }

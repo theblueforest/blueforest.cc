@@ -1,7 +1,6 @@
 {
   "extends": "./node_modules/kiwi-bundle/.models/ts/react.json",
   "compilerOptions": {
-    "baseUrl": ".",
     "rootDir": "src",
     "outDir": "dist"
   },

@@ -1,6 +1,5 @@
-import { React, WebComponent } from "kiwi-bundle-react"
-import { Rack } from "../canvas/Rack"
-import { Module } from "../types/Module"
+import React from "react"
+import { Component } from "kiwi-bundle-react"
 
 interface Props {
   data: any
@@ -12,7 +11,7 @@ interface Props {
   moduleMargins: number
 }
 
-export class Stack extends WebComponent<Props> {
+export class Stack extends Component<Props> {
   canvas?: HTMLCanvasElement
 
   getTitle() {

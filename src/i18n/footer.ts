@@ -3,7 +3,7 @@ import { i18nData } from "dropin-recipes"
 export const i18nFooter = i18nData({
 
   title: {
-    fr: "Une question ?",
+    fr: "Une question ?"
   },
 
   baseline: {

@@ -21,11 +21,9 @@
       }
     }
   },
-  "dependencies": {
-    "dropin-recipes": "^1.7.1",
-    "kiwi-bundle-react": "^1.0.0"
-  },
   "devDependencies": {
-    "kiwi-bundle": "^3.0.1"
+    "dropin-recipes": "^1.7.1",
+    "kiwi-bundle": "^3.0.1",
+    "kiwi-bundle-react": "^1.0.0"
   }
 }
