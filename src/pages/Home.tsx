@@ -1,4 +1,4 @@
-import * as React from "react"
+import React from "react"
 import * as Kiwi from "kiwi-bundle-react"
 import { TechnologiesComponent } from "../components/Technologies"
 

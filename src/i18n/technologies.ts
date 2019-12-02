@@ -9,7 +9,7 @@ export const i18nTechnologies = i18nData({
 
   dropinTitle: "DROP'in",
 
-  dropinDescription: (years: number): i18nData[] => [
+  dropinDescription: (years: number): i18nData => [
     {
       fr: [
         "Développée ces ",
@@ -29,7 +29,7 @@ export const i18nTechnologies = i18nData({
 
   kiwiBundleTitle: "Kiwi Bundle",
 
-  kiwiBundleDescription: (): i18nData[] => [
+  kiwiBundleDescription: [
     {
       fr: "Suite de librairies TypeScript permettant la création simplifiée d'application cross-platform web, desktop, Android et iOS avec **une unique codebase**.",
     },
