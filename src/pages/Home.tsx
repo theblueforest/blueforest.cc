@@ -1,13 +1,11 @@
 import React from "react"
-import * as Kiwi from "kiwi-bundle-react"
-import { TechnologiesComponent } from "../components/Technologies"
+import { BlueForest } from "../bundle"
+import { TechnologiesLayout } from "../layouts/Technologies"
 
-export class HomePage extends Kiwi.Page {
+interface Params {}
 
-  render() {
-    return [
-      <TechnologiesComponent key={"techs"} keyPrefix={"techs"}/>,
-    ]
-  }
-
-}
+export const HomePage = BlueForest.Page<Params>({
+  render: () => [
+    <TechnologiesLayout key={"techs"} keyPrefix={"techs"}/>,
+  ],
+})

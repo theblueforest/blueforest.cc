@@ -9,7 +9,7 @@ export const i18nTechnologies = i18nData({
 
   dropinTitle: "DROP'in",
 
-  dropinDescription: (years: number): i18nData => [
+  dropinDescription: (years: number): i18nData[] => [
     {
       fr: [
         "Développée ces ",
