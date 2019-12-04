@@ -10,9 +10,9 @@ interface Props {
 
 export const TechnologiesLayout = BlueForest.Layout<Props>({
 
-  render: ({ props, architect }) => {
+  render: ({ props }) => {
     const { keyPrefix } = props
-    return <Kiwi.List style={architect(TechnologiesLayoutStyle.test)}>
+    return <Kiwi.List style={TechnologiesLayoutStyle.test}>
     {i18nTechnologies.dropinDescription(new Date().getFullYear() - 2015).map((desc, index) => {
       return <Kiwi.ListElement key={`${keyPrefix}-desc-${index}`}>
         <Kiwi.Text keyPrefix={`${keyPrefix}-desc-${index}`} i18n={desc}/>
