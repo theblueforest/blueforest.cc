@@ -1,12 +1,13 @@
-import React from "react"
+import * as React from "react"
 import * as Kiwi from "kiwi-bundle-react"
+import { BlueForest } from "../bundle"
 
-/*export const TechnologiesLayout = Kiwi.Component({
+interface Props extends Kiwi.ComponentProps {}
 
-  style: {},
+export const TechnologiesLayout = BlueForest.Component<Props>({
 
   render: () => {
-    return "OK"
+    return <div>OK</div>
   }
 
-})*/
+})

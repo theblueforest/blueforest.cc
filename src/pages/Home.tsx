@@ -1,8 +1,9 @@
-import React from "react"
+import * as React from "react"
+import * as Kiwi from "kiwi-bundle-react"
 import { BlueForest } from "../bundle"
 import { TechnologiesLayout } from "../layouts/Technologies"
 
-interface Params {}
+interface Params extends Kiwi.ComponentProps {}
 
 export const HomePage = BlueForest.Page<Params>({
   render: () => [

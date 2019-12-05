@@ -4,7 +4,7 @@ import { BlueForest } from "../bundle"
 import { i18nTechnologies } from "../i18n/technologies"
 import { TechnologiesLayoutStyle } from "./Technologies.style"
 
-interface Props {
+interface Props extends Kiwi.ComponentProps {
   keyPrefix: string
 }
 
