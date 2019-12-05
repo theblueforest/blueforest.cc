@@ -17,5 +17,13 @@ export const BlueForest = new KiwiBundle({
       PURPLE: "#6355E0",
       GREEN: "#61FFD8",
     },
+    fonts: {
+      google: {
+        families: [ "Muli:400,700", "sans-serif" ],
+      }
+    },
+    css: {
+      "font-family": "'Muli', sans-serif",
+    },
   },
 })

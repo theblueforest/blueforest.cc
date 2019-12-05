@@ -14,7 +14,7 @@ export const HomePage = BlueForest.Page<Params>({
   render: () => [
     <HeaderLayout key={"header"} keyPrefix={"header"}/>,
     <MethodLayout key={"method"} keyPrefix={"method"}/>,
-    <ExpertiseLayout key={"method"} keyPrefix={"method"}/>,
+    <ExpertiseLayout key={"expertise"} keyPrefix={"expertise"}/>,
     <TechnologiesLayout key={"techs"} keyPrefix={"techs"}/>,
     <ForestsLayout key={"forests"} keyPrefix={"forests"}/>,
     <FooterLayout key={"footer"} keyPrefix={"footer"}/>,
