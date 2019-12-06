@@ -1,5 +1,5 @@
 import { BlueForest } from "../bundle"
-import { TitlesStyle } from "../styles/titles"
+import { TitlesValues } from "../values/titles"
 
 export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
 
@@ -12,7 +12,7 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ sizes, colors })
   ],
 
   title: [
-    { style: TitlesStyle.global },
+    { style: TitlesValues.global },
     {
       style: {
         color: "white",

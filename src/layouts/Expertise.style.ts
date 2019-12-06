@@ -1,6 +1,5 @@
 import { BlueForest } from "../bundle"
-import { TitlesStyle } from "../styles/titles"
-import { ServicesStyle } from "../styles/services"
+import { TitlesValues } from "../values/titles"
 
 export const ExpertiseLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
 
@@ -14,8 +13,8 @@ export const ExpertiseLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) =>
   ],
 
   title: [
-    { style: TitlesStyle.global },
-    { style: TitlesStyle.onLeft },
+    { style: TitlesValues.global },
+    { style: TitlesValues.onLeft },
     {
       style: {
         color: colors.BLUE,

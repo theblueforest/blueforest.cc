@@ -1,6 +1,6 @@
 import { BlueForest } from "../bundle"
 
-export const HeaderTitleComponentStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
+export const HeaderComponentStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
 
   container: [
     {

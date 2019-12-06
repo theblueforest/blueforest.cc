@@ -3,6 +3,7 @@ import * as Kiwi from "kiwi-bundle-react"
 import { BlueForest } from "../bundle"
 import { i18nFooter } from "../i18n/footer"
 import { FooterLayoutStyle } from "./Footer.style"
+import { FooterValues } from "../values/footer"
 
 interface Props extends Kiwi.ComponentProps {
   keyPrefix: string
@@ -28,10 +29,7 @@ export const FooterLayout = BlueForest.Layout<Props>({
       />
 
       <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nFooter.legalInformations}/>
-      <Kiwi.Text>
-        Copyright © {new Date().getFullYear()} Blue Forest
-      </Kiwi.Text>
-
+      <Kiwi.Text children={FooterValues.copyright()}/>
     </Kiwi.Container>
   }
 

@@ -1,6 +1,6 @@
-import * as Kiwi from "kiwi-bundle-react"
+import { BlueForest } from "../bundle"
 
-export const ServicesStyle = Kiwi.StyleSheet({
+export const ServicesValues = BlueForest.Values(() => ({
 
   block: {
     width: "calc(50% - 84px)",
@@ -9,4 +9,4 @@ export const ServicesStyle = Kiwi.StyleSheet({
     borderWidth: 2,
   }
 
-})
+}))

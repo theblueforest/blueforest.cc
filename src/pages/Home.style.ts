@@ -1,6 +1,4 @@
 import { BlueForest } from "../bundle"
-import { LeavesStyle } from "../styles/leaves"
-import { TitlesStyle } from "../styles/titles"
 
 export const HomePageStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
 
