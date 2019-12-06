@@ -16,6 +16,7 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
 
   title: [
     { style: TitlesStyle.global },
+    { style: TitlesStyle.onLeft },
     {
       style: {
         color: colors.PINK,
@@ -28,18 +29,7 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
       style: {
         width: "60%",
         display: "block",
-        margin: "auto",
-      },
-    },
-  ],
-
-  leaves2: [
-    { style: LeavesStyle.leaves2 },
-    {
-      style: {
-        display: "block",
-        marginTop: 70,
-        marginLeft: "auto",
+        margin: "0 auto 70px",
       },
     },
   ],

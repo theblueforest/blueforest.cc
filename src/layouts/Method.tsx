@@ -26,10 +26,6 @@ export const MethodLayout = BlueForest.Layout<Props>({
         source={require("../../assets/method.fr.png")}
         style={MethodLayoutStyle.image}
       />
-      <Kiwi.Image
-        source={require("../../assets/leaves2.png")}
-        style={MethodLayoutStyle.leaves2}
-      />
     </Kiwi.Container>
   }
 

@@ -14,11 +14,11 @@ export const i18nTechnologies = i18nData({
       fr: [
         "Développée ces ",
         years,
-        " dernières années et aujourd'hui destinée aux architectures de nos clients, DROP'in est une technologie capable de créer, organiser et déployer l'ensemble de vos **projets**.",
+        " dernières années et aujourd'hui destinée aux architectures de nos clients, DROP'in est une technologie capable de **créer**, **organiser** et **déployer** l'ensemble de vos projets.",
       ],
     },
     {
-      fr: "De l'idée à la production, Blue Forest vous accompagne dans l'implémentation de vos produits à travers DROP'in.",
+      fr: "De l'**idée** à la **production**, Blue Forest vous accompagne dans l'implémentation de vos produits à travers DROP'in.",
     },
   ],
 

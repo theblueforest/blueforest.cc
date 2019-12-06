@@ -9,6 +9,9 @@ export const TitlesStyle = Kiwi.StyleSheet({
     fontWeight: "bold",
     paddingTop: 50,
     marginBottom: 30,
+  },
+
+  onLeft: {
     marginLeft: LeavesStyle.leaves1.width + 10,
   }
 

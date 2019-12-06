@@ -1,0 +1,17 @@
+import { BlueForest } from "../bundle"
+import { LeavesStyle } from "../styles/leaves"
+import { TitlesStyle } from "../styles/titles"
+
+export const HomePageStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
+
+  leaves2: [
+    {
+      style: {
+        marginBottom: -70,
+        display: "block",
+        marginLeft: "auto",
+      },
+    },
+  ],
+
+}))

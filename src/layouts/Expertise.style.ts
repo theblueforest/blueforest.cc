@@ -15,6 +15,7 @@ export const ExpertiseLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) =>
 
   title: [
     { style: TitlesStyle.global },
+    { style: TitlesStyle.onLeft },
     {
       style: {
         color: colors.BLUE,
@@ -23,12 +24,12 @@ export const ExpertiseLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) =>
   ],
 
   services: [
-    { style: ServicesStyle.container },
     {
       style: {
         margin: "auto",
         display: "flex",
         flexWrap: "wrap",
+        width: "80%",
       },
     },
   ],

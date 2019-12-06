@@ -12,13 +12,6 @@ export const ExpertiseBlockComponentStyle = BlueForest.StyleSheet(({ sizes, colo
         borderStyle: "solid",
         padding: 20,
         textAlign: "center",
-        flex: `1 1 ${
-          (ServicesStyle.container.width
-            - (ServicesStyle.block.borderWidth * 4)
-            - (ServicesStyle.block.margin * 4)
-            - (20 * 4)
-          ) / 2
-        }px`,
       },
     },
   ],
