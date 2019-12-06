@@ -31,7 +31,7 @@ export const i18nExpertise = i18nData({
   },
 
   devOpsTitle: {
-    fr: "DevOps",
+    fr: "Déploiement",
   },
 
   devOpsDescription: {

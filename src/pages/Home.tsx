@@ -8,7 +8,7 @@ import { ForestsLayout } from "../layouts/Forests"
 import { FooterLayout } from "../layouts/Footer"
 import { HeaderLayout } from "../layouts/Header"
 
-interface Params extends Kiwi.ComponentProps {}
+interface Params {}
 
 export const HomePage = BlueForest.Page<Params>({
   render: () => [

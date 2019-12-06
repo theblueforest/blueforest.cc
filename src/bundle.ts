@@ -1,4 +1,4 @@
-import { KiwiBundle } from "kiwi-bundle-react"
+import { KiwiBundle, Router, Route } from "kiwi-bundle-react"
 
 export const BlueForest = new KiwiBundle({
   routes: {
@@ -20,7 +20,7 @@ export const BlueForest = new KiwiBundle({
     fonts: {
       google: {
         families: [ "Muli:400,700", "sans-serif" ],
-      }
+      },
     },
     css: {
       "font-family": "'Muli', sans-serif",

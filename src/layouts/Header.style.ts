@@ -8,6 +8,7 @@ export const HeaderLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
         backgroundColor: colors.BLUE,
         minHeight: "100%",
         color: "white",
+        textAlign: "center",
       },
     },
   ],
@@ -16,6 +17,7 @@ export const HeaderLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
     {
       style: {
         paddingTop: 50,
+        marginBottom: 30,
       },
     },
   ],
@@ -23,6 +25,7 @@ export const HeaderLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
   forest: [
     {
       style: {
+        width: 800,
       },
     },
   ],

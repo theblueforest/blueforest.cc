@@ -17,7 +17,7 @@
       },
       "dev": {
         "webHost": "localhost",
-        "webPort": 8042
+        "webPort": 8040
       }
     }
   },

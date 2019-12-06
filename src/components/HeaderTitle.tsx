@@ -12,11 +12,22 @@ export const HeaderTitleComponent = BlueForest.Component<Props>({
 
   render: ({ props, style }) => {
     const { keyPrefix } = props
-    console.log(HeaderTitleComponentStyle.container, style)
     return <Kiwi.Container style={HeaderTitleComponentStyle.container}>
-      <Kiwi.Image source={require("../../assets/logo.png")} style={HeaderTitleComponentStyle.logo}/>
-      <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nHeader.name} style={HeaderTitleComponentStyle.name}/>
-      <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nHeader.baseline} style={HeaderTitleComponentStyle.baseline}/>
+      <Kiwi.Image
+        source={require("../../assets/logo.png")}
+        alt="Blue Forest"
+        style={HeaderTitleComponentStyle.logo}
+      />
+      <Kiwi.Text
+        keyPrefix={keyPrefix}
+        i18n={i18nHeader.name}
+        style={HeaderTitleComponentStyle.name}
+      />
+      <Kiwi.Text
+        keyPrefix={keyPrefix}
+        i18n={i18nHeader.baseline}
+        style={HeaderTitleComponentStyle.baseline}
+      />
     </Kiwi.Container>
   }
 
