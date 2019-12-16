@@ -5,9 +5,9 @@ import { TitlesValues } from "../values/titles"
 export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
 
   leaves1: [
-    { style: LeavesValues.leaves1 },
     {
       style: {
+        width: LeavesValues.width[1],
         position: "absolute",
         zIndex: 0,
       },

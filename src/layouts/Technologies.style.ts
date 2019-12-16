@@ -21,9 +21,13 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ sizes, colors })
     }
   ],
 
-  image: {
-    width: "100%",
-  },
+  image: [
+    {
+      style: {
+        width: "100%",
+      },
+    },
+  ],
 
 
 }))

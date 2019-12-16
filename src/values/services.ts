@@ -1,4 +1,5 @@
 import { BlueForest } from "../bundle"
+import * as Kiwi from "kiwi-bundle-react"
 
 export const ServicesValues = BlueForest.Values(() => ({
 
@@ -7,6 +8,6 @@ export const ServicesValues = BlueForest.Values(() => ({
     margin: 20,
     padding: 30,
     borderWidth: 2,
-  }
+  } as Kiwi.CSSProperties,
 
 }))

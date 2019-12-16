@@ -1,4 +1,5 @@
 import { BlueForest } from "../bundle"
+import * as Kiwi from "kiwi-bundle-react"
 import { LeavesValues } from "./leaves"
 
 export const TitlesValues = BlueForest.Values(() => ({
@@ -9,10 +10,10 @@ export const TitlesValues = BlueForest.Values(() => ({
     fontWeight: "bold",
     paddingTop: 50,
     marginBottom: 30,
-  },
+  } as Kiwi.CSSProperties,
 
   onLeft: {
     marginLeft: LeavesValues.width[1] + 10,
-  }
+  },
 
 }))
