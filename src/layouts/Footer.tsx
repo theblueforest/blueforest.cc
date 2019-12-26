@@ -21,10 +21,10 @@ export const FooterLayout = BlueForest.Layout<Props>({
 
       Nazim
 
-      <Kiwi.Image key="leaves5" source={require("../../assets/leaves6.png")}/>,
+      <Kiwi.Image key="leaves5" source={"../../assets/leaves6.png"}/>,
 
       <Kiwi.Image
-        source={require("../../assets/footer.png")}
+        source={"../../assets/footer.png"}
         style={FooterLayoutStyle.image}
       />
 

@@ -15,8 +15,8 @@ export const ForestsLayout = BlueForest.Layout<Props>({
       <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nForests.title}/>
       <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nForests.description}/>
       FORESTS
-      <Kiwi.Image source={require("../../assets/leaves3.png")}/>
-      <Kiwi.Image source={require("../../assets/leaves4.png")}/>
+      <Kiwi.Image source={"../../assets/leaves3.png"}/>
+      <Kiwi.Image source={"../../assets/leaves4.png"}/>
     </Kiwi.Container>
   }
 
