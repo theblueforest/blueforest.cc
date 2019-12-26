@@ -14,7 +14,7 @@ export const HeaderComponent = BlueForest.Component<Props>({
     const { keyPrefix } = props
     return <Kiwi.Container style={HeaderComponentStyle.container}>
       <Kiwi.Image
-        source={require("../../assets/logo.png")}
+        source={"../../assets/logo.png"}
         alt="Blue Forest"
         style={HeaderComponentStyle.logo}
       />

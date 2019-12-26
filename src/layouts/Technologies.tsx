@@ -15,7 +15,7 @@ export const TechnologiesLayout = BlueForest.Layout<Props>({
     return <Kiwi.Container style={TechnologiesLayoutStyle.container}>
       <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nTechnologies.title} style={TechnologiesLayoutStyle.title}/>
 
-      <Kiwi.Image source={require("../../assets/DROPin.png")} style={TechnologiesLayoutStyle.image}/>
+      <Kiwi.Image source={"../../assets/DROPin.png"} style={TechnologiesLayoutStyle.image}/>
 
       <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nTechnologies.dropinTitle}/>
       <Kiwi.List>

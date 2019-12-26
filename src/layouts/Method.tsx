@@ -14,7 +14,7 @@ export const MethodLayout = BlueForest.Layout<Props>({
     const { keyPrefix } = props
     return <Kiwi.Container>
       <Kiwi.Image
-        source={require("../../assets/leaves1.png")}
+        source={"../../assets/leaves1.png"}
         style={MethodLayoutStyle.leaves1}
       />
       <Kiwi.Text
@@ -23,7 +23,7 @@ export const MethodLayout = BlueForest.Layout<Props>({
         style={MethodLayoutStyle.title}
       />
       <Kiwi.Image
-        source={require("../../assets/method.fr.png")}
+        source={"../../assets/method.fr.png"}
         style={MethodLayoutStyle.image}
       />
     </Kiwi.Container>
