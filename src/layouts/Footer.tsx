@@ -4,6 +4,8 @@ import { BlueForest } from "../bundle"
 import { i18nFooter } from "../i18n/footer"
 import { FooterLayoutStyle } from "./Footer.style"
 import { FooterValues } from "../values/footer"
+import leaves6Image from "../../assets/leaves6.png"
+import footerImage from "../../assets/footer.png"
 
 interface Props extends Kiwi.ComponentProps {
   keyPrefix: string
@@ -21,10 +23,10 @@ export const FooterLayout = BlueForest.Layout<Props>({
 
       Nazim
 
-      <Kiwi.Image key="leaves5" source={"../../assets/leaves6.png"}/>,
+      <Kiwi.Image key="leaves5" source={leaves6Image}/>,
 
       <Kiwi.Image
-        source={"../../assets/footer.png"}
+        source={footerImage}
         style={FooterLayoutStyle.image}
       />
 

@@ -3,6 +3,7 @@ import * as Kiwi from "kiwi-bundle-react"
 import { BlueForest } from "../bundle"
 import { HeaderComponentStyle } from "./Header.style"
 import { i18nHeader } from "../i18n/header"
+import logoImage from "../../assets/logo.png"
 
 interface Props extends Kiwi.ComponentProps {
   keyPrefix: string
@@ -14,7 +15,7 @@ export const HeaderComponent = BlueForest.Component<Props>({
     const { keyPrefix } = props
     return <Kiwi.Container style={HeaderComponentStyle.container}>
       <Kiwi.Image
-        source={"../../assets/logo.png"}
+        source={logoImage}
         alt="Blue Forest"
         style={HeaderComponentStyle.logo}
       />
