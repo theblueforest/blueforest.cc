@@ -3,6 +3,7 @@ import * as Kiwi from "kiwi-bundle-react"
 import { BlueForest } from "../bundle"
 import { i18nTechnologies } from "../i18n/technologies"
 import { TechnologiesLayoutStyle } from "./Technologies.style"
+import DROPinImage from "../../assets/DROPin.png"
 
 interface Props extends Kiwi.ComponentProps {
   keyPrefix: string
@@ -15,7 +16,7 @@ export const TechnologiesLayout = BlueForest.Layout<Props>({
     return <Kiwi.Container style={TechnologiesLayoutStyle.container}>
       <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nTechnologies.title} style={TechnologiesLayoutStyle.title}/>
 
-      <Kiwi.Image source={require("../../assets/DROPin.png")} style={TechnologiesLayoutStyle.image}/>
+      <Kiwi.Image source={DROPinImage} style={TechnologiesLayoutStyle.image}/>
 
       <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nTechnologies.dropinTitle}/>
       <Kiwi.List>

@@ -1,13 +1,13 @@
 import { BlueForest } from "../bundle"
-import { LeavesStyle } from "../styles/leaves"
-import { TitlesStyle } from "../styles/titles"
+import { LeavesValues } from "../values/leaves"
+import { TitlesValues } from "../values/titles"
 
 export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
 
   leaves1: [
-    { style: LeavesStyle.leaves1 },
     {
       style: {
+        width: LeavesValues.width[1],
         position: "absolute",
         zIndex: 0,
       },
@@ -15,8 +15,8 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
   ],
 
   title: [
-    { style: TitlesStyle.global },
-    { style: TitlesStyle.onLeft },
+    { style: TitlesValues.global },
+    { style: TitlesValues.onLeft },
     {
       style: {
         color: colors.PINK,

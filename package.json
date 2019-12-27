@@ -7,23 +7,30 @@
   "scripts": {
     "start": "kiwi start",
     "test": "kiwi test",
-    "build": "kiwi build"
+    "build": "kiwi build",
+    "deploy": "kiwi deploy",
+    "undeploy": "kiwi undeploy"
   },
   "bundles": {
     "kiwi-bundle": {
-      "app": {
-        "name": "Blue Forest",
-        "author": "Blue Forest"
+      "options": {
+        "app": {
+          "name": "Blue Forest",
+          "author": "Blue Forest"
+        },
+        "dev": {
+          "webHost": "localhost",
+          "webPort": 8040
+        }
       },
-      "dev": {
-        "webHost": "localhost",
-        "webPort": 8040
+      "handlers": {
+        "client": "./client"
       }
     }
   },
   "devDependencies": {
     "dropin-recipes": "^1.7.1",
-    "kiwi-bundle": "^3.0.1",
-    "kiwi-bundle-react": "^1.0.0"
+    "kiwi-bundle": "^3.0.7",
+    "kiwi-bundle-react": "^1.0.3"
   }
 }

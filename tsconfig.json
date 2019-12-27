@@ -2,7 +2,12 @@
   "extends": "./node_modules/kiwi-bundle/.models/ts/react.json",
   "compilerOptions": {
     "rootDir": "src",
-    "outDir": "dist"
+    "outDir": "dist",
+    "types": [
+      "node",
+      "react",
+      "kiwi-bundle-react/.models/types"
+    ]
   },
   "include": [
     "src/**/*"
