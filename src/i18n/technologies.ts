@@ -47,4 +47,15 @@ export const i18nTechnologies = i18nData({
     fr: "En savoir plus",
   },
 
+  soonTitle: {
+    fr: "C'est pour bientôt !"
+  },
+
+  soonText: {
+    fr: "Les technologies développées seront bientôt disponibles, n’hésitez pas à vous inscrire ci-dessous pour être tenu informé :"
+  },
+
+  soonInput: {
+    fr: "Votre e-mail"
+  }
 })
