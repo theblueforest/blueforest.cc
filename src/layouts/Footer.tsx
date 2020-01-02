@@ -6,6 +6,9 @@ import { FooterLayoutStyle } from "./Footer.style"
 import { FooterValues } from "../values/footer"
 import leaves6Image from "../../assets/leaves6.png"
 import footerImage from "../../assets/footer.png"
+import LinkedinImage from "../../assets/Linkedin.png"
+import GithubImage from "../../assets/Github.png"
+import { ForestsLayoutStyle } from "./Forests.style"
 
 interface Props extends Kiwi.ComponentProps {
   keyPrefix: string
@@ -16,22 +19,56 @@ export const FooterLayout = BlueForest.Layout<Props>({
   render: ({ props }) => {
     const { keyPrefix } = props
     return <Kiwi.Container style={FooterLayoutStyle.container}>
-      <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nFooter.title}/>
-      <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nFooter.baseline}/>
+      <Kiwi.Text
+        keyPrefix={keyPrefix}
+        i18n={i18nFooter.title}
+        style={FooterLayoutStyle.title}
+      />
+      
+      <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nFooter.subtitle} style={FooterLayoutStyle.subtitle}/>
 
-      Ariane
+      <Kiwi.Container style={FooterLayoutStyle.cardsContainer}>
+        <Kiwi.Container style={FooterLayoutStyle.card}>
+          <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nFooter.ariane} style={FooterLayoutStyle.cardTitle}/>
+          <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nFooter.arianeRole} style={FooterLayoutStyle.cardSubtitle}/>
+          <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nFooter.arianeEmail} style={FooterLayoutStyle.cardEmail}/>
 
-      Nazim
+          <Kiwi.Container style={FooterLayoutStyle.cardLogos}>
+            <Kiwi.Image
+              source={LinkedinImage}
+              style={FooterLayoutStyle.cardLogo}
+            />
+          </Kiwi.Container>
+        </Kiwi.Container>
 
-      <Kiwi.Image key="leaves5" source={leaves6Image}/>,
+        <Kiwi.Container style={FooterLayoutStyle.card}>
+          <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nFooter.nazim} style={FooterLayoutStyle.cardTitle}/>
+          <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nFooter.nazimRole} style={FooterLayoutStyle.cardSubtitle}/>
+          <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nFooter.nazimEmail} style={FooterLayoutStyle.cardEmail}/>
+
+          <Kiwi.Container style={FooterLayoutStyle.cardLogos}>
+            <Kiwi.Image
+              source={LinkedinImage}
+              style={FooterLayoutStyle.cardLogo}
+            />
+
+            <Kiwi.Image
+              source={GithubImage}
+              style={FooterLayoutStyle.cardLogoGithub}
+            />
+          </Kiwi.Container>
+        </Kiwi.Container>
+      </Kiwi.Container>
+
+      <Kiwi.Image key="leaves5" source={leaves6Image} style={FooterLayoutStyle.leave}/>,
+
+      <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nFooter.legalInformations} style={FooterLayoutStyle.legals}/>
+      <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nFooter.copyright} style={FooterLayoutStyle.legals}/>
 
       <Kiwi.Image
         source={footerImage}
         style={FooterLayoutStyle.image}
       />
-
-      <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nFooter.legalInformations}/>
-      <Kiwi.Text children={FooterValues.copyright()}/>
     </Kiwi.Container>
   }
 

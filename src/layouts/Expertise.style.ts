@@ -6,7 +6,7 @@ export const ExpertiseLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) =>
   container: [
     {
       style: {
-        backgroundColor: colors.GREEN,
+        background: colors.GREEN,
         paddingBottom: 30,
       },
     },
@@ -14,21 +14,36 @@ export const ExpertiseLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) =>
 
   title: [
     { style: TitlesValues.global },
+    { max: sizes.MEDIUM, style: {
+      marginLeft: "auto",
+    marginRight: "auto",
+    width: "70%"
+    } },
     { style: TitlesValues.onLeft },
     {
       style: {
         color: colors.BLUE,
       },
     },
+    {
+      max: sizes.MEDIUM,
+      style: {
+        textAlign: "center",
+        marginBottom: 28,
+        marginLeft: "auto",
+        marginRight: "auto",
+        width: "80%",
+      }
+    }
   ],
 
   services: [
     {
       style: {
+        justifyContent: "center",
         margin: "auto",
         display: "flex",
-        flexWrap: "wrap",
-        width: "80%",
+        flexWrap: "wrap"
       },
     },
   ],

@@ -12,6 +12,14 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
         zIndex: 0,
       },
     },
+
+    {
+      max: sizes.MEDIUM,
+
+      style: {
+        display: "none"
+      }
+    }
   ],
 
   title: [
@@ -22,6 +30,14 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
         color: colors.PINK,
       },
     },
+    {
+      max: sizes.MEDIUM,
+      style: {
+        textAlign: "center",
+        marginBottom: 28,
+        marginLeft: 0
+      }
+    }
   ],
 
   image: [
@@ -32,6 +48,14 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
         margin: "0 auto 70px",
       },
     },
+
+    {
+      max: sizes.MEDIUM,
+      style: {
+        width: "100%",
+        marginBottom: 18
+      }
+    }
   ],
 
 }))
