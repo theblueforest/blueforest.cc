@@ -10,6 +10,14 @@ export const HomePageStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
         marginLeft: "auto",
       },
     },
+
+    {
+      max: sizes.MEDIUM,
+
+      style: {
+        display: "none"
+      }
+    }
   ],
 
 }))

@@ -9,7 +9,6 @@ import { FooterLayout } from "../layouts/Footer"
 import { HeaderLayout } from "../layouts/Header"
 import { HomePageStyle } from "./Home.style"
 import leaves2Image from "../../assets/leaves2.png"
-import leaves5Image from "../../assets/leaves5.png"
 
 interface Params {}
 
@@ -25,7 +24,6 @@ export const HomePage = BlueForest.Page<Params>({
     <ExpertiseLayout key={"expertise"} keyPrefix={"expertise"}/>,
     <TechnologiesLayout key={"techs"} keyPrefix={"techs"}/>,
     <ForestsLayout key={"forests"} keyPrefix={"forests"}/>,
-    <Kiwi.Image key="leaves5" source={leaves5Image}/>,
     <FooterLayout key={"footer"} keyPrefix={"footer"}/>,
   ],
 })
