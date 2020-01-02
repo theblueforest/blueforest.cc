@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "dropin-recipes": "^1.7.1",
-    "kiwi-bundle": "^3.0.7",
-    "kiwi-bundle-react": "^1.0.3"
+    "kiwi-bundle": "3.0.7",
+    "kiwi-bundle-react": "1.0.4"
   }
 }
