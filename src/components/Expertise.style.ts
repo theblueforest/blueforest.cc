@@ -7,7 +7,6 @@ export const ExpertiseComponentStyle = BlueForest.StyleSheet(({ sizes, colors })
     { style: ServicesValues.block },
     {
       style: {
-        backgroundColor: "white",
         borderColor: color,
         borderStyle: "solid",
         padding: 20,
@@ -20,21 +19,46 @@ export const ExpertiseComponentStyle = BlueForest.StyleSheet(({ sizes, colors })
     {
       style: {
         color,
-        fontSize: 24,
+        fontFamily: "Muli",
+        fontStyle: "normal",
         fontWeight: "bold",
+        fontSize: "28px",
+        lineHeight: "43px",
         textTransform: "uppercase",
         display: "block",
-        marginBottom: 10,
+        paddingTop: "40px",
+        marginBottom: "27px",
       },
     },
+
+    {
+      max: sizes.MEDIUM,
+      style: {
+        fontSize: 24,
+        paddingTop: 20
+      }
+    }
   ],
 
   description: [
     {
       style: {
         color: colors.BLUE,
+        fontFamily: "Muli",
+        fontStyle: "normal",
+        fontWeight: "normal",
+        fontSize: "28px",
+        lineHeight: "35px",
+        textAlign: "center"
       },
     },
+
+    {
+      max: sizes.MEDIUM,
+      style: {
+        fontSize: 20
+      }
+    }
   ],
 
 }))

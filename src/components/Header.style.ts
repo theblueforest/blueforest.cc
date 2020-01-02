@@ -15,6 +15,13 @@ export const HeaderComponentStyle = BlueForest.StyleSheet(({ sizes, colors }) =>
         gridRowGap: 0,
       },
     },
+
+    {
+      max: sizes.MEDIUM,
+      style: {
+        display: "block"
+      }
+    }
   ],
 
   logo: [
@@ -24,6 +31,13 @@ export const HeaderComponentStyle = BlueForest.StyleSheet(({ sizes, colors }) =>
         width: 90,
       },
     },
+
+    {
+      max: sizes.MEDIUM,
+      style: {
+        display: "inline-block",
+      }
+    }
   ],
 
   name: [
@@ -35,6 +49,13 @@ export const HeaderComponentStyle = BlueForest.StyleSheet(({ sizes, colors }) =>
         fontWeight: "bold",
       },
     },
+
+    {
+      max: sizes.MEDIUM,
+      style: {
+        display: "block"
+      }
+    }
   ],
 
   baseline: [
