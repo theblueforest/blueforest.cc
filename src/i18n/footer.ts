@@ -39,6 +39,6 @@ export const i18nFooter = i18nData({
   },
 
   copyright: {
-    fr: "Copyright (c) 2019 Blue Forest"
+    fr: "Copyright (c) 2020 Blue Forest"
   }
 })

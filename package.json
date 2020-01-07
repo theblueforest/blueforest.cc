@@ -4,6 +4,7 @@
   "author": "Nazim Lachter <nazim@blueforest.cc>",
   "repository": "git@github.com:theblueforest/blueforest.cc.git",
   "license": "Apache-2.0",
+  "main": "./dist/index.html",
   "scripts": {
     "start": "kiwi start",
     "test": "kiwi test",
