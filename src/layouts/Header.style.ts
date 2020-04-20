@@ -1,14 +1,13 @@
 import { BlueForest } from "../bundle"
 
-export const HeaderLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
+export const HeaderLayoutStyle = BlueForest.StyleSheet(theme => ({
 
   container: [
     {
       style: {
-        backgroundColor: colors.BLUE,
+        backgroundColor: theme.colors.BLUE,
         minHeight: "100%",
         color: "white",
-        textAlign: "center",
       },
     },
   ],

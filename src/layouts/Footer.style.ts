@@ -2,7 +2,7 @@ import { BlueForest } from "../bundle"
 import { TitlesValues } from "../values/titles"
 import { LeavesValues } from "../values/leaves"
 
-export const FooterLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
+export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
   title: [
     { style: TitlesValues.global },
     {

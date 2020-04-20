@@ -7,7 +7,7 @@ interface Props extends Kiwi.ComponentProps {}
 
 export const FounderComponent = BlueForest.Component<Props>({
 
-  render: ({ props }) => {
+  render: () => {
     return <Kiwi.Container style={FounderComponentStyle.container}>
     </Kiwi.Container>
   }

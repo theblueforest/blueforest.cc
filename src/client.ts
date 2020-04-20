@@ -1,8 +1,6 @@
 import { BlueForest } from "./bundle"
 import { HomePage } from "./pages/Home"
 
-const router = BlueForest.Router({
+BlueForest.Render({
   HOME: HomePage,
 })
-
-BlueForest.Client(router)

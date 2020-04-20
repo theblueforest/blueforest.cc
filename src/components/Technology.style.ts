@@ -1,6 +1,6 @@
 import { BlueForest } from "../bundle"
 
-export const TechnologyComponentStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
+export const TechnologyComponentStyle = BlueForest.StyleSheet(({}) => ({
 
   container: [
     {

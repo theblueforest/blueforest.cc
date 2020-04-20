@@ -1,7 +1,7 @@
 import { BlueForest } from "../bundle"
 import { TitlesValues } from "../values/titles"
 
-export const ExpertiseLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
+export const ExpertiseLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
 
   container: [
     {
