@@ -1,6 +1,6 @@
 {
   "name": "blueforest.cc",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "author": "Nazim Lachter <nazim@blueforest.cc>",
   "repository": "git@github.com:theblueforest/blueforest.cc.git",
   "license": "Apache-2.0",
@@ -28,8 +28,7 @@
     }
   },
   "devDependencies": {
-    "dropin-recipes": "^1.7.1",
-    "kiwi-bundle": "3.0.7",
-    "kiwi-bundle-react": "1.0.4"
+    "kiwi-bundle": "3.1.0",
+    "kiwi-bundle-react": "1.1.0"
   }
 }
