@@ -8,9 +8,7 @@
   "scripts": {
     "start": "kiwi start",
     "test": "kiwi test",
-    "build": "kiwi build",
-    "deploy": "kiwi deploy",
-    "undeploy": "kiwi undeploy"
+    "build": "kiwi build"
   },
   "bundles": {
     "kiwi-bundle": {
@@ -20,7 +18,7 @@
           "author": "Blue Forest"
         },
         "dev": {
-          "webHost": "localhost",
+          "webHost": "0.0.0.0",
           "webPort": 8040
         }
       },
