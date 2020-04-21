@@ -13,26 +13,26 @@ import leaves5Image from "../../assets/leaves5.png"
 import { ForestsLayoutStyle } from "./Forests.style"
 
 interface Props extends Kiwi.ComponentProps {
-  keyPrefix: string
+  id: string
 }
 
 export const ForestsLayout = BlueForest.Layout<Props>({
 
   render: ({ props }) => {
-    const { keyPrefix } = props
+    const { id } = props
     return <Kiwi.Container style={ForestsLayoutStyle.container}>
       <Kiwi.Image
         source={leaves3Image}
         style={ForestsLayoutStyle.leaves1}
       />
       <Kiwi.Text
-        keyPrefix={keyPrefix}
-        i18n={i18nForests.title}
+        id={id}
+        children={i18nForests.title}
         style={ForestsLayoutStyle.title}
       />
       <Kiwi.Text
-        keyPrefix={keyPrefix}
-        i18n={i18nForests.description}
+        id={id}
+        children={i18nForests.description}
         style={ForestsLayoutStyle.description}
       />
 
@@ -44,8 +44,8 @@ export const ForestsLayout = BlueForest.Layout<Props>({
           />
 
         <Kiwi.Text
-          keyPrefix={keyPrefix}
-          i18n={i18nForests.laClocheDescription}
+          id={id}
+          children={i18nForests.laClocheDescription}
           style={ForestsLayoutStyle.cardTitle}
         />
         </Kiwi.Container>
@@ -57,50 +57,50 @@ export const ForestsLayout = BlueForest.Layout<Props>({
           />
 
           <Kiwi.List style={ForestsLayoutStyle.cardTags}>
-            <Kiwi.ListElement style={ForestsLayoutStyle.cardTag}>
+            <Kiwi.ListElement id={id} style={ForestsLayoutStyle.cardTag}>
               <Kiwi.Text
-                keyPrefix={keyPrefix}
-                i18n={i18nForests.ermTag1}
+                id={id}
+                children={i18nForests.ermTag1}
                 style={ForestsLayoutStyle.cardTagText}
               />
             </Kiwi.ListElement>
 
-            <Kiwi.ListElement style={ForestsLayoutStyle.cardTag}>
+            <Kiwi.ListElement id={id} style={ForestsLayoutStyle.cardTag}>
               <Kiwi.Text
-                keyPrefix={keyPrefix}
-                i18n={i18nForests.ermTag2}
+                id={id}
+                children={i18nForests.ermTag2}
                 style={ForestsLayoutStyle.cardTagText}
               />
             </Kiwi.ListElement>
 
-            <Kiwi.ListElement style={ForestsLayoutStyle.cardTag}>
+            <Kiwi.ListElement id={id} style={ForestsLayoutStyle.cardTag}>
               <Kiwi.Text
-                keyPrefix={keyPrefix}
-                i18n={i18nForests.ermTag3}
+                id={id}
+                children={i18nForests.ermTag3}
                 style={ForestsLayoutStyle.cardTagText}
               />
             </Kiwi.ListElement>
 
-            <Kiwi.ListElement style={ForestsLayoutStyle.cardTag}>
+            <Kiwi.ListElement id={id} style={ForestsLayoutStyle.cardTag}>
               <Kiwi.Text
-                keyPrefix={keyPrefix}
-                i18n={i18nForests.ermTag4}
+                id={id}
+                children={i18nForests.ermTag4}
                 style={ForestsLayoutStyle.cardTagText}
               />
             </Kiwi.ListElement>
 
-            <Kiwi.ListElement style={ForestsLayoutStyle.cardTag}>
+            <Kiwi.ListElement id={id} style={ForestsLayoutStyle.cardTag}>
               <Kiwi.Text
-                keyPrefix={keyPrefix}
-                i18n={i18nForests.ermTag5}
+                id={id}
+                children={i18nForests.ermTag5}
                 style={ForestsLayoutStyle.cardTagText}
               />
             </Kiwi.ListElement>
 
-            <Kiwi.ListElement style={ForestsLayoutStyle.cardTag}>
+            <Kiwi.ListElement id={id} style={ForestsLayoutStyle.cardTag}>
               <Kiwi.Text
-                keyPrefix={keyPrefix}
-                i18n={i18nForests.ermTag6}
+                id={id}
+                children={i18nForests.ermTag6}
                 style={ForestsLayoutStyle.cardTagText}
               />
             </Kiwi.ListElement>
@@ -108,8 +108,8 @@ export const ForestsLayout = BlueForest.Layout<Props>({
 
           <Kiwi.Container style={ForestsLayoutStyle.cardBtn}>
             <Kiwi.Text
-              keyPrefix={keyPrefix}
-              i18n={i18nForests.visitErm}
+              id={id}
+              children={i18nForests.visitErm}
               style={ForestsLayoutStyle.cardTagText}
             />
           </Kiwi.Container>
@@ -122,50 +122,50 @@ export const ForestsLayout = BlueForest.Layout<Props>({
           />
 
           <Kiwi.List style={ForestsLayoutStyle.cardTags}>
-            <Kiwi.ListElement style={ForestsLayoutStyle.cardTag}>
+            <Kiwi.ListElement id={id} style={ForestsLayoutStyle.cardTag}>
               <Kiwi.Text
-                keyPrefix={keyPrefix}
-                i18n={i18nForests.qapexTag1}
+                id={id}
+                children={i18nForests.qapexTag1}
                 style={ForestsLayoutStyle.cardTagText}
               />
             </Kiwi.ListElement>
 
-            <Kiwi.ListElement style={ForestsLayoutStyle.cardTag}>
+            <Kiwi.ListElement id={id} style={ForestsLayoutStyle.cardTag}>
               <Kiwi.Text
-                keyPrefix={keyPrefix}
-                i18n={i18nForests.qapexTag2}
+                id={id}
+                children={i18nForests.qapexTag2}
                 style={ForestsLayoutStyle.cardTagText}
               />
             </Kiwi.ListElement>
 
-            <Kiwi.ListElement style={ForestsLayoutStyle.cardTag}>
+            <Kiwi.ListElement id={id} style={ForestsLayoutStyle.cardTag}>
               <Kiwi.Text
-                keyPrefix={keyPrefix}
-                i18n={i18nForests.qapexTag3}
+                id={id}
+                children={i18nForests.qapexTag3}
                 style={ForestsLayoutStyle.cardTagText}
               />
             </Kiwi.ListElement>
 
-            <Kiwi.ListElement style={ForestsLayoutStyle.cardTag}>
+            <Kiwi.ListElement id={id} style={ForestsLayoutStyle.cardTag}>
               <Kiwi.Text
-                keyPrefix={keyPrefix}
-                i18n={i18nForests.qapexTag4}
+                id={id}
+                children={i18nForests.qapexTag4}
                 style={ForestsLayoutStyle.cardTagText}
               />
             </Kiwi.ListElement>
 
-            <Kiwi.ListElement style={ForestsLayoutStyle.cardTag}>
+            <Kiwi.ListElement id={id} style={ForestsLayoutStyle.cardTag}>
               <Kiwi.Text
-                keyPrefix={keyPrefix}
-                i18n={i18nForests.qapexTag5}
+                id={id}
+                children={i18nForests.qapexTag5}
                 style={ForestsLayoutStyle.cardTagText}
               />
             </Kiwi.ListElement>
 
-            <Kiwi.ListElement style={ForestsLayoutStyle.cardTag}>
+            <Kiwi.ListElement id={id} style={ForestsLayoutStyle.cardTag}>
               <Kiwi.Text
-                keyPrefix={keyPrefix}
-                i18n={i18nForests.qapexTag6}
+                id={id}
+                children={i18nForests.qapexTag6}
                 style={ForestsLayoutStyle.cardTagText}
               />
             </Kiwi.ListElement>
@@ -173,8 +173,8 @@ export const ForestsLayout = BlueForest.Layout<Props>({
 
           <Kiwi.Container style={ForestsLayoutStyle.cardBtn}>
             <Kiwi.Text
-              keyPrefix={keyPrefix}
-              i18n={i18nForests.visitQapex}
+              id={id}
+              children={i18nForests.visitQapex}
               style={ForestsLayoutStyle.cardTagText}
             />
           </Kiwi.Container>
@@ -187,8 +187,8 @@ export const ForestsLayout = BlueForest.Layout<Props>({
           />
 
           <Kiwi.Text
-            keyPrefix={keyPrefix}
-            i18n={i18nForests.maoboaDescription}
+            id={id}
+            children={i18nForests.maoboaDescription}
             style={ForestsLayoutStyle.cardTitle}
           />
         </Kiwi.Container>
@@ -209,7 +209,7 @@ export const ForestsLayout = BlueForest.Layout<Props>({
         style={ForestsLayoutStyle.leaves2}
       />
 
-      <Kiwi.Image key="leaves5" source={leaves5Image} style={ForestsLayoutStyle.leaves3}/>
+      <Kiwi.Image source={leaves5Image} style={ForestsLayoutStyle.leaves3}/>
     </Kiwi.Container>
   }
 

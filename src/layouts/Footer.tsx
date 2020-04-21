@@ -11,27 +11,27 @@ import GithubImage from "../../assets/Github.png"
 import { ForestsLayoutStyle } from "./Forests.style"
 
 interface Props extends Kiwi.ComponentProps {
-  keyPrefix: string
+  id: string
 }
 
 export const FooterLayout = BlueForest.Layout<Props>({
 
   render: ({ props }) => {
-    const { keyPrefix } = props
+    const { id } = props
     return <Kiwi.Container style={FooterLayoutStyle.container}>
       <Kiwi.Text
-        keyPrefix={keyPrefix}
-        i18n={i18nFooter.title}
+        id={id}
+        children={i18nFooter.title}
         style={FooterLayoutStyle.title}
       />
-      
-      <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nFooter.subtitle} style={FooterLayoutStyle.subtitle}/>
+
+      <Kiwi.Text id={id} children={i18nFooter.subtitle} style={FooterLayoutStyle.subtitle}/>
 
       <Kiwi.Container style={FooterLayoutStyle.cardsContainer}>
         <Kiwi.Container style={FooterLayoutStyle.card}>
-          <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nFooter.ariane} style={FooterLayoutStyle.cardTitle}/>
-          <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nFooter.arianeRole} style={FooterLayoutStyle.cardSubtitle}/>
-          <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nFooter.arianeEmail} style={FooterLayoutStyle.cardEmail}/>
+          <Kiwi.Text id={id} children={i18nFooter.ariane} style={FooterLayoutStyle.cardTitle}/>
+          <Kiwi.Text id={id} children={i18nFooter.arianeRole} style={FooterLayoutStyle.cardSubtitle}/>
+          <Kiwi.Text id={id} children={i18nFooter.arianeEmail} style={FooterLayoutStyle.cardEmail}/>
 
           <Kiwi.Container style={FooterLayoutStyle.cardLogos}>
             <Kiwi.Image
@@ -42,9 +42,9 @@ export const FooterLayout = BlueForest.Layout<Props>({
         </Kiwi.Container>
 
         <Kiwi.Container style={FooterLayoutStyle.card}>
-          <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nFooter.nazim} style={FooterLayoutStyle.cardTitle}/>
-          <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nFooter.nazimRole} style={FooterLayoutStyle.cardSubtitle}/>
-          <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nFooter.nazimEmail} style={FooterLayoutStyle.cardEmail}/>
+          <Kiwi.Text id={id} children={i18nFooter.nazim} style={FooterLayoutStyle.cardTitle}/>
+          <Kiwi.Text id={id} children={i18nFooter.nazimRole} style={FooterLayoutStyle.cardSubtitle}/>
+          <Kiwi.Text id={id} children={i18nFooter.nazimEmail} style={FooterLayoutStyle.cardEmail}/>
 
           <Kiwi.Container style={FooterLayoutStyle.cardLogos}>
             <Kiwi.Image
@@ -60,10 +60,10 @@ export const FooterLayout = BlueForest.Layout<Props>({
         </Kiwi.Container>
       </Kiwi.Container>
 
-      <Kiwi.Image key="leaves5" source={leaves6Image} style={FooterLayoutStyle.leave}/>,
+      <Kiwi.Image source={leaves6Image} style={FooterLayoutStyle.leave}/>,
 
-      <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nFooter.legalInformations} style={FooterLayoutStyle.legals}/>
-      <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nFooter.copyright} style={FooterLayoutStyle.legals}/>
+      <Kiwi.Text id={id} children={i18nFooter.legalInformations} style={FooterLayoutStyle.legals}/>
+      <Kiwi.Text id={id} children={i18nFooter.copyright} style={FooterLayoutStyle.legals}/>
 
       <Kiwi.Image
         source={footerImage}

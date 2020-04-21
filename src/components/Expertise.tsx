@@ -5,7 +5,7 @@ import { BlueForest } from "../bundle"
 import { ExpertiseComponentStyle } from "./Expertise.style"
 
 interface Props extends Kiwi.ComponentProps {
-  keyPrefix: string
+  id: string
   color: string
   title: i18nData
   description: i18nData
@@ -14,16 +14,16 @@ interface Props extends Kiwi.ComponentProps {
 export const ExpertiseComponent = BlueForest.Component<Props>({
 
   render: ({ props }) => {
-    const { keyPrefix, color, title, description } = props
+    const { id, color, title, description } = props
     return <Kiwi.Container style={ExpertiseComponentStyle.container(color)}>
       <Kiwi.Text
-        keyPrefix={keyPrefix}
-        i18n={title}
+        id={id}
+        children={title}
         style={ExpertiseComponentStyle.title(color)}
       />
       <Kiwi.Text
-        keyPrefix={keyPrefix}
-        i18n={description}
+        id={id}
+        children={description}
         style={ExpertiseComponentStyle.description}
       />
     </Kiwi.Container>

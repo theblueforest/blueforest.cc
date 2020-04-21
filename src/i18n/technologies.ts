@@ -39,7 +39,7 @@ export const i18nTechnologies = i18nData({
   ],
 
   kiwiBundleConclusion: {
-    fr: "Retrouvez plus d'informations sur le Kiwi Bundle sur GitHub : **[theblueforest/kiwi-bundle](https://github.com/theblueforest/kiwi-bundle)**."
+    fr: "Retrouvez plus d'informations sur le Kiwi Bundle sur GitHub : **[theblueforest/kiwi-bundle](https://github.com/theblueforest/kiwi-bundle){target:_blank}**."
   },
 
 

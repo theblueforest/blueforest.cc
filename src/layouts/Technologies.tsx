@@ -6,48 +6,50 @@ import { TechnologiesLayoutStyle } from "./Technologies.style"
 import DROPinImage from "../../assets/DROPin.png"
 
 interface Props extends Kiwi.ComponentProps {
-  keyPrefix: string
+  id: string
 }
 
 export const TechnologiesLayout = BlueForest.Layout<Props>({
 
   render: ({ props }) => {
-    const { keyPrefix } = props
+    const { id } = props
     return <Kiwi.Container style={TechnologiesLayoutStyle.container}>
-      <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nTechnologies.title} style={TechnologiesLayoutStyle.title}/>
+      <Kiwi.Text id={id} children={i18nTechnologies.title} style={TechnologiesLayoutStyle.title}/>
 
       <Kiwi.Image source={DROPinImage} style={TechnologiesLayoutStyle.image}/>
 
-      <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nTechnologies.dropinTitle} style={TechnologiesLayoutStyle.subtitle}/>
+      <Kiwi.Text id={id} children={i18nTechnologies.dropinTitle} style={TechnologiesLayoutStyle.subtitle}/>
       <Kiwi.List style={TechnologiesLayoutStyle.list}>
         {i18nTechnologies.dropinDescription(new Date().getFullYear() - 2015).map((desc, index) => {
-          return <Kiwi.ListElement key={`${keyPrefix}-dropin-${index}`} style={TechnologiesLayoutStyle.listElement}>
-            <Kiwi.Text keyPrefix={`${keyPrefix}-dropin-${index}`} i18n={desc}/>
+          const childrenId = `${id}-dropin-${index}`
+          return <Kiwi.ListElement id={childrenId} style={TechnologiesLayoutStyle.listElement}>
+            <Kiwi.Text id={`${childrenId}-text`} children={desc}/>
           </Kiwi.ListElement>
         })}
-        <Kiwi.ListElement style={TechnologiesLayoutStyle.listLastElement}>
-          <Kiwi.Text keyPrefix={`${keyPrefix}-dropin`} i18n={i18nTechnologies.dropinConclusion} style={TechnologiesLayoutStyle.listLastElementText}/>
+        <Kiwi.ListElement id={`${id}-dropin-last`} style={TechnologiesLayoutStyle.listLastElement}>
+          <Kiwi.Text id={`${id}-dropin-last-text`} children={i18nTechnologies.dropinConclusion} style={TechnologiesLayoutStyle.listLastElementText}/>
         </Kiwi.ListElement>
       </Kiwi.List>
 
-      <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nTechnologies.kiwiBundleTitle} style={TechnologiesLayoutStyle.subtitle}/>
+      <Kiwi.Text id={id} children={i18nTechnologies.kiwiBundleTitle} style={TechnologiesLayoutStyle.subtitle}/>
       <Kiwi.List style={TechnologiesLayoutStyle.list}>
         {i18nTechnologies.kiwiBundleDescription.map((desc, index) => {
-          return <Kiwi.ListElement key={`${keyPrefix}-desc-${index}`} style={TechnologiesLayoutStyle.listElement}>
-            <Kiwi.Text keyPrefix={`${keyPrefix}-desc-${index}`} i18n={desc}/>
+          const childrenId = `${id}-kb-${index}`
+          return <Kiwi.ListElement id={childrenId} style={TechnologiesLayoutStyle.listElement}>
+            <Kiwi.Text id={`${childrenId}-text`} children={desc}/>
           </Kiwi.ListElement>
         })}
-        <Kiwi.ListElement style={TechnologiesLayoutStyle.listLastElement}>
-          <Kiwi.Text keyPrefix={`${keyPrefix}-cln`} i18n={i18nTechnologies.kiwiBundleConclusion} style={TechnologiesLayoutStyle.listLastElementText}/>
+        <Kiwi.ListElement id={`${id}-kb-last`} style={TechnologiesLayoutStyle.listLastElement}>
+          <Kiwi.Text id={`${id}-kb-last-text`} children={i18nTechnologies.kiwiBundleConclusion} style={TechnologiesLayoutStyle.listLastElementText}/>
         </Kiwi.ListElement>
       </Kiwi.List>
 
       <Kiwi.Container style={TechnologiesLayoutStyle.soon}>
-        <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nTechnologies.soonTitle} style={TechnologiesLayoutStyle.soonTitle}/>
-        <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nTechnologies.soonText} style={TechnologiesLayoutStyle.soonText}/>
+        <Kiwi.Text id={id} children={i18nTechnologies.soonTitle} style={TechnologiesLayoutStyle.soonTitle}/>
+        <Kiwi.Text id={id} children={i18nTechnologies.soonText} style={TechnologiesLayoutStyle.soonText}/>
         <Kiwi.Container style={TechnologiesLayoutStyle.soonForm}>
           <Kiwi.Container style={TechnologiesLayoutStyle.soonFormField}>
-            <Kiwi.Text keyPrefix={keyPrefix} i18n={i18nTechnologies.soonInput}/>
+            <Kiwi.Text id={id} children={i18nTechnologies.soonInput}/>
           </Kiwi.Container>
           <Kiwi.Container style={TechnologiesLayoutStyle.soonFormBtn}>S'inscrire</Kiwi.Container>
         </Kiwi.Container>

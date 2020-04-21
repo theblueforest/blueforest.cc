@@ -21,7 +21,15 @@ export const HeaderLayoutStyle = BlueForest.StyleSheet(theme => ({
     },
   ],
 
-  forest: [
+  forestContainer: [
+    {
+      style: {
+        textAlign: "center",
+      },
+    },
+  ],
+
+  forestVideo: [
     {
       style: {
         width: 800,

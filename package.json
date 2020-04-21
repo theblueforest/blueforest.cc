@@ -18,7 +18,7 @@
           "author": "Blue Forest"
         },
         "dev": {
-          "webHost": "0.0.0.0",
+          "webHost": "localhost",
           "webPort": 8040
         }
       },
