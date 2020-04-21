@@ -6,13 +6,13 @@ import { ExpertiseLayoutStyle } from "./Expertise.style"
 import { ExpertiseComponent } from "../components/Expertise"
 
 interface Props extends Kiwi.ComponentProps {
-  id: string
+  keyPrefix: string
 }
 
 export const ExpertiseLayout = BlueForest.Layout<Props>({
 
   render: ({ props, theme }) => {
-    const { id } = props
+    const { keyPrefix: id } = props
     return <Kiwi.Container style={ExpertiseLayoutStyle.container}>
       <Kiwi.Text
         id={id}

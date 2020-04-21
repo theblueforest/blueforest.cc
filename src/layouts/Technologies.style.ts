@@ -49,7 +49,7 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
   ],
 
   list: [{
-    style: {
+    style: {
       width: "60%",
       margin: "0 auto 40px auto",
       fontFamily: "Muli",
@@ -72,19 +72,19 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
   }],
 
   listElement: [{
-    style: {
+    style: {
       "margin": "0 0 18px 0"
     }
   }],
 
   listLastElement: [{
-    style: {
+    style: {
       "margin": "0 0 10px 0"
     }
   }],
 
   listLastElementText: [{
-    style: {
+    style: {
       "color": "#61FFD8"
     }
   }],

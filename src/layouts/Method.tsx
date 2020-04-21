@@ -7,27 +7,17 @@ import leaves1Image from "../../assets/leaves1.png"
 import methodImage from "../../assets/method.fr.png"
 
 interface Props extends Kiwi.ComponentProps {
-  id: string
+  keyPrefix: string
 }
 
 export const MethodLayout = BlueForest.Layout<Props>({
 
   render: ({ props }) => {
-    const { id } = props
+    const { keyPrefix } = props
     return <Kiwi.Container>
-      <Kiwi.Image
-        source={leaves1Image}
-        style={MethodLayoutStyle.leaves1}
-      />
-      <Kiwi.Text
-        id={id}
-        children={i18nMethod.title}
-        style={MethodLayoutStyle.title}
-      />
-      <Kiwi.Image
-        source={methodImage}
-        style={MethodLayoutStyle.image}
-      />
+      <Kiwi.Image source={leaves1Image} style={MethodLayoutStyle.leaves1}/>
+      <Kiwi.Text id={keyPrefix} style={MethodLayoutStyle.title} children={i18nMethod.title}/>
+      <Kiwi.Image source={methodImage} style={MethodLayoutStyle.image}/>
     </Kiwi.Container>
   }
 

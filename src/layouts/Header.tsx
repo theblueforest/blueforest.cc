@@ -6,23 +6,17 @@ import { LogoComponent } from "../components/Logo"
 import headerVideo from "../../assets/header.mp4"
 
 interface Props extends Kiwi.ComponentProps {
-  id: string
+  keyPrefix: string
 }
 
 export const HeaderLayout = BlueForest.Layout<Props>({
 
   render: ({ props }) => {
-    const { id } = props
+    const { keyPrefix } = props
     return <Kiwi.Container style={HeaderLayoutStyle.container}>
-      <Kiwi.Container style={HeaderLayoutStyle.title}>
-        <LogoComponent id={id}/>
-      </Kiwi.Container>
+      <Kiwi.Container style={HeaderLayoutStyle.title} children={<LogoComponent id={keyPrefix}/>}/>
       <Kiwi.Container style={HeaderLayoutStyle.forestContainer}>
-        <Kiwi.Video
-          id={`${id}-video`}
-          sources={[ headerVideo ]}
-          style={HeaderLayoutStyle.forestVideo}
-        />
+        <Kiwi.Video id={`${keyPrefix}-video`} sources={[ headerVideo ]} style={HeaderLayoutStyle.forestVideo}/>
       </Kiwi.Container>
     </Kiwi.Container>
   }

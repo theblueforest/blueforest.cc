@@ -70,7 +70,7 @@ export const i18nForests = i18nData({
     fr: "[Visiter le site](https://qapex.com)"
   },
 
-  visitErm: {
-    fr: "[Visiter le site](https://erm-conseils.com)"
+  visitERM: {
+    fr: "[Visiter le site](https://erm-conseil.com)"
   }
 })

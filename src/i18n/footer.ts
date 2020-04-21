@@ -23,7 +23,7 @@ export const i18nFooter = i18nData({
   },
 
   arianeEmail: {
-    fr: "ariane@blueforest.fr"
+    fr: "ariane@blueforest.cc"
   },
 
   nazim: {
@@ -31,14 +31,14 @@ export const i18nFooter = i18nData({
   },
 
   nazimRole: {
-    fr: "Dev-ops"
+    fr: "Développeur & DevOps"
   },
 
   nazimEmail: {
-    fr: "nazim@blueforest.fr"
+    fr: "nazim@blueforest.cc"
   },
 
   copyright: {
-    fr: "Copyright (c) 2020 Blue Forest"
+    fr: "Copyright © 2020 Blue Forest"
   }
 })
