@@ -20,7 +20,7 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
   ],
 
   title: [
-    { style: TitlesValues.global },
+    { style: TitlesValues.H1 },
     {
       style: {
         color: "white",
@@ -31,8 +31,8 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
   ],
 
   subtitle: [
-    { style: TitlesValues.global },
-    { style: TitlesValues.onLeft },
+    { style: TitlesValues.H1 },
+    { style: TitlesValues.H1 },
     {
       style: {
         color: colors.PINK,

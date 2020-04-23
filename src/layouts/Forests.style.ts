@@ -70,8 +70,7 @@ export const ForestsLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => (
   ],
 
   title: [
-    { style: TitlesValues.global },
-    { style: TitlesValues.onLeft },
+    { style: TitlesValues.H1 },
     {
       style: {
         color: colors.PINK,

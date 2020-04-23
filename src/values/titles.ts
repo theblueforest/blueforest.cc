@@ -1,19 +1,26 @@
 import { BlueForest } from "../bundle"
 import * as Kiwi from "kiwi-bundle-react"
-import { LeavesValues } from "./leaves"
 
-export const TitlesValues = BlueForest.Values(() => ({
+export const TitlesValues = BlueForest.Values(({ colors }) => ({
 
-  global: {
-    fontSize: 30,
+  H1: {
+    fontSize: 38,
     display: "block",
     fontWeight: "bold",
-    paddingTop: 50,
+    paddingTop: 20,
     marginBottom: 30,
+    textAlign: "center",
   } as Kiwi.CSSProperties,
 
-  onLeft: {
-    marginLeft: LeavesValues.width[1] + 10,
-  },
+  H2: {
+    fontSize: 34,
+    display: "block",
+    fontWeight: "bold",
+    textAlign: "center",
+    paddingTop: 30,
+    marginBottom: 30,
+    color: colors.PINK,
+  } as Kiwi.CSSProperties,
+
 
 }))

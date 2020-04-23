@@ -4,7 +4,7 @@ import { LeavesValues } from "../values/leaves"
 
 export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
   title: [
-    { style: TitlesValues.global },
+    { style: TitlesValues.H1 },
     {
       style: {
         display: "block",

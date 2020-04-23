@@ -3,14 +3,14 @@ import { i18nData } from "dropin-recipes"
 export const i18nMethod = i18nData({
 
   title: {
-    fr: "Blue Forest est un accompagnement dans le design d’expériences utilisateurs",
+    fr: "Blue Forest vous accompagne dans le design d’expériences utilisateurs",
   },
 
   intro: {
     fr: "Notre mission est de vous guider le long du chemin de la conception de votre projet. Vos idées sont semblables à des graines que vous semez au fur et à mesure de votre quête, donnant naissance à une forêt.",
   },
 
-  uxImgAlt: {
+  uxImageAlt: {
     fr: "Expérience utilisateur",
   },
 
@@ -27,6 +27,10 @@ export const i18nMethod = i18nData({
     },
   ],
 
+  explorationImageAlt: {
+    fr: "Exploration",
+  },
+
   explorationTitle: {
     fr: "Exploration",
   },
@@ -37,6 +41,10 @@ export const i18nMethod = i18nData({
 
   explorationText: {
     fr: "Nous utilisons les techniques de brainstorming, recherches utilisateurs, documentations, ateliers de groupe (présentations, réflexions collectives, mapping des idées, etc)...",
+  },
+
+  conceptionImageAlt: {
+    fr: "Conception",
   },
 
   conceptionTitle: {
@@ -55,6 +63,10 @@ export const i18nMethod = i18nData({
       fr: "Dans le cadre d’une recherche sur l’utilisateur, nous faisons appel à plusieurs méthodes inspirées de l’UX Design (design d’expérience utilisateur) et nous établissons en fonction du projet une documentation pouvant contenir : les personas, différents parcours utilisateurs, carte de l’empathie, etc.",
     },
   ],
+
+  realisationImageAlt: {
+    fr: "Réalisation",
+  },
 
   realisationTitle: {
     fr: "Réalisation",
