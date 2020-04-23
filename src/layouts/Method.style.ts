@@ -1,61 +1,69 @@
 import { BlueForest } from "../bundle"
 import { LeavesValues } from "../values/leaves"
 import { TitlesValues } from "../values/titles"
+import { TextValues } from "../values/text"
 
 export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
 
-  leaves1: [
+  container: [
     {
       style: {
-        width: LeavesValues.width[1],
-        position: "absolute",
-        zIndex: 0,
+        textAlign: "center",
+        color: colors.BLUE,
       },
     },
-
-    {
-      max: sizes.MEDIUM,
-
-      style: {
-        display: "none"
-      }
-    }
   ],
 
   title: [
-    { style: TitlesValues.global },
-    { style: TitlesValues.onLeft },
-    {
-      style: {
-        color: colors.PINK,
-      },
-    },
+    { style: TextValues.block },
     {
       max: sizes.MEDIUM,
       style: {
-        textAlign: "center",
         marginBottom: 28,
         marginLeft: 0
       }
     }
   ],
 
-  image: [
-    {
-      style: {
-        width: "60%",
-        display: "block",
-        margin: "0 auto 70px",
-      },
-    },
+  intro: [
+    { style: TextValues.block },
+  ],
 
+  uxImg: [
     {
-      max: sizes.MEDIUM,
       style: {
-        width: "100%",
-        marginBottom: 18
-      }
+        maxWidth: 200,
+      },
     }
   ],
+
+  howTitle: [
+    { style: TextValues.block },
+  ],
+
+  explorationTitle: [
+    { style: TextValues.block },
+  ],
+
+  explorationIntro: [
+    { style: TextValues.block },
+  ],
+
+  explorationText: [
+    { style: TextValues.block },
+  ],
+
+  conceptionTitle: [
+    { style: TextValues.block },
+  ],
+
+  conceptionIntro: [
+    { style: TextValues.block },
+  ],
+
+  realisationTitle: [
+    { style: TextValues.block },
+  ],
+
 
 }))

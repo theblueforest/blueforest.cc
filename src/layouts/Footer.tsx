@@ -3,12 +3,9 @@ import * as Kiwi from "kiwi-bundle-react"
 import { BlueForest } from "../bundle"
 import { i18nFooter } from "../i18n/footer"
 import { FooterLayoutStyle } from "./Footer.style"
-import { FooterValues } from "../values/footer"
-import leaves6Image from "../../assets/leaves6.png"
 import footerImage from "../../assets/footer.png"
-import LinkedinImage from "../../assets/Linkedin.png"
-import GithubImage from "../../assets/Github.png"
-import { ForestsLayoutStyle } from "./Forests.style"
+import LinkedInImage from "../../assets/LinkedIn.png"
+import GitHubImage from "../../assets/GitHub.png"
 
 interface Props extends Kiwi.ComponentProps {
   keyPrefix: string
@@ -35,7 +32,7 @@ export const FooterLayout = BlueForest.Layout<Props>({
 
           <Kiwi.Container style={FooterLayoutStyle.cardLogos}>
             <Kiwi.Image
-              source={LinkedinImage}
+              source={LinkedInImage}
               style={FooterLayoutStyle.cardLogo}
             />
           </Kiwi.Container>
@@ -48,19 +45,17 @@ export const FooterLayout = BlueForest.Layout<Props>({
 
           <Kiwi.Container style={FooterLayoutStyle.cardLogos}>
             <Kiwi.Image
-              source={LinkedinImage}
+              source={LinkedInImage}
               style={FooterLayoutStyle.cardLogo}
             />
 
             <Kiwi.Image
-              source={GithubImage}
+              source={GitHubImage}
               style={FooterLayoutStyle.cardLogoGithub}
             />
           </Kiwi.Container>
         </Kiwi.Container>
       </Kiwi.Container>
-
-      <Kiwi.Image source={leaves6Image} style={FooterLayoutStyle.leave}/>,
 
       <Kiwi.Text id={keyPrefix} children={i18nFooter.legalInformations} style={FooterLayoutStyle.legals}/>
       <Kiwi.Text id={keyPrefix} children={i18nFooter.copyright} style={FooterLayoutStyle.legals}/>

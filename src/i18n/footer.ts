@@ -11,7 +11,7 @@ export const i18nFooter = i18nData({
   },
 
   legalInformations: {
-    fr: "[Mentions légales](https://qapex.com)",
+    fr: "Mentions légales",
   },
 
   ariane: {

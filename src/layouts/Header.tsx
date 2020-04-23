@@ -16,7 +16,11 @@ export const HeaderLayout = BlueForest.Layout<Props>({
     return <Kiwi.Container style={HeaderLayoutStyle.container}>
       <Kiwi.Container style={HeaderLayoutStyle.title} children={<LogoComponent id={keyPrefix}/>}/>
       <Kiwi.Container style={HeaderLayoutStyle.forestContainer}>
-        <Kiwi.Video id={`${keyPrefix}-video`} sources={[ headerVideo ]} style={HeaderLayoutStyle.forestVideo}/>
+        <Kiwi.Video
+          id={`${keyPrefix}-video`}
+          sources={[ headerVideo ]}
+          style={HeaderLayoutStyle.forestVideo}
+        />
       </Kiwi.Container>
     </Kiwi.Container>
   }

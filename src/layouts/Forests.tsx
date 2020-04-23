@@ -2,14 +2,11 @@ import * as React from "react"
 import * as Kiwi from "kiwi-bundle-react"
 import { BlueForest } from "../bundle"
 import { i18nForests } from "../i18n/forests"
-import leaves3Image from "../../assets/leaves3.png"
-import leaves4Image from "../../assets/leaves4.png"
-import LaCloche from "../../assets/LaCloche.png"
-import MaoBoa from "../../assets/MaoBoa.png"
-import Qapex from "../../assets/Qapex.png"
-import Erm from "../../assets/Erm.png"
-import Telaqua from "../../assets/Telaqua.png"
-import leaves5Image from "../../assets/leaves5.png"
+import LaCloche from "../../assets/companies/LaCloche.png"
+import MaoBoa from "../../assets/companies/MaoBoa.png"
+import Qapex from "../../assets/companies/Qapex.png"
+import Erm from "../../assets/companies/ERM.png"
+import Telaqua from "../../assets/companies/Telaqua.png"
 import { ForestsLayoutStyle } from "./Forests.style"
 
 interface Props extends Kiwi.ComponentProps {
@@ -21,7 +18,6 @@ export const ForestsLayout = BlueForest.Layout<Props>({
   render: ({ props }) => {
     const { keyPrefix: id } = props
     return <Kiwi.Container style={ForestsLayoutStyle.container}>
-      <Kiwi.Image source={leaves3Image} style={ForestsLayoutStyle.leaves1}/>
       <Kiwi.Text id={id} children={i18nForests.title} style={ForestsLayoutStyle.title}/>
       <Kiwi.Text id={id} children={i18nForests.description} style={ForestsLayoutStyle.description}/>
 
@@ -112,8 +108,6 @@ export const ForestsLayout = BlueForest.Layout<Props>({
         </Kiwi.Container>
       </Kiwi.Container>
 
-      <Kiwi.Image source={leaves4Image} style={ForestsLayoutStyle.leaves2}/>
-      <Kiwi.Image source={leaves5Image} style={ForestsLayoutStyle.leaves3}/>
     </Kiwi.Container>
   }
 

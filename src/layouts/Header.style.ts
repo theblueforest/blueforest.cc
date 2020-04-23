@@ -32,7 +32,8 @@ export const HeaderLayoutStyle = BlueForest.StyleSheet(theme => ({
   forestVideo: [
     {
       style: {
-        width: 800,
+        width: "80%",
+        maxWidth: 550,
       },
     },
   ],
