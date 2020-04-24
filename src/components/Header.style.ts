@@ -28,7 +28,7 @@ export const HeaderComponentStyle = BlueForest.StyleSheet(({ sizes, colors }) =>
     {
       style: {
         gridArea: "1 / 1 / 3 / 2",
-        width: 90,
+        width: 150,
       },
     },
 
@@ -45,7 +45,7 @@ export const HeaderComponentStyle = BlueForest.StyleSheet(({ sizes, colors }) =>
       style: {
         gridArea: "1 / 2 / 2 / 3",
         alignSelf: "end",
-        fontSize: 40,
+        fontSize: 50,
         fontWeight: "bold",
       },
     },
@@ -62,6 +62,7 @@ export const HeaderComponentStyle = BlueForest.StyleSheet(({ sizes, colors }) =>
     {
       style: {
         gridArea: "2 / 2 / 3 / 3",
+        fontSize: 20,
       },
     },
   ],

@@ -16,7 +16,7 @@ export const HeaderLayoutStyle = BlueForest.StyleSheet(theme => ({
   
     {
       style: {
-        paddingTop: 50,
+        paddingTop: 60,
         marginBottom: 30,
       },
     },
@@ -35,6 +35,7 @@ export const HeaderLayoutStyle = BlueForest.StyleSheet(theme => ({
       style: {
         width: "80%",
         maxWidth: 550,
+        marginTop: 50,
       },
     },
   ],
