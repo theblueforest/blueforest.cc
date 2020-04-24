@@ -1,6 +1,5 @@
 import { BlueForest } from "../bundle"
-import { LeavesValues } from "../values/leaves"
-import { TitlesValues } from "../values/titles"
+import { TextValues } from "../values/text"
 
 export const ForestsLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
 
@@ -13,61 +12,8 @@ export const ForestsLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => (
     },
   ],
 
-  leaves1: [
-    {
-      style: {
-        width: LeavesValues.width[1],
-        position: "absolute",
-        top: "220px",
-        zIndex: 0,
-      },
-    },
-    {
-      max: sizes.MEDIUM,
-      style: {
-        display: "none"
-      }
-    }
-  ],
-
-  leaves2: [
-    {
-      style: {
-        width: LeavesValues.width[2],
-        position: "absolute",
-        bottom: "4%",
-        right: 0,
-        zIndex: 0,
-      },
-    },
-    {
-      max: sizes.MEDIUM,
-      style: {
-        display: "none"
-      }
-    }
-  ],
-
-  leaves3: [
-    {
-      style: {
-        width: LeavesValues.width[3],
-        position: "absolute",
-        bottom: "-9%",
-        left: 0,
-        zIndex: 11,
-      },
-    },
-    {
-      max: sizes.MEDIUM,
-      style: {
-        display: "none"
-      }
-    }
-  ],
-
   title: [
-    { style: TitlesValues.H1 },
+    { style: TextValues.h1 },
     {
       style: {
         color: colors.PINK,

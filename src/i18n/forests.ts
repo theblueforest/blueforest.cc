@@ -6,8 +6,4 @@ export const i18nForests = i18nData({
     fr: "Les forêts déjà aménagées",
   },
 
-  laCloche: {
-    fr: "En co-construction avec les collaborateurs de chaque projet, Blue Forest a conçu un ensemble de forêts où s'entremêlent aspects visuels et techniques.",
-  },
-
 })

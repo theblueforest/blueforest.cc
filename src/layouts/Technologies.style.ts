@@ -1,11 +1,9 @@
 import { BlueForest } from "../bundle"
-import { TitlesValues } from "../values/titles"
 import { TextValues } from "../values/text"
 
 export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
 
-  container: 
-  [
+  container: [
     {
       style: {
         textAlign: "center",
@@ -23,7 +21,6 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
         maxWidth: 350,
       },
     },
-
   ],
 
   content: [
@@ -45,7 +42,7 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
   ],
 
   title: [
-    { style: TitlesValues.H1 },
+    { style: TextValues.h1 },
     {
       style: {
         color: "white",
@@ -56,8 +53,8 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
   ],
 
   subtitle: [
-    { style: TitlesValues.H1 },
-    { style: TitlesValues.H1 },
+    { style: TextValues.h1 },
+    { style: TextValues.h1 },
     {
       style: {
         color: colors.PINK,
@@ -87,148 +84,169 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
       color: "#FFFFFF",
       listStyleType: "none"
     }
-  }, {
+  },
+  {
     max: sizes.MEDIUM,
-    style: {
-      width: "100%",
-      margin: "0 auto 0 auto",
-      textAlign: "left",
-      fontSize: "18px",
-      padding: "0"
+      style: {
+        width: "100%",
+        margin: "0 auto 0 auto",
+        textAlign: "left",
+        fontSize: "18px",
+        padding: "0"
+      }
     }
-  }],
+  ],
 
   listElement: [
     { style: TextValues.block },
     {
-    style: {
-      "margin": "0 0 18px 0"
+      style: {
+        "margin": "0 0 18px 0"
+      }
     }
-  }],
+  ],
 
   listLastElement: [
     { style: TextValues.block },
     {
-    style: {
-      "margin": "0 0 10px 0"
+      style: {
+        "margin": "0 0 10px 0"
+      }
     }
-  }],
+  ],
 
   listLastElementText: [
     { style: TextValues.block },
     {
-    style: {
-      "color": "#61FFD8"
+      style: {
+        "color": "#61FFD8"
+      }
     }
-  }],
+  ],
 
-  soon: [{
-    style: {
-      border: "2px solid #61FFD8",
-      width: "60%",
-      margin: "110px auto 50px auto",
-      padding: "0 59px",
-      boxSizing: "border-box"
+  soon: [
+    {
+      style: {
+        border: "2px solid #61FFD8",
+        width: "60%",
+        margin: "110px auto 50px auto",
+        padding: "0 59px",
+        boxSizing: "border-box"
+      }
+    },
+    {
+      max: sizes.MEDIUM,
+      style: {
+        width: "100%",
+        marginTop: 40,
+        textAlign: "left",
+        fontSize: "18px",
+        padding: "0 18px"
+      }
     }
-  }, {
-    max: sizes.MEDIUM,
-    style: {
-      width: "100%",
-      marginTop: 40,
-      textAlign: "left",
-      fontSize: "18px",
-      padding: "0 18px"
-    }
-  }],
+  ],
 
-  soonTitle: [{
-    style: {
-      padding: "26px 0",
-      display: "block",
-      fontFamily: "Muli",
-      fontStyle: "normal",
-      fontWeight: "bold",
-      fontSize: "36px",
-      lineheight: "45px",
-      color: "#61FFD8",
-      textAlign: "center"
+  soonTitle: [
+    {
+      style: {
+        padding: "26px 0",
+        display: "block",
+        fontFamily: "Muli",
+        fontStyle: "normal",
+        fontWeight: "bold",
+        fontSize: "36px",
+        lineheight: "45px",
+        color: "#61FFD8",
+        textAlign: "center"
+      }
+    },
+    {
+      max: sizes.MEDIUM,
+      style: {
+        fontSize: "30px"
+      }
     }
-  }, {
-    max: sizes.MEDIUM,
-    style: {
-      fontSize: "30px"
-    }
-  }],
+  ],
 
-  soonText: [{
-    style: {
-      display: "block",
-      fontFamily: "Muli",
-      fontStyle: "normal",
-      fontWeight: "normal",
-      lineHeight: "30px",
-      color: "#61FFD8",
-      textAlign: "left",
-      fontSize: "18px",
+  soonText: [
+    {
+      style: {
+        display: "block",
+        fontFamily: "Muli",
+        fontStyle: "normal",
+        fontWeight: "normal",
+        lineHeight: "30px",
+        color: "#61FFD8",
+        textAlign: "left",
+        fontSize: "18px",
+      }
     }
-  }],
+  ],
 
-  soonForm: [{
-    style: {
-      display: "flex",
-      paddingTop: "28px",
-      paddingBottom: "28px",
-      justifyContent: "space-between",
-      flexWrap: "wrap"
+  soonForm: [
+    {
+      style: {
+        display: "flex",
+        paddingTop: "28px",
+        paddingBottom: "28px",
+        justifyContent: "space-between",
+        flexWrap: "wrap"
+      }
     }
-  }],
+  ],
 
-  soonFormField: [{
-    style: {
-      border: "1px solid #61FFD8",
-      boxSizing: "border-box",
-      borderRadius: "12px",
-      fontStyle: "normal",
-      fontWeight: "normal",
-      fontSize: "24px",
-      lineHeight: "46px",
-      color: "#61FFD8",
-      textAlign: "center",
-      flexBasis: "64%",
-      marginRight: "18px",
-      flexGrow: 1,
-      flexShrink: 1,
+  soonFormField: [
+    {
+      style: {
+        border: "1px solid #61FFD8",
+        boxSizing: "border-box",
+        borderRadius: "12px",
+        fontStyle: "normal",
+        fontWeight: "normal",
+        fontSize: "24px",
+        lineHeight: "46px",
+        color: "#61FFD8",
+        textAlign: "center",
+        flexBasis: "64%",
+        marginRight: "18px",
+        flexGrow: 1,
+        flexShrink: 1,
+      }
+    },
+    {
+      max: sizes.MEDIUM,
+      style: {
+        marginRight: 0,
+        marginBottom: "14px",
+        fontSize: 18
+      }
     }
-  }, {
-    max: sizes.MEDIUM,
-    style: {
-      marginRight: 0,
-      marginBottom: "14px",
-      fontSize: 18
-    }
-  }],
+  ],
 
-  soonFormBtn: [{
-    style: {
-      background: "#61FFD8",
-      borderRadius: "12px",
-      flexBasis: "20%",
-      flexGrow: 1,
-      flexShrink: 1,
-      fontWeight: "bold",
-      fontSize: "24px",
-      lineHeight: "30px",
-      textAlign: "center",
-      color: "#0244C6",
-      padding: "10px 40px"
+  soonFormBtn: [
+    {
+      style: {
+        background: "#61FFD8",
+        borderRadius: "12px",
+        flexBasis: "20%",
+        flexGrow: 1,
+        flexShrink: 1,
+        fontWeight: "bold",
+        fontSize: "24px",
+        lineHeight: "30px",
+        textAlign: "center",
+        color: "#0244C6",
+        padding: "10px 40px"
+      }
+    },
+    {
+      max: sizes.MEDIUM,
+      style: {
+        marginRight: 0,
+        marginBottom: "14px",
+        fontSize: 18
+      }
     }
-  }, {
-    max: sizes.MEDIUM,
-    style: {
-      marginRight: 0,
-      marginBottom: "14px",
-      fontSize: 18
-    }
-  }]
+  ],
 
 }))

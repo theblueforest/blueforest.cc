@@ -14,14 +14,11 @@ export const TechnologiesLayout = BlueForest.Layout<Props>({
   render: ({ props }) => {
     const { keyPrefix: id } = props
     return <Kiwi.Container style={TechnologiesLayoutStyle.container}>
-    
-    <Kiwi.Image source={DROPinImage} style={TechnologiesLayoutStyle.DROPinImage}/>
-    
-    <Kiwi.Container style={TechnologiesLayoutStyle.content}>
-      
+      <Kiwi.Image source={DROPinImage} style={TechnologiesLayoutStyle.DROPinImage}/>
+      <Kiwi.Container style={TechnologiesLayoutStyle.content}>
+
       <Kiwi.Text children={i18nTechnologies.title} id={id} style={TechnologiesLayoutStyle.title}/>
 
-    
       <Kiwi.Text children={i18nTechnologies.dropinTitle} style={TechnologiesLayoutStyle.subtitle}/>
       <Kiwi.List style={TechnologiesLayoutStyle.list}>
         {i18nTechnologies.dropinDescription(new Date().getFullYear() - 2015).map((desc, index) => {

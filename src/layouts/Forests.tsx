@@ -18,7 +18,7 @@ export const ForestsLayout = BlueForest.Layout<Props>({
   render: ({ props }) => {
     const { keyPrefix: id } = props
     return <Kiwi.Container style={ForestsLayoutStyle.container}>
-      <Kiwi.Text id={id} children={i18nForests.title} style={ForestsLayoutStyle.title}/>
+      {/*<Kiwi.Text id={id} children={i18nForests.title} style={ForestsLayoutStyle.title}/>
       <Kiwi.Text id={id} children={i18nForests.description} style={ForestsLayoutStyle.description}/>
 
       <Kiwi.Container style={ForestsLayoutStyle.cardsContainer}>
@@ -106,7 +106,7 @@ export const ForestsLayout = BlueForest.Layout<Props>({
 
         <Kiwi.Container style={ForestsLayoutStyle.emptyCard}>
         </Kiwi.Container>
-      </Kiwi.Container>
+  </Kiwi.Container>*/}
 
     </Kiwi.Container>
   }

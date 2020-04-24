@@ -1,20 +1,18 @@
 import { BlueForest } from "../bundle"
-import { TitlesValues } from "../values/titles"
 import { TextValues } from "../values/text"
 import { BooleanFieldValidator } from "dropin-recipes"
 
 export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
 
-container: 
-[
-  {
-    style: {
-      textAlign: "center",
-      Width: "100%",
-      background: "linear-gradient(rgb(255, 255, 255) 40%, rgba(255, 255, 255, 0) 90%), rgba(97, 255, 216, 0.5)",
+  container: [
+    {
+      style: {
+        textAlign: "center",
+        Width: "100%",
+        background: "linear-gradient(rgb(255, 255, 255) 40%, rgba(255, 255, 255, 0) 90%), rgba(97, 255, 216, 0.5)",
+      },
     },
-  },
-],
+  ],
 
   content: [
     {
@@ -29,7 +27,7 @@ container:
   ],
 
   title: [
-    { style: TitlesValues.H1 },
+    { style: TextValues.h1 },
     {
       max: sizes.MEDIUM,
       style: {
@@ -60,15 +58,14 @@ container:
   ],
 
   howTitle: [
-    { style: TitlesValues.H2 },
+    { style: TextValues.h2 },
   ],
 
   howText: [
     { style: TextValues.block },
   ],
 
-  explorationImage: 
-  [
+  explorationImage: [
     {
       style: {
         maxWidth: 200,
@@ -79,12 +76,11 @@ container:
   ],
 
   explorationTitle: [
-    { style: TitlesValues.H2 },
+    { style: TextValues.h2 },
   ],
 
   explorationIntro: [
     { style: TextValues.block },
-    
     { style: {
       fontWeight: "bold",
       },
@@ -100,11 +96,9 @@ container:
 
       },
     },
-    
   ],
 
-  conceptionImage: 
-  [
+  conceptionImage: [
     {
       style: {
         maxWidth: 200,
@@ -115,12 +109,11 @@ container:
   ],
 
   conceptionTitle: [
-    { style: TitlesValues.H2 },
+    { style: TextValues.h2 },
   ],
 
   conceptionIntro: [
     { style: TextValues.block},
-    
     { style: {
       fontWeight: "bold",
     },
@@ -138,8 +131,7 @@ container:
     },
   ],
 
-  realisationImage: 
-  [
+  realisationImage: [
     {
       style: {
         maxWidth: 200,
@@ -151,7 +143,7 @@ container:
   ],
 
   realisationTitle: [
-    { style: TitlesValues.H2 },
+    { style: TextValues.h2 },
   ],
 
   realisationIntro: [

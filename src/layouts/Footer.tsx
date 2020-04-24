@@ -29,12 +29,8 @@ export const FooterLayout = BlueForest.Layout<Props>({
           <Kiwi.Text id={keyPrefix} style={FooterLayoutStyle.cardTitle}>Ariane Save</Kiwi.Text>
           <Kiwi.Text id={keyPrefix} children={i18nFooter.graphicDesigner} style={FooterLayoutStyle.cardSubtitle}/>
           <Kiwi.Text id={keyPrefix} style={FooterLayoutStyle.cardEmail}>ariane@blueforest.cc</Kiwi.Text>
-
           <Kiwi.Container style={FooterLayoutStyle.cardLogos}>
-            <Kiwi.Image
-              source={LinkedInImage}
-              style={FooterLayoutStyle.cardLogo}
-            />
+            <Kiwi.Image source={LinkedInImage} style={FooterLayoutStyle.cardLogo}/>
           </Kiwi.Container>
         </Kiwi.Container>
 
@@ -42,28 +38,21 @@ export const FooterLayout = BlueForest.Layout<Props>({
           <Kiwi.Text id={keyPrefix} style={FooterLayoutStyle.cardTitle}>Nazim Lachter</Kiwi.Text>
           <Kiwi.Text id={keyPrefix} children={i18nFooter.devNOps} style={FooterLayoutStyle.cardSubtitle}/>
           <Kiwi.Text id={keyPrefix} style={FooterLayoutStyle.cardEmail}>nazim@blueforest.cc</Kiwi.Text>
-
           <Kiwi.Container style={FooterLayoutStyle.cardLogos}>
-            <Kiwi.Image
-              source={LinkedInImage}
-              style={FooterLayoutStyle.cardLogo}
-            />
-
-            <Kiwi.Image
-              source={GitHubImage}
-              style={FooterLayoutStyle.cardLogoGithub}
-            />
+            <Kiwi.Link path="https://www.linkedin.com/in/nlachter" target="_blank">
+              <Kiwi.Image source={LinkedInImage} style={FooterLayoutStyle.cardLogo}/>
+            </Kiwi.Link>
+            <Kiwi.Image source={GitHubImage} style={FooterLayoutStyle.cardLogoGithub}/>
           </Kiwi.Container>
         </Kiwi.Container>
       </Kiwi.Container>
 
       <Kiwi.Text id={keyPrefix} children={i18nFooter.legalInformations} style={FooterLayoutStyle.legals}/>
-      <Kiwi.Text id={keyPrefix} children={i18nFooter.copyright} style={FooterLayoutStyle.legals}/>
+      <Kiwi.Text id={keyPrefix} style={FooterLayoutStyle.legals}>
+        Copyright © {new Date().getFullYear()} Blue Forest
+      </Kiwi.Text>
 
-      <Kiwi.Image
-        source={footerImage}
-        style={FooterLayoutStyle.image}
-      />
+      <Kiwi.Image source={footerImage} style={FooterLayoutStyle.image}/>
     </Kiwi.Container>
   }
 

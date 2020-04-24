@@ -1,10 +1,10 @@
 import { BlueForest } from "../bundle"
-import { TitlesValues } from "../values/titles"
-import { LeavesValues } from "../values/leaves"
+import { TextValues } from "../values/text"
 
 export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
+
   title: [
-    { style: TitlesValues.H1 },
+    { style: TextValues.h1 },
     {
       style: {
         display: "block",
@@ -26,31 +26,32 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
         textAlign: "center",
         color: "#0244C6",
         width: "64%",
-        margin: "0 auto 40px auto"
-      }
+        margin: "0 auto 40px auto",
+      },
     },
     {
       max: sizes.MEDIUM,
       style: {
         fontSize: 20,
         marginBottom: 40,
-        lineHeight: "28px"
-      }
-      }
-    ],
+        lineHeight: "28px",
+      },
+    },
+  ],
 
   container: [
     {
       style: {
         background: colors.GREEN,
-        position: "relative"
+        position: "relative",
       },
-    },  {
+    },
+    {
       max: sizes.MEDIUM,
       style: {
-        overflow: "hidden"
-      }
-    }
+        overflow: "hidden",
+      },
+    },
   ],
 
   image: [
@@ -59,19 +60,18 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
         position: "absolute",
         bottom: 0,
         left: 0,
-        height: "400px"
-      }
+        height: "400px",
+      },
     },
-
     {
       max: sizes.MEDIUM,
       style: {
         position: "relative",
         bottom: "-4px",
         height: "auto",
-        maxWidth: "140%"
-      }
-    }
+        maxWidth: "140%",
+      },
+    },
   ],
 
   cardsContainer: [
@@ -81,15 +81,15 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
         width: "100%",
         margin: "90px auto 100px",
         flexWrap: "wrap",
-        justifyContent: "center"
-      }
+        justifyContent: "center",
+      },
     },
     {
       max: sizes.MEDIUM,
       style: {
         marginTop: "10px",
-        marginBottom: "0"
-      }
+        marginBottom: "0",
+      },
     },
   ],
 
@@ -106,8 +106,8 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
         flexBasis: "360px",
         margin: "0 20px 80px 20px",
         padding: "40px 0",
-        boxSizing: "border-box"
-      }
+        boxSizing: "border-box",
+      },
     },
     {
       max: sizes.MEDIUM,
@@ -116,9 +116,9 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
         flexBasis: "88%",
         marginLeft: "auto",
         marginBottom: "28px",
-        marginRight: "auto"
-      }
-    }
+        marginRight: "auto",
+      },
+    },
   ],
 
   cardTitle: [
@@ -132,15 +132,15 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
         lineHeight: "33px",
         textAlign: "center",
         color: "#0244C6",
-        marginBottom: "14px"
-      }
+        marginBottom: "14px",
+      },
     },
     {
       max: sizes.MEDIUM,
       style: {
-        fontSize: 20
-      }
-    }
+        fontSize: 20,
+      },
+    },
   ],
 
   cardSubtitle: [
@@ -176,7 +176,7 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
         lineHeight: "28px",
         textAlign: "center",
         color: "#0244C6",
-      }
+      },
     },
     {
       max: sizes.MEDIUM,
@@ -200,8 +200,8 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
     {
       style: {
         display: "block",
-        width: "40px"
-      }
+        width: "40px",
+      },
     },
     {
       max: sizes.MEDIUM,
@@ -240,7 +240,7 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
         color: "#0244C6",
         paddingRight: "40px",
         paddingBottom: "40px",
-      }
+      },
     },
     {
       max: sizes.MEDIUM,
