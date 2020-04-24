@@ -10,7 +10,7 @@ export const i18nMethod = i18nData({
     fr: "Notre mission est de vous guider le long du chemin de la conception de votre projet. Vos idées sont semblables à des graines que vous semez au fur et à mesure de votre quête, donnant naissance à une forêt.",
   },
 
-  uxImageAlt: {
+  ux: {
     fr: "Expérience utilisateur",
   },
 
@@ -20,31 +20,23 @@ export const i18nMethod = i18nData({
 
   howText: [
     {
-      fr: "Nous proposons un ensemble d'outils et de pratiques vous permettant de faire grandir votre écosystème afin d'inviter des utilisateurs à venir se promener dans votre forêt.",
+      fr: "**Nous proposons un ensemble d'outils et de pratiques vous permettant de faire grandir votre écosystème afin d'inviter des utilisateurs à venir se promener dans votre forêt.**",
     },
     {
       fr: "Nous organisons le processus de création  sur la base du **Kit de Foresterie**, une méthodologie pensée pour vous et vos clients :",
     },
   ],
 
-  explorationImageAlt: {
-    fr: "Exploration",
-  },
-
   explorationTitle: {
     fr: "Exploration",
   },
 
   explorationIntro: {
-    fr: "Lors de la phase d'exploration, nous interrogeons ensemble les problématiques que soulève le projet.",
+    fr: "**Lors de la phase d'exploration, nous interrogeons ensemble les problématiques que soulève le projet.**",
   },
 
   explorationText: {
     fr: "Nous utilisons les techniques de brainstorming, recherches utilisateurs, documentations, ateliers de groupe (présentations, réflexions collectives, mapping des idées, etc)...",
-  },
-
-  conceptionImageAlt: {
-    fr: "Conception",
   },
 
   conceptionTitle: {
@@ -52,7 +44,7 @@ export const i18nMethod = i18nData({
   },
 
   conceptionIntro: {
-    fr: "L’étape de conception nous permet de donner du sens aux informations recueillies et de formuler les pistes de solutions.",
+    fr: "**L’étape de conception nous permet de donner du sens aux informations recueillies et de formuler les pistes de solutions.**",
   },
 
   conceptionText: [
@@ -64,18 +56,13 @@ export const i18nMethod = i18nData({
     },
   ],
 
-  realisationImageAlt: {
-    fr: "Réalisation",
-  },
-
   realisationTitle: {
     fr: "Réalisation",
   },
 
-  realisationIntro:
-    {
+  realisationIntro: {
     fr: "La réalisation consiste à organiser et à mettre en place les solutions retenues lors de la conception.",
-    },
+  },
 
   realisationText: [
     {

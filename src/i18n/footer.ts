@@ -14,31 +14,12 @@ export const i18nFooter = i18nData({
     fr: "Mentions légales",
   },
 
-  ariane: {
-    fr: "Ariane Save"
-  },
-
-  arianeRole: {
+  graphicDesigner: {
     fr: "Designer graphique"
   },
 
-  arianeEmail: {
-    fr: "ariane@blueforest.cc"
-  },
-
-  nazim: {
-    fr: "Nazim Lachter"
-  },
-
-  nazimRole: {
+  devNOps: {
     fr: "Développeur & DevOps"
   },
 
-  nazimEmail: {
-    fr: "nazim@blueforest.cc"
-  },
-
-  copyright: {
-    fr: "Copyright © 2020 Blue Forest"
-  }
 })

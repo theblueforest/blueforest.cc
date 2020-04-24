@@ -3,13 +3,16 @@ import { LeavesValues } from "../values/leaves"
 import { TitlesValues } from "../values/titles"
 
 export const ForestsLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
-  container: [{
-    style: {
-      position: "relative",
-      marginTop: "28px"
-    }
-  }],
-  
+
+  container: [
+    {
+      style: {
+        position: "relative",
+        marginTop: "28px"
+      },
+    },
+  ],
+
   leaves1: [
     {
       style: {
@@ -19,10 +22,8 @@ export const ForestsLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => (
         zIndex: 0,
       },
     },
-
     {
       max: sizes.MEDIUM,
-
       style: {
         display: "none"
       }
@@ -39,10 +40,8 @@ export const ForestsLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => (
         zIndex: 0,
       },
     },
-
     {
       max: sizes.MEDIUM,
-
       style: {
         display: "none"
       }
@@ -59,10 +58,8 @@ export const ForestsLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => (
         zIndex: 11,
       },
     },
-
     {
       max: sizes.MEDIUM,
-
       style: {
         display: "none"
       }
@@ -121,71 +118,83 @@ export const ForestsLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => (
     },
   ],
 
-  cardsContainer: [{
-    style: {
-      display: "flex",
-      maxWidth: "860px",
-      margin: "90px auto 70px auto",
-      flexWrap: "wrap",
-      justifyContent: "center"
-    }
-  }, {
-    max: sizes.MEDIUM,
-    style: {
-      marginTop: 48,
-      marginBottom: -40
+  cardsContainer: [
+    {
+      style: {
+        display: "flex",
+        maxWidth: "860px",
+        margin: "90px auto 70px auto",
+        flexWrap: "wrap",
+        justifyContent: "center",
+      }
     },
-  },],
+    {
+      max: sizes.MEDIUM,
+      style: {
+        marginTop: 48,
+        marginBottom: -40,
+      },
+    }
+  ],
 
-  card: [{
-    style: {
-      width: "339px",
-      height: "374px",
-      background: "#FFFFFF",
-      boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.2)",
-      borderRadius: "5px",
-      flexShrink: 0,
-      flexGrow: 0,
-      flexBasis: "339px",
-      margin: "0 40px 80px 40px"
-    }
-  }, {
-    max: sizes.MEDIUM,
-    style: {
-      width: "88%",
-      flexBasis: "88%",
-    }
-  }],
+  card: [
+    {
+      style: {
+        width: "339px",
+        height: "374px",
+        background: "#FFFFFF",
+        boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.2)",
+        borderRadius: "5px",
+        flexShrink: 0,
+        flexGrow: 0,
+        flexBasis: "339px",
+        margin: "0 40px 80px 40px"
+      }
+    },
+    {
+      max: sizes.MEDIUM,
+      style: {
+        width: "88%",
+        flexBasis: "88%",
+      },
+    },
+  ],
 
-  emptyCard: [{
-    style: {
-      width: "339px",
-      height: "374px",
-      flexBasis: "339px",
-      margin: "0 40px 80px 40px"
-    }
-  }, {
-    max: sizes.MEDIUM,
-    style: {
-      display: "none"
-    }
-  }],
+  emptyCard: [
+    {
+      style: {
+        width: "339px",
+        height: "374px",
+        flexBasis: "339px",
+        margin: "0 40px 80px 40px"
+      }
+    },
+    {
+      max: sizes.MEDIUM,
+      style: {
+        display: "none",
+      },
+    },
+  ],
 
-  cardImage: [{
-    style: {
-      display: "block",
-      margin: "48px 81px 0 81px",
+  cardImage: [
+    {
+      style: {
+        display: "block",
+        margin: "48px 81px 0 81px",
+      },
+    },
+    {
+      max: sizes.MEDIUM,
+      style: {
+        marginTop: 28,
+        marginLeft: "auto",
+        marginRight: "auto",
+        width: "60%",
+        height: "auto",
+      },
     }
-  }, {
-    max: sizes.MEDIUM,
-    style: {
-      marginTop: 28,
-      marginLeft: "auto",
-      marginRight: "auto",
-      width: "60%",
-      height: "auto"
-    }
-  }],
+  ],
 
   cardTitle: [{
     style: {
@@ -241,20 +250,23 @@ export const ForestsLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => (
     }
   }],
 
-  cardTagText: [{
-    style: {
-      display: "block",
-      fontFamily: "Muli",
-      fontStyle: "normal",
-      fontWeight: "normal",
-      fontSize: "20px",
-      lineHeight: "25px",
-      color: "#0244C6",
-    }
-  }, {
-    max: sizes.MEDIUM,
-    style: {
-      fontSize: "16px",
-    }
-  }]
+  cardTagText: [
+    {
+      style: {
+        display: "block",
+        fontFamily: "Muli",
+        fontStyle: "normal",
+        fontWeight: "normal",
+        fontSize: "20px",
+        lineHeight: "25px",
+        color: "#0244C6",
+      }
+    },
+    {
+      max: sizes.MEDIUM,
+      style: {
+        fontSize: "16px",
+      },
+    },
+  ],
 }))

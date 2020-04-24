@@ -1,12 +1,10 @@
 import * as React from "react"
-import * as Kiwi from "kiwi-bundle-react"
 import { BlueForest } from "../bundle"
 import { MethodLayout } from "../layouts/Method"
 import { TechnologiesLayout } from "../layouts/Technologies"
 import { ForestsLayout } from "../layouts/Forests"
 import { FooterLayout } from "../layouts/Footer"
 import { HeaderLayout } from "../layouts/Header"
-import { HomePageStyle } from "./Home.style"
 
 interface Params {}
 

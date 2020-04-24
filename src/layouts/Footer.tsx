@@ -26,9 +26,9 @@ export const FooterLayout = BlueForest.Layout<Props>({
 
       <Kiwi.Container style={FooterLayoutStyle.cardsContainer}>
         <Kiwi.Container style={FooterLayoutStyle.card}>
-          <Kiwi.Text id={keyPrefix} children={i18nFooter.ariane} style={FooterLayoutStyle.cardTitle}/>
-          <Kiwi.Text id={keyPrefix} children={i18nFooter.arianeRole} style={FooterLayoutStyle.cardSubtitle}/>
-          <Kiwi.Text id={keyPrefix} children={i18nFooter.arianeEmail} style={FooterLayoutStyle.cardEmail}/>
+          <Kiwi.Text id={keyPrefix} style={FooterLayoutStyle.cardTitle}>Ariane Save</Kiwi.Text>
+          <Kiwi.Text id={keyPrefix} children={i18nFooter.graphicDesigner} style={FooterLayoutStyle.cardSubtitle}/>
+          <Kiwi.Text id={keyPrefix} style={FooterLayoutStyle.cardEmail}>ariane@blueforest.cc</Kiwi.Text>
 
           <Kiwi.Container style={FooterLayoutStyle.cardLogos}>
             <Kiwi.Image
@@ -39,9 +39,9 @@ export const FooterLayout = BlueForest.Layout<Props>({
         </Kiwi.Container>
 
         <Kiwi.Container style={FooterLayoutStyle.card}>
-          <Kiwi.Text id={keyPrefix} children={i18nFooter.nazim} style={FooterLayoutStyle.cardTitle}/>
-          <Kiwi.Text id={keyPrefix} children={i18nFooter.nazimRole} style={FooterLayoutStyle.cardSubtitle}/>
-          <Kiwi.Text id={keyPrefix} children={i18nFooter.nazimEmail} style={FooterLayoutStyle.cardEmail}/>
+          <Kiwi.Text id={keyPrefix} style={FooterLayoutStyle.cardTitle}>Nazim Lachter</Kiwi.Text>
+          <Kiwi.Text id={keyPrefix} children={i18nFooter.devNOps} style={FooterLayoutStyle.cardSubtitle}/>
+          <Kiwi.Text id={keyPrefix} style={FooterLayoutStyle.cardEmail}>nazim@blueforest.cc</Kiwi.Text>
 
           <Kiwi.Container style={FooterLayoutStyle.cardLogos}>
             <Kiwi.Image
