@@ -1,13 +1,37 @@
 import { BlueForest } from "../bundle"
 import { TitlesValues } from "../values/titles"
+import { TextValues } from "../values/text"
 
 export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
 
-  container: [
+  container: 
+  [
+    {
+      style: {
+        textAlign: "center",
+        Width: "100%",
+        background: colors.BLUE,
+        paddingBottom: 50,
+      },
+    },
+  ],
+
+  DROPinImage: [
+    {
+      style: {
+        marginTop: 100,
+      },
+    },
+
+  ],
+
+  content: [
     {
       style: {
         backgroundColor: colors.BLUE,
-        padding: "0 0 80px 0"
+        padding: "0 0 80px 0",
+        maxWidth: "50%",
+        margin: "auto",
       },
     },
     {
@@ -25,7 +49,7 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
       style: {
         color: "white",
         textAlign: "center",
-        marginBottom: 60
+        marginBottom: 60,
       },
     }
   ],
@@ -36,26 +60,28 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
     {
       style: {
         color: colors.PINK,
+        textAlign: "left",
       },
     },
     {
       max: sizes.MEDIUM,
       style: {
-        textAlign: "center",
         marginBottom: 28,
-        marginLeft: 0
+        marginLeft: 0,
       }
     }
   ],
 
-  list: [{
+  list: [
+    { style: TextValues.block },
+    {
     style: {
-      width: "60%",
-      margin: "0 auto 40px auto",
+      width: "100%",
+      margin: "auto",
       fontFamily: "Muli",
       fontStyle: "normal",
       fontWeight: "normal",
-      fontSize: "24px",
+      fontSize: "25px",
       lineHeight: "30px",
       color: "#FFFFFF",
       listStyleType: "none"
@@ -63,7 +89,7 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
   }, {
     max: sizes.MEDIUM,
     style: {
-      width: "80%",
+      width: "100%",
       margin: "0 auto 0 auto",
       textAlign: "left",
       fontSize: "18px",
@@ -71,52 +97,42 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
     }
   }],
 
-  listElement: [{
+  listElement: [
+    { style: TextValues.block },
+    {
     style: {
       "margin": "0 0 18px 0"
     }
   }],
 
-  listLastElement: [{
+  listLastElement: [
+    { style: TextValues.block },
+    {
     style: {
       "margin": "0 0 10px 0"
     }
   }],
 
-  listLastElementText: [{
+  listLastElementText: [
+    { style: TextValues.block },
+    {
     style: {
       "color": "#61FFD8"
     }
   }],
 
-  image: [
-    {
-      style: {
-        width: "100%",
-      },
-    }, {
-      max: sizes.MEDIUM,
-      style: {
-        display: "block",
-        width: "220%",
-        marginLeft: "-58%",
-        marginBottom: "-28px"
-      }
-    }
-  ],
-
   soon: [{
     style: {
       border: "2px solid #61FFD8",
       width: "60%",
-      margin: "110px auto 40px auto",
+      margin: "110px auto 50px auto",
       padding: "0 59px",
       boxSizing: "border-box"
     }
   }, {
     max: sizes.MEDIUM,
     style: {
-      width: "80%",
+      width: "100%",
       marginTop: 40,
       textAlign: "left",
       fontSize: "18px",

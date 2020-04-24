@@ -21,7 +21,8 @@ container:
       style: {
         color: colors.BLUE,
         maxWidth: "50%",
-        margin : "auto", 
+        margin : "auto",
+        paddingTop: 20,
         textAlign: "center",
       },
     },
@@ -32,22 +33,30 @@ container:
     {
       max: sizes.MEDIUM,
       style: {
-        marginBottom: 28,
-        marginLeft: 0
+        marginLeft: 0,
       }
     }
-  ],
-
-  intro: [
-    { style: TextValues.block },
   ],
 
   uxImg: [
     {
       style: {
         maxWidth: 600,
+        marginTop: 10,
+        marginBottom: 20,
       },
     }
+  ],
+
+  intro: [
+    { style: TextValues.block },
+    {
+      style: {
+        marginTop: 20,
+        marginBottom: 30,
+      },
+    }
+
   ],
 
   howTitle: [
@@ -84,6 +93,14 @@ container:
 
   explorationText: [
     { style: TextValues.block },
+    {
+      style: {
+        marginTop: 30,
+        marginBottom: 30,
+
+      },
+    },
+    
   ],
 
   conceptionImage: 
@@ -112,6 +129,13 @@ container:
 
   conceptionText: [
     { style: TextValues.block },
+    {
+      style: {
+        marginTop: 30,
+        marginBottom: 30,
+
+      },
+    },
   ],
 
   realisationImage: 
@@ -123,15 +147,31 @@ container:
         marginBottom: 10,
 
       },
-    }
+    },
   ],
 
   realisationTitle: [
     { style: TitlesValues.H2 },
   ],
 
+  realisationIntro: [
+    { style: TextValues.block },
+    { style: {
+    fontWeight: "bold",
+      },
+    },
+  ],
+
   realisationText: [
     { style: TextValues.block },
+    {
+      style: {
+        marginTop: 30,
+        marginBottom: 30,
+
+      },
+    },
+
   ],
 
 }))

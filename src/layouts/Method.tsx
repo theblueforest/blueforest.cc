@@ -44,6 +44,8 @@ export const MethodLayout = BlueForest.Layout<Props>({
 
         <Kiwi.Image source={realisationImage} alt={i18nMethod.realisationImageAlt.fr} style={MethodLayoutStyle.realisationImage}/>
         <Kiwi.Text id={keyPrefix} children={i18nMethod.realisationTitle} style={MethodLayoutStyle.realisationTitle}/>
+
+        <Kiwi.Text id={keyPrefix} children={i18nMethod.realisationIntro} style={MethodLayoutStyle.realisationIntro}/>
         
         {i18nMethod.realisationText.map(text => {
           return <Kiwi.Text id={keyPrefix} children={text} style={MethodLayoutStyle.realisationText}/>

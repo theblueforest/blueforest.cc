@@ -72,10 +72,12 @@ export const i18nMethod = i18nData({
     fr: "Réalisation",
   },
 
-  realisationText: [
+  realisationIntro:
     {
-      fr: "La réalisation consiste à organiser et à mettre en place les solutions retenues lors de la conception.",
+    fr: "La réalisation consiste à organiser et à mettre en place les solutions retenues lors de la conception.",
     },
+
+  realisationText: [
     {
       fr: "La réalisation consiste à organiser et à mettre en place les solutions retenues lors de la conception.",
     },

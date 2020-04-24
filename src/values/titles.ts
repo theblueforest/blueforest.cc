@@ -7,8 +7,8 @@ export const TitlesValues = BlueForest.Values(({ colors }) => ({
     fontSize: 38,
     display: "block",
     fontWeight: "bold",
-    paddingTop: 20,
-    marginBottom: 30,
+    paddingTop: 50,
+    marginBottom: 50,
     textAlign: "center",
   } as Kiwi.CSSProperties,
 
