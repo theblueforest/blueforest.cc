@@ -20,6 +20,7 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
     {
       style: {
         marginTop: 100,
+        maxWidth: 350,
       },
     },
 
