@@ -39,7 +39,7 @@ export const HeaderComponentStyle = BlueForest.StyleSheet(({ sizes, colors }) =>
       }
     }
   ],
-
+  
   name: [
     {
       style: {

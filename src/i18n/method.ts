@@ -52,7 +52,7 @@ export const i18nMethod = i18nData({
       fr: "Nous formalisons les idées retenues lors d’un processus d’idéation. Ce qui nous permet de réaliser les maquettes en Wireframe (représentation schématique d la structure du site) puis en High Fidelity (représentation plus fidèle au résultat final).",
     },
     {
-      fr: "Dans le cadre d’une recherche sur l’utilisateur, nous faisons appel à plusieurs méthodes inspirées de l’UX Design (design d’expérience utilisateur) et nous établissons en fonction du projet une documentation pouvant contenir : les personas, différents parcours utilisateurs, carte de l’empathie, etc.",
+      fr: "Dans le cadre d’une recherche sur l’utilisateur, nous faisons appel à plusieurs méthodes inspirées de l’UX Design (design d’expérience utilisateur) et nous établissons en fonction du projet une documentation pouvant contenir : les personas, différents parcours utilisateurs, carte d'empathie, etc.",
     },
   ],
 

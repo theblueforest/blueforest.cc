@@ -57,7 +57,7 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
     { style: TextValues.h1 },
     {
       style: {
-        color: colors.PINK,
+        color: "white",
         textAlign: "left",
       },
     },
