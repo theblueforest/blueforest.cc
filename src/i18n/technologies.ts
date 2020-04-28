@@ -56,6 +56,6 @@ export const i18nTechnologies = i18nData({
   },
 
   soonInput: {
-    fr: "Votre e-mail"
+    fr: "Votre adresse e-mail"
   }
 })

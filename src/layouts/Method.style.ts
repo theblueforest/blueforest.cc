@@ -159,8 +159,6 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
     {
       style: {
         marginTop: 30,
-        marginBottom: 30,
-
       },
     },
 

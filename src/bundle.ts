@@ -1,6 +1,6 @@
-import { KiwiBundle } from "kiwi-bundle-react"
+import { KiwiBundleReact } from "kiwi-bundle-react"
 
-export const BlueForest = new KiwiBundle({
+export const BlueForest = new KiwiBundleReact({
   routes: {
     HOME: "/",
   },

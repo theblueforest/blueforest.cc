@@ -20,13 +20,13 @@ export const MethodLayout = BlueForest.Layout<Props>({
       <Kiwi.Container style={MethodLayoutStyle.content}>
         <Kiwi.Text id={keyPrefix} children={i18nMethod.title} style={MethodLayoutStyle.title}/>
 
-        <Kiwi.Image source={uxImage} alt={i18nMethod.ux.fr} style={MethodLayoutStyle.uxImg}/>
+        <Kiwi.Image source={uxImage} alt={i18nMethod.ux} style={MethodLayoutStyle.uxImg}/>
 
         <Kiwi.Text id={keyPrefix} children={i18nMethod.intro} style={MethodLayoutStyle.intro}/>
         <Kiwi.Text id={keyPrefix} children={i18nMethod.howTitle} style={MethodLayoutStyle.howTitle}/>
 
-        {i18nMethod.howText.map(text => {
-          return <Kiwi.Text id={keyPrefix} children={text} style={MethodLayoutStyle.howText}/>
+        {i18nMethod.howText.map((text, index) => {
+          return <Kiwi.Text key={index} id={keyPrefix} children={text} style={MethodLayoutStyle.howText}/>
         })}
 
         <Kiwi.Image source={explorationImage} alt={i18nMethod.explorationTitle} style={MethodLayoutStyle.explorationImage}/>
@@ -37,19 +37,20 @@ export const MethodLayout = BlueForest.Layout<Props>({
         <Kiwi.Image source={conceptionImage} alt={i18nMethod.conceptionTitle} style={MethodLayoutStyle.conceptionImage}/>
         <Kiwi.Text id={keyPrefix} children={i18nMethod.conceptionTitle} style={MethodLayoutStyle.conceptionTitle}/>
         <Kiwi.Text id={keyPrefix} children={i18nMethod.conceptionIntro} style={MethodLayoutStyle.conceptionIntro}/>
-        {i18nMethod.conceptionText.map(text => {
-          return <Kiwi.Text id={keyPrefix} children={text} style={MethodLayoutStyle.conceptionText}/>
-        })}
 
+        {i18nMethod.conceptionText.map((text, index) => {
+          return <Kiwi.Text key={index} id={keyPrefix} children={text} style={MethodLayoutStyle.conceptionText}/>
+        })}
 
         <Kiwi.Image source={realisationImage} alt={i18nMethod.realisationTitle} style={MethodLayoutStyle.realisationImage}/>
         <Kiwi.Text id={keyPrefix} children={i18nMethod.realisationTitle} style={MethodLayoutStyle.realisationTitle}/>
 
         <Kiwi.Text id={keyPrefix} children={i18nMethod.realisationIntro} style={MethodLayoutStyle.realisationIntro}/>
 
-        {i18nMethod.realisationText.map(text => {
-          return <Kiwi.Text id={keyPrefix} children={text} style={MethodLayoutStyle.realisationText}/>
+        {i18nMethod.realisationText.map((text, index) => {
+          return <Kiwi.Text key={index} id={keyPrefix} children={text} style={MethodLayoutStyle.realisationText}/>
         })}
+
       </Kiwi.Container>
     </Kiwi.Container>
   }

@@ -101,7 +101,8 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
     { style: TextValues.block },
     {
       style: {
-        "margin": "0 0 18px 0"
+        margin: "0 0 18px 0",
+        color: "white",
       }
     }
   ],
