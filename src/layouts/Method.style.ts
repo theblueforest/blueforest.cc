@@ -47,6 +47,7 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
       style: {
         marginTop: 60,
         color: colors.PINK,
+        fontWeight: "bold",
       },
     },
   ],
@@ -54,7 +55,13 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
   servicesContainer: [
     {
       style: {
-        display: "flex",
+        display: "flex", 
+      },
+    },
+    {
+      max: sizes.MEDIUM,
+      style: {
+        flexDirection: "column",
       },
     },
   ],
@@ -65,7 +72,7 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
         flex: 1,
         padding: 50,
       },
-    },
+    }
   ],
 
   image: [

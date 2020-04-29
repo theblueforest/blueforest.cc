@@ -37,7 +37,42 @@ export const TextStyles = BlueForest.StyleSheet(({ sizes }) => ({
     },
   ],
 
-  h2: [],
+  h2: [
+    {
+      style: {
+        display: "block",
+        textAlign: "center",
+        fontSize: 36,
+        padding: "30px 0",
+        fontWeight: "bold"
+      },
+    },
+    {
+      max: sizes.LARGE,
+      style: {
+        fontSize: 32,
+      }
+    },
+    {
+      max: sizes.MEDIUM,
+      style: {
+        fontSize: 26,
+        padding: "20px 0",
+      }
+    },
+    {
+      max: sizes.SMALL,
+      style: {
+        fontSize: 22,
+        padding: "15px 0",
+      }
+    },
+
+
+
+
+
+  ],
 
   content: [
     {

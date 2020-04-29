@@ -19,7 +19,7 @@ interface State extends Kiwi.ComponentState {
 export const FooterLayout = BlueForest.Layout<Props, State>({
 
   state: {
-    isLegalInformationsOpen: true,
+    isLegalInformationsOpen: false,
   },
 
   render: ({ props, setState, state }) => {
