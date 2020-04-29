@@ -1,14 +1,14 @@
-import { KiwiBundle } from "kiwi-bundle-react"
+import { KiwiBundleReact } from "kiwi-bundle-react"
 
-export const BlueForest = new KiwiBundle({
+export const BlueForest = new KiwiBundleReact({
   routes: {
     HOME: "/",
   },
   theme: {
     sizes: {
-      SMALL: 360,
+      SMALL: 400,
       MEDIUM: 800,
-      LARGE: 1440,
+      LARGE: 1200,
     },
     colors: {
       MAGENTA: "#D31C69",

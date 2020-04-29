@@ -1,5 +1,5 @@
 import { BlueForest } from "../bundle"
-import { TextValues } from "../values/text"
+import { TextStyles } from "../styles/text.style"
 
 export const ForestsLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
 
@@ -13,7 +13,7 @@ export const ForestsLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => (
   ],
 
   title: [
-    { style: TextValues.h1 },
+    ...TextStyles.h1,
     {
       style: {
         color: colors.PINK,
@@ -22,7 +22,6 @@ export const ForestsLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => (
     {
       max: sizes.MEDIUM,
       style: {
-        display: "block",
         color: colors.PINK,
         textAlign: "center",
         marginLeft: "auto",

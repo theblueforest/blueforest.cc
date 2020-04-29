@@ -12,15 +12,6 @@ export const HeaderLayoutStyle = BlueForest.StyleSheet(theme => ({
     },
   ],
 
-  title: [
-    {
-      style: {
-        paddingTop: 60,
-        marginBottom: 30,
-      },
-    },
-  ],
-
   forestContainer: [
     {
       style: {

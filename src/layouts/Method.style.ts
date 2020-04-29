@@ -1,5 +1,5 @@
 import { BlueForest } from "../bundle"
-import { TextValues } from "../values/text"
+import { TextStyles } from "../styles/text.style"
 import { BooleanFieldValidator } from "dropin-recipes"
 
 export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
@@ -8,7 +8,7 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
     {
       style: {
         textAlign: "center",
-        Width: "100%",
+        width: "100%",
         background: "linear-gradient(rgb(255, 255, 255) 40%, rgba(255, 255, 255, 0) 90%), rgba(97, 255, 216, 0.5)",
       },
     },
@@ -18,51 +18,67 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
     {
       style: {
         color: colors.BLUE,
-        maxWidth: "50%",
+        maxWidth: "55%",
         margin : "auto",
         paddingTop: 20,
         textAlign: "center",
       },
     },
+    {
+      max: sizes.LARGE,
+      style: {
+        maxWidth: "75%",
+      }
+    },
   ],
 
   title: [
-    { style: TextValues.h1 },
-    {
-      max: sizes.MEDIUM,
-      style: {
-        marginLeft: 0,
-      }
-    }
+    ...TextStyles.h1,
   ],
 
-  uxImg: [
+  uxImage: [
     {
       style: {
+        width: "100%",
         maxWidth: 600,
-        marginTop: 10,
-        marginBottom: 20,
+        margin: "10px 0",
       },
     }
   ],
 
   intro: [
-    { style: TextValues.block },
+    ...TextStyles.content,
     {
       style: {
-        marginTop: 20,
-        marginBottom: 30,
+        margin: "20px 0",
       },
     }
 
   ],
 
   howTitle: [
-    { style: TextValues.h2 },
+    ...TextStyles.h1,
+    {
+      style: {
+        marginTop: 60,
+        color: colors.PINK,
+      },
+    },
   ],
 
   howText: [
-    { style: TextValues.block },
+    ...TextStyles.content,
+    {
+      style: {
+        marginBottom: 20,
+      },
+    },
+    {
+      max: sizes.MEDIUM,
+      style: {
+        marginBottom: 15,
+      }
+    },
   ],
 
   explorationImage: [
@@ -76,19 +92,15 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
   ],
 
   explorationTitle: [
-    { style: TextValues.h2 },
+    ...TextStyles.content,
   ],
 
   explorationIntro: [
-    { style: TextValues.block },
-    { style: {
-      fontWeight: "bold",
-      },
-    },
+    ...TextStyles.content,
   ],
 
   explorationText: [
-    { style: TextValues.block },
+    ...TextStyles.content,
     {
       style: {
         marginTop: 30,
@@ -109,19 +121,15 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
   ],
 
   conceptionTitle: [
-    { style: TextValues.h2 },
+    ...TextStyles.content,
   ],
 
   conceptionIntro: [
-    { style: TextValues.block},
-    { style: {
-      fontWeight: "bold",
-    },
-  }
+    ...TextStyles.content,
   ],
 
   conceptionText: [
-    { style: TextValues.block },
+    ...TextStyles.content,
     {
       style: {
         marginTop: 30,
@@ -143,24 +151,18 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
   ],
 
   realisationTitle: [
-    { style: TextValues.h2 },
+    ...TextStyles.h1,
   ],
 
   realisationIntro: [
-    { style: TextValues.block },
-    { style: {
-    fontWeight: "bold",
-      },
-    },
+    ...TextStyles.content,
   ],
 
   realisationText: [
-    { style: TextValues.block },
+    ...TextStyles.content,
     {
       style: {
         marginTop: 30,
-        marginBottom: 30,
-
       },
     },
 
