@@ -1,6 +1,6 @@
 import { BlueForest } from "../bundle"
 
-export const TextStyles = BlueForest.StyleSheet(({ sizes }) => ({
+export const TextStyles = BlueForest.StyleSheet(({ sizes, colors }) => ({
 
   h1: [
     {
@@ -74,6 +74,8 @@ export const TextStyles = BlueForest.StyleSheet(({ sizes }) => ({
 
   ],
 
+  h3: [],
+
   content: [
     {
       style: {
@@ -81,6 +83,7 @@ export const TextStyles = BlueForest.StyleSheet(({ sizes }) => ({
         textAlign: "justify",
         fontSize: 22,
         margin: "20px 0",
+        color: colors.BLUE,
       },
     },
     {

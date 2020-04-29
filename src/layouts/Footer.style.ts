@@ -266,7 +266,7 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
     },
   ],
 
-  legalInformationsItem: [
+  legalInformationsContent: [
     {
       style: {
         margin: "auto",
@@ -274,6 +274,25 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
         backgroundColor: "white",
         boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.2)",
         borderRadius: "3px",
+        padding: "30px 50px",
+      },
+    },
+  ],
+
+  legalInformationsClose: [
+    {
+      style: {
+        textAlign: "right",
+      },
+    },
+  ],
+
+  legalInformationsCloseIcon: [
+    {
+      style: {
+        height: 34,
+        marginTop: -18,
+        marginRight: -34,
       },
     },
   ],
