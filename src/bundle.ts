@@ -6,9 +6,9 @@ export const BlueForest = new KiwiBundleReact({
   },
   theme: {
     sizes: {
-      SMALL: 360,
+      SMALL: 400,
       MEDIUM: 800,
-      LARGE: 1440,
+      LARGE: 1200,
     },
     colors: {
       MAGENTA: "#D31C69",

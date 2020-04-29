@@ -1,6 +1,6 @@
 import { BlueForest } from "../bundle"
 
-export const HeaderComponentStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
+export const LogoComponentStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
 
   container: [
     {
@@ -13,15 +13,24 @@ export const HeaderComponentStyle = BlueForest.StyleSheet(({ sizes, colors }) =>
         gridTemplateRows: "repeat(2, auto)",
         gridColumnGap: 0,
         gridRowGap: 0,
+        paddingTop: 60,
+        marginBottom: 25,
       },
     },
-
     {
       max: sizes.MEDIUM,
       style: {
-        display: "block"
-      }
-    }
+        display: "block",
+        marginBottom: 0,
+      },
+    },
+    {
+      max: sizes.SMALL,
+      style: {
+        paddingTop: 30,
+        marginBottom: 0,
+      },
+    },
   ],
 
   logo: [
@@ -31,15 +40,20 @@ export const HeaderComponentStyle = BlueForest.StyleSheet(({ sizes, colors }) =>
         width: 150,
       },
     },
-
     {
       max: sizes.MEDIUM,
       style: {
         display: "inline-block",
-      }
-    }
+      },
+    },
+    {
+      max: sizes.SMALL,
+      style: {
+        width: 100,
+      },
+    },
   ],
-  
+
   name: [
     {
       style: {
@@ -49,13 +63,18 @@ export const HeaderComponentStyle = BlueForest.StyleSheet(({ sizes, colors }) =>
         fontWeight: "bold",
       },
     },
-
     {
       max: sizes.MEDIUM,
       style: {
-        display: "block"
-      }
-    }
+        display: "block",
+      },
+    },
+    {
+      max: sizes.SMALL,
+      style: {
+        fontSize: 40,
+      },
+    },
   ],
 
   baseline: [

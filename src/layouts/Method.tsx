@@ -20,7 +20,7 @@ export const MethodLayout = BlueForest.Layout<Props>({
       <Kiwi.Container style={MethodLayoutStyle.content}>
         <Kiwi.Text id={keyPrefix} children={i18nMethod.title} style={MethodLayoutStyle.title}/>
 
-        <Kiwi.Image source={uxImage} alt={i18nMethod.ux} style={MethodLayoutStyle.uxImg}/>
+        <Kiwi.Image source={uxImage} alt={i18nMethod.ux} style={MethodLayoutStyle.uxImage}/>
 
         <Kiwi.Text id={keyPrefix} children={i18nMethod.intro} style={MethodLayoutStyle.intro}/>
         <Kiwi.Text id={keyPrefix} children={i18nMethod.howTitle} style={MethodLayoutStyle.howTitle}/>
@@ -30,14 +30,15 @@ export const MethodLayout = BlueForest.Layout<Props>({
         })}
 
         <Kiwi.Image source={explorationImage} alt={i18nMethod.explorationTitle} style={MethodLayoutStyle.explorationImage}/>
+
         <Kiwi.Text id={keyPrefix} children={i18nMethod.explorationTitle} style={MethodLayoutStyle.explorationTitle}/>
         <Kiwi.Text id={keyPrefix} children={i18nMethod.explorationIntro} style={MethodLayoutStyle.explorationIntro}/>
         <Kiwi.Text id={keyPrefix} children={i18nMethod.explorationText} style={MethodLayoutStyle.explorationText}/>
 
         <Kiwi.Image source={conceptionImage} alt={i18nMethod.conceptionTitle} style={MethodLayoutStyle.conceptionImage}/>
+
         <Kiwi.Text id={keyPrefix} children={i18nMethod.conceptionTitle} style={MethodLayoutStyle.conceptionTitle}/>
         <Kiwi.Text id={keyPrefix} children={i18nMethod.conceptionIntro} style={MethodLayoutStyle.conceptionIntro}/>
-
         {i18nMethod.conceptionText.map((text, index) => {
           return <Kiwi.Text key={index} id={keyPrefix} children={text} style={MethodLayoutStyle.conceptionText}/>
         })}

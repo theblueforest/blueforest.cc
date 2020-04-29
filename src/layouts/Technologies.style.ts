@@ -1,5 +1,5 @@
 import { BlueForest } from "../bundle"
-import { TextValues } from "../values/text"
+import { TextStyles } from "../styles/text.style"
 
 export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
 
@@ -42,7 +42,7 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
   ],
 
   title: [
-    { style: TextValues.h1 },
+    ...TextStyles.h1,
     {
       style: {
         color: "white",
@@ -53,8 +53,7 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
   ],
 
   subtitle: [
-    { style: TextValues.h1 },
-    { style: TextValues.h1 },
+    ...TextStyles.h1,
     {
       style: {
         color: "white",
@@ -71,7 +70,7 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
   ],
 
   list: [
-    { style: TextValues.block },
+    ...TextStyles.content,
     {
     style: {
       width: "100%",
@@ -98,7 +97,7 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
   ],
 
   listElement: [
-    { style: TextValues.block },
+    ...TextStyles.content,
     {
       style: {
         margin: "0 0 18px 0",
@@ -108,7 +107,7 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
   ],
 
   listLastElement: [
-    { style: TextValues.block },
+    ...TextStyles.content,
     {
       style: {
         "margin": "0 0 10px 0"
@@ -117,7 +116,7 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
   ],
 
   listLastElementText: [
-    { style: TextValues.block },
+    ...TextStyles.content,
     {
       style: {
         "color": "#61FFD8"

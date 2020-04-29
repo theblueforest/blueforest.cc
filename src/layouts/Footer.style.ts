@@ -1,13 +1,12 @@
 import { BlueForest } from "../bundle"
-import { TextValues } from "../values/text"
+import { TextStyles } from "../styles/text.style"
 
 export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
 
   title: [
-    { style: TextValues.h1 },
+    ...TextStyles.h1,
     {
       style: {
-        display: "block",
         color: colors.PINK,
         textAlign: "center",
       },

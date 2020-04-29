@@ -1,7 +1,7 @@
 import * as React from "react"
 import * as Kiwi from "kiwi-bundle-react"
 import { BlueForest } from "../bundle"
-import { HeaderComponentStyle } from "./Header.style"
+import { LogoComponentStyle } from "./Logo.style"
 import { i18nHeader } from "../i18n/header"
 import logoImage from "../../assets/logo.white.png"
 
@@ -11,12 +11,13 @@ interface Props extends Kiwi.ComponentProps {
 
 export const LogoComponent = BlueForest.Component<Props>({
 
-  render: ({ props, style }) => {
+  render: ({ props }) => {
     const { id } = props
-    return <Kiwi.Container style={HeaderComponentStyle.container}>
-      <Kiwi.Image source={logoImage} alt="Blue Forest" style={HeaderComponentStyle.logo}/>
-      <Kiwi.Text children="Blue Forest" style={HeaderComponentStyle.name}/>
-      <Kiwi.Text children={i18nHeader.baseline} id={id} style={HeaderComponentStyle.baseline}/>
+
+    return <Kiwi.Container style={LogoComponentStyle.container}>
+      <Kiwi.Image source={logoImage} alt="Blue Forest" style={LogoComponentStyle.logo}/>
+      <Kiwi.Text children="Blue Forest" style={LogoComponentStyle.name}/>
+      <Kiwi.Text children={i18nHeader.baseline} id={id} style={LogoComponentStyle.baseline}/>
     </Kiwi.Container>
   }
 
