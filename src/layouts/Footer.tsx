@@ -6,21 +6,28 @@ import { FooterLayoutStyle } from "./Footer.style"
 import footerImage from "../../assets/footer.png"
 import LinkedInImage from "../../assets/LinkedIn.png"
 import GitHubImage from "../../assets/GitHub.png"
+import { TextStyles } from "../styles/text.style"
 
 interface Props extends Kiwi.ComponentProps {
   keyPrefix: string
 }
 
-export const FooterLayout = BlueForest.Layout<Props>({
+interface State extends Kiwi.ComponentState {
+  isLegalInformationsOpen: boolean
+}
 
-  render: ({ props }) => {
+export const FooterLayout = BlueForest.Layout<Props, State>({
+
+  state: {
+    isLegalInformationsOpen: true,
+  },
+
+  render: ({ props, setState, state }) => {
     const { keyPrefix } = props
+    console.log(state)
     return <Kiwi.Container style={FooterLayoutStyle.container}>
-      <Kiwi.Text
-        id={keyPrefix}
-        children={i18nFooter.title}
-        style={FooterLayoutStyle.title}
-      />
+
+      <Kiwi.Text id={keyPrefix} children={i18nFooter.title} style={TextStyles.h1}/>
 
       <Kiwi.Text id={keyPrefix} children={i18nFooter.subtitle} style={FooterLayoutStyle.subtitle}/>
 
@@ -47,12 +54,22 @@ export const FooterLayout = BlueForest.Layout<Props>({
         </Kiwi.Container>
       </Kiwi.Container>
 
-      <Kiwi.Text id={keyPrefix} children={i18nFooter.legalInformations} style={FooterLayoutStyle.legals}/>
-      <Kiwi.Text id={keyPrefix} style={FooterLayoutStyle.legals}>
-        Copyright © {new Date().getFullYear()} Blue Forest
-      </Kiwi.Text>
+    <Kiwi.Link onClick={() => { if(!state.legalsOpen) setState({ isLegalInformationsOpen: true }) }}>
+      <Kiwi.Text id={keyPrefix} children={i18nFooter.legalInformations} style={FooterLayoutStyle.openLegalInformations}/>
+    </Kiwi.Link>
+
+    <Kiwi.Text id={keyPrefix} style={FooterLayoutStyle.openLegalInformations}>
+      Copyright © {new Date().getFullYear()} Blue Forest
+    </Kiwi.Text>
 
       <Kiwi.Image source={footerImage} style={FooterLayoutStyle.image}/>
+
+      {state.isLegalInformationsOpen && <Kiwi.Container style={FooterLayoutStyle.legalInformationsContainer}>
+        <Kiwi.Container style={FooterLayoutStyle.legalInformationsItem}>
+          <Kiwi.Link onClick={() => { if(!state.legalsOpen) setState({ isLegalInformationsOpen: false }) }}>X</Kiwi.Link>
+        </Kiwi.Container>
+      </Kiwi.Container>}
+
     </Kiwi.Container>
   }
 
