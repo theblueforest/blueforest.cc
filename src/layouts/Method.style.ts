@@ -7,21 +7,20 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
   container: [
     {
       style: {
-        textAlign: "center",
         width: "100%",
         background: "linear-gradient(rgb(255, 255, 255) 40%, rgba(255, 255, 255, 0) 90%), rgba(97, 255, 216, 0.5)",
+        textAlign: "center",
+        color: colors.BLUE,
+        paddingTop: 20,
       },
     },
   ],
 
-  content: [
+  introContainer: [
     {
       style: {
-        color: colors.BLUE,
         maxWidth: "55%",
-        margin : "auto",
-        paddingTop: 20,
-        textAlign: "center",
+        margin: "auto",
       },
     },
     {
@@ -30,10 +29,6 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
         maxWidth: "75%",
       }
     },
-  ],
-
-  title: [
-    ...TextStyles.h1,
   ],
 
   uxImage: [
@@ -46,18 +41,8 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
     }
   ],
 
-  intro: [
-    ...TextStyles.content,
-    {
-      style: {
-        margin: "20px 0",
-      },
-    }
-
-  ],
-
   howTitle: [
-    ...TextStyles.h1,
+    ...TextStyles.h2,
     {
       style: {
         marginTop: 60,
@@ -66,106 +51,34 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
     },
   ],
 
-  howText: [
-    ...TextStyles.content,
+  servicesContainer: [
     {
       style: {
-        marginBottom: 20,
+        display: "flex",
       },
-    },
-    {
-      max: sizes.MEDIUM,
-      style: {
-        marginBottom: 15,
-      }
     },
   ],
 
-  explorationImage: [
+  servicesItem: [
     {
       style: {
+        flex: 1,
+        padding: 50,
+      },
+    },
+  ],
+
+  image: [
+    {
+      style: {
+        display: "block",
+        margin: "auto",
+        width: "100%",
         maxWidth: 200,
         marginTop: 100,
         marginBottom: 10,
       },
     }
-  ],
-
-  explorationTitle: [
-    ...TextStyles.content,
-  ],
-
-  explorationIntro: [
-    ...TextStyles.content,
-  ],
-
-  explorationText: [
-    ...TextStyles.content,
-    {
-      style: {
-        marginTop: 30,
-        marginBottom: 30,
-
-      },
-    },
-  ],
-
-  conceptionImage: [
-    {
-      style: {
-        maxWidth: 200,
-        marginTop: 100,
-        marginBottom: 10,
-      },
-    }
-  ],
-
-  conceptionTitle: [
-    ...TextStyles.content,
-  ],
-
-  conceptionIntro: [
-    ...TextStyles.content,
-  ],
-
-  conceptionText: [
-    ...TextStyles.content,
-    {
-      style: {
-        marginTop: 30,
-        marginBottom: 30,
-
-      },
-    },
-  ],
-
-  realisationImage: [
-    {
-      style: {
-        maxWidth: 200,
-        marginTop: 100,
-        marginBottom: 10,
-
-      },
-    },
-  ],
-
-  realisationTitle: [
-    ...TextStyles.h1,
-  ],
-
-  realisationIntro: [
-    ...TextStyles.content,
-  ],
-
-  realisationText: [
-    ...TextStyles.content,
-    {
-      style: {
-        marginTop: 30,
-      },
-    },
-
   ],
 
 }))

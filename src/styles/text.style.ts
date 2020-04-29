@@ -7,9 +7,10 @@ export const TextStyles = BlueForest.StyleSheet(({ sizes }) => ({
       style: {
         display: "block",
         fontWeight: "bold",
+        textAlign: "center",
         fontSize: 38,
-        marginBottom: 20,
         padding: "30px 0",
+        marginBottom: 20,
       },
     },
     {
@@ -22,7 +23,6 @@ export const TextStyles = BlueForest.StyleSheet(({ sizes }) => ({
       max: sizes.MEDIUM,
       style: {
         fontSize: 28,
-        marginTop: 50,
         marginBottom: 15,
         padding: "20px 0",
       }
@@ -32,11 +32,12 @@ export const TextStyles = BlueForest.StyleSheet(({ sizes }) => ({
       style: {
         fontSize: 24,
         padding: "15px 0",
-        marginTop: 40,
         marginBottom: 10,
       }
     },
   ],
+
+  h2: [],
 
   content: [
     {
@@ -44,6 +45,7 @@ export const TextStyles = BlueForest.StyleSheet(({ sizes }) => ({
         display: "block",
         textAlign: "justify",
         fontSize: 22,
+        margin: "20px 0",
       },
     },
     {

@@ -10,6 +10,7 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
         Width: "100%",
         background: colors.BLUE,
         paddingBottom: 50,
+        paddingTop: 20,
       },
     },
   ],
@@ -46,8 +47,6 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
     {
       style: {
         color: "white",
-        textAlign: "center",
-        marginBottom: 60,
       },
     }
   ],

@@ -7,7 +7,7 @@ export const ForestsLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => (
     {
       style: {
         position: "relative",
-        marginTop: "28px"
+        paddingTop: 20,
       },
     },
   ],
@@ -17,17 +17,6 @@ export const ForestsLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => (
     {
       style: {
         color: colors.PINK,
-      },
-    },
-    {
-      max: sizes.MEDIUM,
-      style: {
-        color: colors.PINK,
-        textAlign: "center",
-        marginLeft: "auto",
-        width: "80%",
-        marginRight: "auto",
-        paddingTop: 18
       },
     },
   ],

@@ -3,12 +3,27 @@ import { TextStyles } from "../styles/text.style"
 
 export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
 
+  container: [
+    {
+      style: {
+        background: colors.GREEN,
+        position: "relative",
+        paddingTop: 20,
+      },
+    },
+    {
+      max: sizes.MEDIUM,
+      style: {
+        overflow: "hidden",
+      },
+    },
+  ],
+
   title: [
     ...TextStyles.h1,
     {
       style: {
         color: colors.PINK,
-        textAlign: "center",
       },
     },
   ],
@@ -34,21 +49,6 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
         fontSize: 20,
         marginBottom: 40,
         lineHeight: "28px",
-      },
-    },
-  ],
-
-  container: [
-    {
-      style: {
-        background: colors.GREEN,
-        position: "relative",
-      },
-    },
-    {
-      max: sizes.MEDIUM,
-      style: {
-        overflow: "hidden",
       },
     },
   ],
@@ -226,7 +226,7 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
     },
   ],
 
-  legals: [
+  openLegalInformations: [
     {
       style: {
         fontFamily: "Muli",
@@ -247,6 +247,33 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
         fontSize: 20,
         paddingRight: 28,
         paddingBottom: 0,
+      },
+    },
+  ],
+
+  legalInformationsContainer: [
+    {
+      style: {
+        position: "fixed",
+        zIndex: 1,
+        paddingTop: "20%",
+        left: 0,
+        top: 0,
+        width: "100%",
+        height: "100%",
+        backgroundColor: "rgba(0,0,0,0.4)",
+      },
+    },
+  ],
+
+  legalInformationsItem: [
+    {
+      style: {
+        margin: "auto",
+        width: "80%",
+        backgroundColor: "white",
+        boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.2)",
+        borderRadius: "3px",
       },
     },
   ],
