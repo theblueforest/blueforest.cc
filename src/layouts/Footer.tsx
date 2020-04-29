@@ -6,6 +6,7 @@ import { FooterLayoutStyle } from "./Footer.style"
 import footerImage from "../../assets/footer.png"
 import LinkedInImage from "../../assets/LinkedIn.png"
 import GitHubImage from "../../assets/GitHub.png"
+import CrossImage from "../../assets/cross.png"
 import { TextStyles } from "../styles/text.style"
 
 interface Props extends Kiwi.ComponentProps {
@@ -64,9 +65,21 @@ export const FooterLayout = BlueForest.Layout<Props, State>({
 
       <Kiwi.Image source={footerImage} style={FooterLayoutStyle.image}/>
 
-      {state.isLegalInformationsOpen && <Kiwi.Container style={FooterLayoutStyle.legalInformationsContainer}>
-        <Kiwi.Container style={FooterLayoutStyle.legalInformationsItem}>
-          <Kiwi.Link onClick={() => { if(!state.legalsOpen) setState({ isLegalInformationsOpen: false }) }}>X</Kiwi.Link>
+      {state.isLegalInformationsOpen && <Kiwi.Container onClick={() => { console.log("TEST") }} style={FooterLayoutStyle.legalInformationsContainer}>
+        <Kiwi.Container style={FooterLayoutStyle.legalInformationsContent}>
+
+          <Kiwi.Container style={FooterLayoutStyle.legalInformationsClose}>
+            <Kiwi.Link onClick={() => { if(!state.legalsOpen) setState({ isLegalInformationsOpen: false }) }}>
+              <Kiwi.Image source={CrossImage} style={FooterLayoutStyle.legalInformationsCloseIcon}/>
+            </Kiwi.Link>
+          </Kiwi.Container>
+
+          <Kiwi.Text id={keyPrefix} children={i18nFooter.legalInformationsTitle} style={TextStyles.h2}/>
+
+          {i18nFooter.legalInformationsText.map((text, index) => {
+            return <Kiwi.Text key={index} id={keyPrefix} children={text} style={TextStyles.content}/>
+          })}
+
         </Kiwi.Container>
       </Kiwi.Container>}
 
