@@ -46,9 +46,7 @@ export const MethodLayout = BlueForest.Layout<Props>({
           <Kiwi.Text id={keyPrefix} children={i18nMethod.conceptionTitle} style={TextStyles.h2}/>
 
           <Kiwi.Text id={keyPrefix} children={i18nMethod.conceptionIntro} style={TextStyles.content}/>
-          {i18nMethod.conceptionText.map((text, index) => {
-            return <Kiwi.Text key={index} id={keyPrefix} children={text} style={TextStyles.content}/>
-          })}
+          <Kiwi.Text id={keyPrefix} children={i18nMethod.conceptionText} style={TextStyles.content}/>
         </Kiwi.Container>
 
         <Kiwi.Container style={MethodLayoutStyle.servicesItem}>
@@ -56,10 +54,8 @@ export const MethodLayout = BlueForest.Layout<Props>({
           <Kiwi.Text id={keyPrefix} children={i18nMethod.realisationTitle} style={TextStyles.h2}/>
 
           <Kiwi.Text id={keyPrefix} children={i18nMethod.realisationIntro} style={TextStyles.content}/>
-
-          {i18nMethod.realisationText.map((text, index) => {
-            return <Kiwi.Text key={index} id={keyPrefix} children={text} style={TextStyles.content}/>
-          })}
+          
+          <Kiwi.Text id={keyPrefix} children={i18nMethod.realisationText} style={TextStyles.content}/>
         </Kiwi.Container>
 
       </Kiwi.Container>

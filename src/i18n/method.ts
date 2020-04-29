@@ -32,11 +32,11 @@ export const i18nMethod = i18nData({
   },
 
   explorationIntro: {
-    fr: "**Lors de la phase d'exploration, nous interrogeons ensemble les problématiques que soulève le projet.**",
+    fr: "Lors de la phase d'exploration, nous interrogeons ensemble les problématiques que soulève le projet.",
   },
 
   explorationText: {
-    fr: "Nous utilisons les techniques de brainstorming, recherches utilisateurs, documentations, ateliers de groupe (présentations, réflexions collectives, mapping des idées, etc)...",
+    fr: "**Brainstorming - Atelier de réflexions - Recherches utilisateurs - etc**",
   },
 
   conceptionTitle: {
@@ -44,18 +44,13 @@ export const i18nMethod = i18nData({
   },
 
   conceptionIntro: {
-    fr: "**L’étape de conception nous permet de donner du sens aux informations recueillies et de formuler les pistes de solutions.**",
+    fr: "L’étape de conception nous permet de donner du sens aux informations recueillies et de formuler les pistes de solutions.",
   },
 
-  conceptionText: [
-    {
-      fr: "Nous formalisons les idées retenues lors d’un processus d’idéation. Ce qui nous permet de réaliser les maquettes en Wireframe (représentation schématique d la structure du site) puis en High Fidelity (représentation plus fidèle au résultat final).",
+  conceptionText: {
+      fr: "**Maquettes - Parcours utilisateurs - Idéation - etc**",
     },
-    {
-      fr: "Dans le cadre d’une recherche sur l’utilisateur, nous faisons appel à plusieurs méthodes inspirées de l’UX Design (design d’expérience utilisateur) et nous établissons en fonction du projet une documentation pouvant contenir : les personas, différents parcours utilisateurs, carte d'empathie, etc.",
-    },
-  ],
-
+    
   realisationTitle: {
     fr: "Réalisation",
   },
@@ -64,13 +59,11 @@ export const i18nMethod = i18nData({
     fr: "La réalisation consiste à organiser et à mettre en place les solutions retenues lors de la conception.",
   },
 
-  realisationText: [
-    {
-      fr: "La réalisation consiste à organiser et à mettre en place les solutions retenues lors de la conception.",
-    },
-    {
-      fr: "Pendant le long du processus de réalisaion, nous faisons tester régulièrement les expériences aux utilisateurs.",
-    },
-  ],
+  realisationText: {
+    fr: "**Développement - etc**",
+  },
 
 })
+
+
+   
