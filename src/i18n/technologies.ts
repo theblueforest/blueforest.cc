@@ -7,21 +7,16 @@ export const i18nTechnologies = i18nData({
   },
 
   intro: {
-    fr: "L'équipe de Blue Forest met à votre disposition un ensemble de technologies",
+    fr: "L'équipe de Blue Forest met à votre disposition un écosystème de technologies :",
   },
 
-  dropinDescription: (years: number): i18nData[] => [
-    {
-      fr: [
-        "Développée ces ",
-        years,
-        " dernières années et aujourd'hui destinée aux architectures de nos clients, DROP'in est une technologie capable de **créer**, **organiser** et **déployer** l'ensemble de vos projets.",
-      ],
-    },
-    {
-      fr: "De l'**idée** à la **production**, Blue Forest vous accompagne dans l'implémentation de vos produits à travers DROP'in.",
-    },
-  ],
+  dropinDescription: (years: number): i18nData => ({
+    fr: [
+      "Développée ces ",
+      years,
+      " dernières années et aujourd'hui destinée aux architectures de nos clients, DROP'in est une technologie capable de **créer**, **organiser** et **déployer** l'ensemble de vos projets.",
+    ],
+  }),
 
   dropinConclusion: {
     fr: "Envie d'en savoir plus ? Nous avons dédié un espace à la description de son fonctionnement sur **[dropin.recipes](https://dropin.recipes){target:_blank}**.",

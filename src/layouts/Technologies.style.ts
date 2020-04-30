@@ -19,6 +19,7 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
     {
       style: {
         width: "100%",
+        marginTop: 40,
       },
     },
   ],
@@ -27,7 +28,7 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
     {
       style: {
         backgroundColor: colors.BLUE,
-        maxWidth: "50%",
+        maxWidth: "55%",
         margin: "auto",
       },
     },
@@ -35,6 +36,7 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
       max: sizes.MEDIUM,
       style: {
         paddingBottom: "18px",
+        maxWidth: "75%",
         overflow: "hidden"
       }
     }

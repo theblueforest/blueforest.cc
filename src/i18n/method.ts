@@ -36,7 +36,7 @@ export const i18nMethod = i18nData({
   },
 
   explorationText: {
-    fr: "**Brainstorming - Atelier de réflexions - Recherches utilisateurs - etc**",
+    fr: "**Audit, brainstorming, ateliers de réflexion et recherches utilisateur**",
   },
 
   conceptionTitle: {
@@ -48,7 +48,7 @@ export const i18nMethod = i18nData({
   },
 
   conceptionText: {
-      fr: "**Maquettes - Parcours utilisateurs - Idéation - etc**",
+      fr: "**Idéation, formalisation et maquettes fonctionnelles**",
     },
 
   realisationTitle: {
@@ -60,7 +60,7 @@ export const i18nMethod = i18nData({
   },
 
   realisationText: {
-    fr: "**Développement - etc**",
+    fr: "**Développement, déploiement et monitoring**",
   },
 
 })

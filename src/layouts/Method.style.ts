@@ -56,6 +56,7 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
     {
       style: {
         display: "flex",
+        maxWidth: "100%",
       },
     },
     {
@@ -70,9 +71,17 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
     {
       style: {
         flex: 1,
-        padding: 50,
+        margin: 50,
       },
-    }
+    },
+    {
+      max: sizes.MEDIUM,
+      style: {
+        margin: "30px auto",
+        padding: "0 50px",
+        maxWidth: "75%",
+      },
+    },
   ],
 
   image: [
@@ -85,7 +94,13 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
         marginTop: 100,
         marginBottom: 10,
       },
-    }
+    },
+    {
+      max: sizes.MEDIUM,
+      style: {
+        marginTop: 30,
+      },
+    },
   ],
 
   title: [

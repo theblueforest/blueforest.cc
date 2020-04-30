@@ -38,27 +38,6 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
     },
   ],
 
-  image: [
-    {
-      style: {
-        position: "absolute",
-        bottom: 0,
-        left: 0,
-        height: "400px",
-        maxWidth: "100%",
-      },
-    },
-    {
-      max: sizes.MEDIUM,
-      style: {
-        position: "relative",
-        bottom: "-4px",
-        height: "auto",
-        maxWidth: "140%",
-      },
-    },
-  ],
-
   cardsContainer: [
     {
       style: {
@@ -72,8 +51,7 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
     {
       max: sizes.MEDIUM,
       style: {
-        marginTop: "10px",
-        marginBottom: "0",
+        margin: "50px auto 0",
       },
     },
   ],
@@ -95,15 +73,12 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
       },
     },
     {
-      max: sizes.MEDIUM,
+      max: sizes.SMALL,
       style: {
-        width: "88%",
-        flexBasis: "88%",
-        marginLeft: "auto",
-        marginBottom: "28px",
-        marginRight: "auto",
+        width: "250px",
+        flexBasis: "250px",
       },
-    },
+    }
   ],
 
   cardTitle: [
@@ -171,7 +146,7 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
     },
   ],
 
-  cardLogos: [
+  cardIcons: [
     {
       style: {
         display: "flex",
@@ -181,11 +156,11 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
     },
   ],
 
-  cardLogo: [
+  cardIconFirst: [
     {
       style: {
         display: "block",
-        width: "40px",
+        width: "30px",
       },
     },
     {
@@ -196,11 +171,11 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
     },
   ],
 
-  cardLogoGithub: [
+  cardIconNext: [
     {
       style: {
         display: "block",
-        width: "40px",
+        width: "30px",
         marginLeft: "28px",
       },
     },
@@ -212,27 +187,22 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
     },
   ],
 
-  openLegalInformations: [
+  legalInformations: [
+    ...TextStyles.content,
     {
       style: {
-        fontFamily: "Muli",
-        fontStyle: "normal",
-        fontWeight: "normal",
-        fontSize: "22px",
-        lineHeight: 0,
+        fontSize: 22,
         textAlign: "right",
-        display: "block",
-        color: "#0244C6",
-        paddingRight: "40px",
-        paddingBottom: "40px",
+        margin: 0,
+        padding: "5px 10px 6px 0",
       },
     },
     {
       max: sizes.MEDIUM,
       style: {
         fontSize: 20,
-        paddingRight: 28,
-        paddingBottom: 0,
+        textAlign: "center",
+        padding: 10,
       },
     },
   ],
@@ -265,6 +235,29 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
     },
   ],
 
+  image: [
+    {
+      style: {
+        position: "absolute",
+        bottom: 0,
+        left: 0,
+        right: 0,
+        height: "400px",
+        maxWidth: "100%",
+        pointerEvents: "none",
+      },
+    },
+    {
+      max: sizes.MEDIUM,
+      style: {
+        position: "relative",
+        bottom: "-4px",
+        height: "auto",
+        maxWidth: "140%",
+      },
+    },
+  ],
+
   legalInformationsClose: [
     {
       style: {
@@ -289,6 +282,7 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
       style: {
         padding: 0,
         marginTop: -20,
+        color: colors.BLUE,
       },
     },
   ],
@@ -296,11 +290,11 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
   legalInformationsTitleFadeIn: [
     {
       style: {
-        animation: "fadeIn ease 2s",
-        "-webkit-animation": "fadeIn ease 2s",
-        "-moz-animation": "fadeIn ease 2s",
-        "-o-animation": "fadeIn ease 2s",
-        "-ms-animation": "fadeIn ease 2s",
+        animation: "fadeIn ease 1s",
+        WebkitAnimation: "fadeIn ease 1s",
+        MozAnimation: "fadeIn ease 1s",
+        OAnimation: "fadeIn ease 1s",
+        MsAnimation: "fadeIn ease 1s",
       },
     },
   ],
@@ -308,11 +302,11 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
   legalInformationsTitleFadeOut: [
     {
       style: {
-        animation: "fadeOut ease 2s",
-        "-webkit-animation": "fadeOut ease 2s",
-        "-moz-animation": "fadeOut ease 2s",
-        "-o-animation": "fadeOut ease 2s",
-        "-ms-animation": "fadeOut ease 2s",
+        animation: "fadeOut ease 1s",
+        WebkitAnimation: "fadeOut ease 1s",
+        MozAnimation: "fadeOut ease 1s",
+        OAnimation: "fadeOut ease 1s",
+        MsAnimation: "fadeOut ease 1s",
       },
     },
   ],
