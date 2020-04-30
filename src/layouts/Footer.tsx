@@ -8,6 +8,7 @@ import LinkedInImage from "../../assets/LinkedIn.png"
 import GitHubImage from "../../assets/GitHub.png"
 import CrossImage from "../../assets/cross.png"
 import { TextStyles } from "../styles/text.style"
+import { ClickListener } from "kiwi-bundle-react"
 
 interface Props extends Kiwi.ComponentProps {
   keyPrefix: string
@@ -25,10 +26,9 @@ export const FooterLayout = BlueForest.Layout<Props, State>({
 
   render: ({ props, setState, state }) => {
     const { keyPrefix } = props
-    console.log(state)
     return <Kiwi.Container style={FooterLayoutStyle.container}>
 
-      <Kiwi.Text id={keyPrefix} children={i18nFooter.title} style={TextStyles.h1}/>
+      <Kiwi.Text id={keyPrefix} children={i18nFooter.title} style={FooterLayoutStyle.title}/>
 
       <Kiwi.Text id={keyPrefix} children={i18nFooter.subtitle} style={FooterLayoutStyle.subtitle}/>
 
@@ -55,32 +55,35 @@ export const FooterLayout = BlueForest.Layout<Props, State>({
         </Kiwi.Container>
       </Kiwi.Container>
 
-    <Kiwi.Link onClick={() => { if(!state.legalsOpen) setState({ isLegalInformationsOpen: true }) }}>
-      <Kiwi.Text id={keyPrefix} children={i18nFooter.legalInformations} style={FooterLayoutStyle.openLegalInformations}/>
-    </Kiwi.Link>
+      <Kiwi.Link onClick={() => { if(!state.legalsOpen) setState({ isLegalInformationsOpen: true }) }}>
+        <Kiwi.Text id={keyPrefix} children={i18nFooter.legalInformations} style={FooterLayoutStyle.openLegalInformations}/>
+      </Kiwi.Link>
 
-    <Kiwi.Text id={keyPrefix} style={FooterLayoutStyle.openLegalInformations}>
-      Copyright © {new Date().getFullYear()} Blue Forest
-    </Kiwi.Text>
+      <Kiwi.Text id={keyPrefix} style={FooterLayoutStyle.openLegalInformations}>
+        Copyright © {new Date().getFullYear()} Blue Forest
+      </Kiwi.Text>
 
       <Kiwi.Image source={footerImage} style={FooterLayoutStyle.image}/>
 
-      {state.isLegalInformationsOpen && <Kiwi.Container onClick={() => { console.log("TEST") }} style={FooterLayoutStyle.legalInformationsContainer}>
-        <Kiwi.Container style={FooterLayoutStyle.legalInformationsContent}>
+      {state.isLegalInformationsOpen && <Kiwi.Container style={FooterLayoutStyle.legalInformationsContainer}>
+        <ClickListener onOutsideClick={() => { setState({ isLegalInformationsOpen: false }) }}>
+          <Kiwi.Container style={state.isLegalInformationsOpen
+            ? [ ...FooterLayoutStyle.legalInformationsContent, ...FooterLayoutStyle.legalInformationsTitleFadeOut ]
+            : [ ...FooterLayoutStyle.legalInformationsContent, ...FooterLayoutStyle.legalInformationsTitleFadeIn ]
+          }>
+            <Kiwi.Container style={FooterLayoutStyle.legalInformationsClose}>
+              <Kiwi.Link onClick={() => { setState({ isLegalInformationsOpen: false }) }}>
+                <Kiwi.Image source={CrossImage} style={FooterLayoutStyle.legalInformationsCloseIcon}/>
+              </Kiwi.Link>
+            </Kiwi.Container>
 
-          <Kiwi.Container style={FooterLayoutStyle.legalInformationsClose}>
-            <Kiwi.Link onClick={() => { if(!state.legalsOpen) setState({ isLegalInformationsOpen: false }) }}>
-              <Kiwi.Image source={CrossImage} style={FooterLayoutStyle.legalInformationsCloseIcon}/>
-            </Kiwi.Link>
+            <Kiwi.Text id={keyPrefix} children={i18nFooter.legalInformationsTitle} style={FooterLayoutStyle.legalInformationsTitle}/>
+
+            {i18nFooter.legalInformationsText.map((text, index) => {
+              return <Kiwi.Text key={index} id={keyPrefix} children={text} style={TextStyles.content}/>
+            })}
           </Kiwi.Container>
-
-          <Kiwi.Text id={keyPrefix} children={i18nFooter.legalInformationsTitle} style={TextStyles.h2}/>
-
-          {i18nFooter.legalInformationsText.map((text, index) => {
-            return <Kiwi.Text key={index} id={keyPrefix} children={text} style={TextStyles.content}/>
-          })}
-
-        </Kiwi.Container>
+        </ClickListener>
       </Kiwi.Container>}
 
     </Kiwi.Container>

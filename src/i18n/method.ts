@@ -20,7 +20,7 @@ export const i18nMethod = i18nData({
 
   howText: [
     {
-      fr: "**Nous proposons un ensemble d'outils et de pratiques vous permettant de faire grandir votre écosystème afin d'inviter des utilisateurs à venir se promener dans votre forêt.**",
+      fr: "Nous proposons un ensemble d'outils et de pratiques vous permettant de faire grandir votre écosystème afin d'inviter des utilisateurs à venir se promener dans votre forêt.",
     },
     {
       fr: "Nous organisons le processus de création  sur la base du **Kit de Foresterie**, une méthodologie pensée pour vous et vos clients :",
@@ -50,7 +50,7 @@ export const i18nMethod = i18nData({
   conceptionText: {
       fr: "**Maquettes - Parcours utilisateurs - Idéation - etc**",
     },
-    
+
   realisationTitle: {
     fr: "Réalisation",
   },
@@ -64,6 +64,3 @@ export const i18nMethod = i18nData({
   },
 
 })
-
-
-   

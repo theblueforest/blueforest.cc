@@ -15,11 +15,10 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
     },
   ],
 
-  DROPinImage: [
+  image: [
     {
       style: {
-        marginTop: 100,
-        maxWidth: 350,
+        width: "100%",
       },
     },
   ],
@@ -28,7 +27,6 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
     {
       style: {
         backgroundColor: colors.BLUE,
-        padding: "0 0 80px 0",
         maxWidth: "50%",
         margin: "auto",
       },
@@ -48,6 +46,17 @@ export const TechnologiesLayoutStyle = BlueForest.StyleSheet(({ colors, sizes })
       style: {
         color: "white",
       },
+    }
+  ],
+
+  intro: [
+    ...TextStyles.content,
+    {
+      style: {
+        color: "white",
+        textAlign: "center",
+        marginBottom: 50,
+      }
     }
   ],
 

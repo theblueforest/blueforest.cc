@@ -3,11 +3,12 @@ import { i18nData } from "dropin-recipes"
 export const i18nTechnologies = i18nData({
 
   title: {
-    fr: "Nos technologies",
+    fr: "De l'idée à la production, nous vous aidons à déployer l'architecture technique de vos solutions",
   },
 
-
-  dropinTitle: "DROP'in",
+  intro: {
+    fr: "L'équipe de Blue Forest met à votre disposition un ensemble de technologies",
+  },
 
   dropinDescription: (years: number): i18nData[] => [
     {
@@ -26,9 +27,6 @@ export const i18nTechnologies = i18nData({
     fr: "Envie d'en savoir plus ? Nous avons dédié un espace à la description de son fonctionnement sur **[dropin.recipes](https://dropin.recipes){target:_blank}**.",
   },
 
-
-  kiwiBundleTitle: "Kiwi Bundle",
-
   kiwiBundleDescription: [
     {
       fr: "Suite de librairies TypeScript permettant la création simplifiée d'application cross-platform web, desktop, Android et iOS avec **une unique codebase**.",
@@ -42,20 +40,4 @@ export const i18nTechnologies = i18nData({
     fr: "Retrouvez plus d'informations sur le Kiwi Bundle sur GitHub : **[theblueforest/kiwi-bundle](https://github.com/theblueforest/kiwi-bundle){target:_blank}**."
   },
 
-
-  callToAction: {
-    fr: "En savoir plus",
-  },
-
-  soonTitle: {
-    fr: "C'est pour bientôt !"
-  },
-
-  soonText: {
-    fr: "Les technologies développées seront bientôt disponibles, n’hésitez pas à vous inscrire ci-dessous pour être tenu informé :"
-  },
-
-  soonInput: {
-    fr: "Votre adresse e-mail"
-  }
 })

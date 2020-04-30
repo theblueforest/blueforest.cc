@@ -24,31 +24,16 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
     {
       style: {
         color: colors.PINK,
+        paddingBottom: 0,
       },
     },
   ],
 
   subtitle: [
+    ...TextStyles.content,
     {
       style: {
-        display: "block",
-        fontFamily: "Muli",
-        fontStyle: "normal",
-        fontWeight: "normal",
-        fontSize: "24px",
-        lineHeight: "45px",
         textAlign: "center",
-        color: "#0244C6",
-        width: "64%",
-        margin: "0 auto 40px auto",
-      },
-    },
-    {
-      max: sizes.MEDIUM,
-      style: {
-        fontSize: 20,
-        marginBottom: 40,
-        lineHeight: "28px",
       },
     },
   ],
@@ -60,6 +45,7 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
         bottom: 0,
         left: 0,
         height: "400px",
+        maxWidth: "100%",
       },
     },
     {
@@ -78,7 +64,7 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
       style: {
         display: "flex",
         width: "100%",
-        margin: "90px auto 100px",
+        margin: "50px auto 170px",
         flexWrap: "wrap",
         justifyContent: "center",
       },
@@ -293,6 +279,40 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
         height: 34,
         marginTop: -18,
         marginRight: -34,
+      },
+    },
+  ],
+
+  legalInformationsTitle: [
+    ...TextStyles.h2,
+    {
+      style: {
+        padding: 0,
+        marginTop: -20,
+      },
+    },
+  ],
+
+  legalInformationsTitleFadeIn: [
+    {
+      style: {
+        animation: "fadeIn ease 2s",
+        "-webkit-animation": "fadeIn ease 2s",
+        "-moz-animation": "fadeIn ease 2s",
+        "-o-animation": "fadeIn ease 2s",
+        "-ms-animation": "fadeIn ease 2s",
+      },
+    },
+  ],
+
+  legalInformationsTitleFadeOut: [
+    {
+      style: {
+        animation: "fadeOut ease 2s",
+        "-webkit-animation": "fadeOut ease 2s",
+        "-moz-animation": "fadeOut ease 2s",
+        "-o-animation": "fadeOut ease 2s",
+        "-ms-animation": "fadeOut ease 2s",
       },
     },
   ],

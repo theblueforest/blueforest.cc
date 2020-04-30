@@ -55,7 +55,7 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
   servicesContainer: [
     {
       style: {
-        display: "flex", 
+        display: "flex",
       },
     },
     {
@@ -85,6 +85,15 @@ export const MethodLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => ({
         marginTop: 100,
         marginBottom: 10,
       },
+    }
+  ],
+
+  title: [
+    ...TextStyles.h2,
+    {
+      style: {
+        color: colors.PINK,
+      }
     }
   ],
 

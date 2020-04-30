@@ -35,26 +35,22 @@ export const MethodLayout = BlueForest.Layout<Props>({
 
         <Kiwi.Container style={MethodLayoutStyle.servicesItem}>
           <Kiwi.Image source={explorationImage} alt={i18nMethod.explorationTitle} style={MethodLayoutStyle.image}/>
-          <Kiwi.Text id={keyPrefix} children={i18nMethod.explorationTitle} style={TextStyles.h2}/>
+          <Kiwi.Text id={keyPrefix} children={i18nMethod.explorationTitle} style={MethodLayoutStyle.title}/>
           <Kiwi.Text id={keyPrefix} children={i18nMethod.explorationIntro} style={TextStyles.content}/>
           <Kiwi.Text id={keyPrefix} children={i18nMethod.explorationText} style={TextStyles.content}/>
         </Kiwi.Container>
 
         <Kiwi.Container style={MethodLayoutStyle.servicesItem}>
           <Kiwi.Image source={conceptionImage} alt={i18nMethod.conceptionTitle} style={MethodLayoutStyle.image}/>
-
-          <Kiwi.Text id={keyPrefix} children={i18nMethod.conceptionTitle} style={TextStyles.h2}/>
-
+          <Kiwi.Text id={keyPrefix} children={i18nMethod.conceptionTitle} style={MethodLayoutStyle.title}/>
           <Kiwi.Text id={keyPrefix} children={i18nMethod.conceptionIntro} style={TextStyles.content}/>
           <Kiwi.Text id={keyPrefix} children={i18nMethod.conceptionText} style={TextStyles.content}/>
         </Kiwi.Container>
 
         <Kiwi.Container style={MethodLayoutStyle.servicesItem}>
           <Kiwi.Image source={realisationImage} alt={i18nMethod.realisationTitle} style={MethodLayoutStyle.image}/>
-          <Kiwi.Text id={keyPrefix} children={i18nMethod.realisationTitle} style={TextStyles.h2}/>
-
+          <Kiwi.Text id={keyPrefix} children={i18nMethod.realisationTitle} style={MethodLayoutStyle.title}/>
           <Kiwi.Text id={keyPrefix} children={i18nMethod.realisationIntro} style={TextStyles.content}/>
-          
           <Kiwi.Text id={keyPrefix} children={i18nMethod.realisationText} style={TextStyles.content}/>
         </Kiwi.Container>
 
