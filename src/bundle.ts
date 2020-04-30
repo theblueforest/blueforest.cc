@@ -16,6 +16,7 @@ export const BlueForest = new KiwiBundleReact({
       BLUE: "#1748C7",
       PURPLE: "#6355E0",
       GREEN: "linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 33.33%), rgba(97, 255, 216, 0.5)",
+      GREEN2: "#DFFEF7",
     },
     fonts: {
       google: {

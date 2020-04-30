@@ -7,11 +7,11 @@ export const i18nNewsletter = i18nData({
   },
 
   text: {
-    fr: "Nous serons ravis de partager avec vous l’aventure Blue Forest"
+    fr: "Nous serons ravis de partager avec vous l'aventure Blue Forest"
   },
 
   checkbox: {
-    fr: "J'accepte de recevoir la Newsletter et je comprends que je peux me désabonner à tout moment",
+    fr: "En m'inscrivant, j'accepte de recevoir la Newsletter et je comprends que je peux me désabonner à tout moment",
   },
 
   email: {

@@ -3,7 +3,7 @@ import { i18nData } from "dropin-recipes"
 export const i18nMethod = i18nData({
 
   title: {
-    fr: "Blue Forest vous accompagne dans le design d’expériences utilisateurs",
+    fr: "Blue Forest vous accompagne dans le design d'expériences utilisateurs",
   },
 
   intro: {
@@ -44,7 +44,7 @@ export const i18nMethod = i18nData({
   },
 
   conceptionIntro: {
-    fr: "L’étape de conception nous permet de donner du sens aux informations recueillies et de formuler les pistes de solutions.",
+    fr: "L'étape de conception nous permet de donner du sens aux informations recueillies et de formuler les pistes de solutions.",
   },
 
   conceptionText: {
