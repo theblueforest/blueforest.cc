@@ -19,7 +19,8 @@ export const i18nTechnologies = i18nData({
   }),
 
   dropinConclusion: {
-    fr: "Envie d'en savoir plus ? Nous avons dédié un espace à la description de son fonctionnement sur **[dropin.recipes](https://dropin.recipes){target:_blank}**.",
+    // fr: "Envie d'en savoir plus ? Nous avons dédié un espace à la description de son fonctionnement sur **[dropin.recipes](https://dropin.recipes){target:_blank}**.",
+    fr: "Envie d'en savoir plus ? Inscrivez-vous à la newsletter ci-dessous afin de recevoir les prochaines mises à jour du projet.",
   },
 
   kiwiBundleDescription: [

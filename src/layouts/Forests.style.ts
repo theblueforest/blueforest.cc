@@ -17,7 +17,7 @@ export const ForestsLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => (
     {
       style: {
         color: colors.PINK,
-        marginBottom: 0,
+        marginTop: 30,
       },
     },
   ],
