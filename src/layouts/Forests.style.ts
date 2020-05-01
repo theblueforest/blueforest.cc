@@ -22,7 +22,7 @@ export const ForestsLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => (
     },
   ],
 
-  image: (selected: boolean): StyleSheet => {
+  image: (selected: boolean = false): StyleSheet => {
     const style: StyleSheet = [
       {
         style: {
@@ -35,12 +35,42 @@ export const ForestsLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => (
     if(selected) {
       style.push({
         style: {
-          boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.2)",
+          boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.2)",
           borderRadius: "3px",
         },
       })
     }
     return style
   },
+
+  cardContainer: [
+    {
+      style: {
+        margin: "40px 0 50px",
+        width: "100%",
+      },
+    },
+  ],
+
+  card: [
+    {
+      style: {
+        width: "55%",
+        boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.2)",
+        borderRadius: "3px",
+        margin: "auto",
+        padding: "30px 50px",
+        boxSizing: "border-box",
+      },
+    },
+  ],
+
+  cardImage: [
+    {
+      style: {
+        width: 130,
+      },
+    },
+  ]
 
 }))

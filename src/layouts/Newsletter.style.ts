@@ -84,13 +84,23 @@ export const NewsletterLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) =
     },
   ],
 
+  text: [
+    ...TextStyles.content,
+    {
+      style: {
+        textAlign: "center",
+      },
+    },
+  ],
+
   terms: [
     ...TextStyles.content,
     {
       style: {
+        textAlign: "center",
         fontSize: 13,
-      }
-    }
-  ]
+      },
+    },
+  ],
 
 }))

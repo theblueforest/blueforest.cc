@@ -33,7 +33,7 @@ export const i18nForests = i18nData({
       fr: "Qapex, spécialiste de la filtration carburant, est fabricant agréé de corps de filtre FAUDI Aviation. Fort de son expérience dans le domaine pétrolier aéroportuaire, Qapex et son équipe accompagne ses clients dans la maintenance des équipements fixes et mobiles.",
     },
     {
-      fr: "Réflexions, questionnements, brainstorming, réalisations. Une rencontre riche et conviviale entre les équipes de Qapex et Blue Forest a permis, pas à pas, de construire l’univers visuel du projet.",
+      fr: "**Réflexions, questionnements, brainstorming, réalisations. Une rencontre riche et conviviale entre les équipes de Qapex et Blue Forest a permis, pas à pas, de construire l’univers visuel du projet.**",
     },
   ],
 
@@ -51,7 +51,7 @@ export const i18nForests = i18nData({
       fr: "Vous ne raterez plus votre courrier ! Flag Letter est une solution connectée qui vous prévient lorsque vous recevez du courier dans votre boîte au lettre. ",
     },
     {
-      fr: "Flag Letter et Blue Forest travaille ensemble sur le site internet et l’application mobile qui seront le support de l’expérience des utilisateurs.",
+      fr: "**Flag Letter et Blue Forest travaille ensemble sur le site internet et l’application mobile qui seront le support de l’expérience des utilisateurs.**",
     },
   ],
 
