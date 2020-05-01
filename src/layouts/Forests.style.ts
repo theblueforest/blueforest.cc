@@ -63,6 +63,12 @@ export const ForestsLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => (
         boxSizing: "border-box",
       },
     },
+    {
+      max: sizes.LARGE,
+      style: {
+        width: "75%",
+      }
+    }
   ],
 
   cardImage: [

@@ -6,8 +6,7 @@ export const NewsletterLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) =
   container: [
     {
       style: {
-        display: "flex",
-        maxWidth: "100%",
+        width: "100%",
         backgroundColor: colors.GREEN2,
         color: colors.BLUE,
       },
@@ -21,19 +20,45 @@ export const NewsletterLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) =
     },
   ],
 
+  content: [
+    {
+      style: {
+        width: "100%",
+        margin: "auto",
+        display: "flex",
+      },
+    },
+  ],
+
   item: [
     {
       style: {
         flex: 1,
-        margin: 50,
         textAlign: "center",
+        maxWidth: 420,
       },
     },
     {
       max: sizes.MEDIUM,
       style: {
-        margin: "10px auto",
+        // margin: "10px auto",
         maxWidth: "75%",
+      },
+    },
+  ],
+
+  itemLeft: [
+    {
+      style: {
+        margin: "50px 50px 50px 100px",
+      },
+    },
+  ],
+
+  itemRight: [
+    {
+      style: {
+        margin: "50px 100px 50px 50px",
       },
     },
   ],

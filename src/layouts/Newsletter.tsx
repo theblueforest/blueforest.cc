@@ -15,15 +15,17 @@ export const NewsletterLayout = BlueForest.Layout<Props>({
   render: ({ props, options }) => {
     const { keyPrefix } = props
     return <Kiwi.Container style={NewsletterLayoutStyle.container}>
-      <Kiwi.Container style={NewsletterLayoutStyle.item}>
-        <Kiwi.Image source={NewsletterImage} style={NewsletterLayoutStyle.image}/>
-      </Kiwi.Container>
-      <Kiwi.Container style={NewsletterLayoutStyle.item}>
-        <Kiwi.Text id={keyPrefix} children={i18nNewsletter.title} style={TextStyles.h2}/>
-        <Kiwi.Text id={keyPrefix} children={i18nNewsletter.text} style={NewsletterLayoutStyle.text}/>
-        <Kiwi.Input placeholder={i18nNewsletter.email} style={NewsletterLayoutStyle.form} placeholderColor={options.theme.colors.BLUE}/>
-        <Kiwi.Text id={keyPrefix} children={i18nNewsletter.checkbox} style={NewsletterLayoutStyle.terms}/>
-        <Kiwi.Button children={i18nNewsletter.register} style={NewsletterLayoutStyle.button}/>
+      <Kiwi.Container style={NewsletterLayoutStyle.content}>
+        <Kiwi.Container style={[ ...NewsletterLayoutStyle.item, ...NewsletterLayoutStyle.itemLeft ]}>
+          <Kiwi.Image source={NewsletterImage} style={NewsletterLayoutStyle.image}/>
+        </Kiwi.Container>
+        <Kiwi.Container style={[ ...NewsletterLayoutStyle.item, ...NewsletterLayoutStyle.itemRight ]}>
+          <Kiwi.Text id={keyPrefix} children={i18nNewsletter.title} style={TextStyles.h2}/>
+          <Kiwi.Text id={keyPrefix} children={i18nNewsletter.text} style={NewsletterLayoutStyle.text}/>
+          <Kiwi.Input placeholder={i18nNewsletter.email} style={NewsletterLayoutStyle.form} placeholderColor={options.theme.colors.BLUE}/>
+          <Kiwi.Text id={keyPrefix} children={i18nNewsletter.checkbox} style={NewsletterLayoutStyle.terms}/>
+          <Kiwi.Button children={i18nNewsletter.register} style={NewsletterLayoutStyle.button}/>
+        </Kiwi.Container>
       </Kiwi.Container>
     </Kiwi.Container>
   }
