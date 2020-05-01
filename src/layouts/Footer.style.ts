@@ -96,7 +96,7 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
       },
     },
     {
-      max: sizes.MEDIUM,
+      max: sizes.SMALL,
       style: {
         fontSize: 20,
       },
@@ -118,7 +118,7 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
       }
     },
     {
-      max: sizes.MEDIUM,
+      max: sizes.SMALL,
       style: {
         fontSize: 18,
       },
@@ -139,7 +139,7 @@ export const FooterLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => ({
       },
     },
     {
-      max: sizes.MEDIUM,
+      max: sizes.SMALL,
       style: {
         fontSize: 18,
       },

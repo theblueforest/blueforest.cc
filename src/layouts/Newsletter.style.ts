@@ -9,6 +9,8 @@ export const NewsletterLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) =
         width: "100%",
         backgroundColor: colors.GREEN2,
         color: colors.BLUE,
+        textAlign: "center",
+        padding: "50px 0",
       },
     },
     {
@@ -20,45 +22,13 @@ export const NewsletterLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) =
     },
   ],
 
-  content: [
+  imageContainer: [
     {
       style: {
-        width: "100%",
-        margin: "auto",
-        display: "flex",
-      },
-    },
-  ],
-
-  item: [
-    {
-      style: {
-        flex: 1,
-        textAlign: "center",
         maxWidth: 420,
-      },
-    },
-    {
-      max: sizes.MEDIUM,
-      style: {
-        // margin: "10px auto",
-        maxWidth: "75%",
-      },
-    },
-  ],
-
-  itemLeft: [
-    {
-      style: {
-        margin: "50px 50px 50px 100px",
-      },
-    },
-  ],
-
-  itemRight: [
-    {
-      style: {
-        margin: "50px 100px 50px 50px",
+        display: "inline-block",
+        verticalAlign: "middle",
+        margin: 50,
       },
     },
   ],
@@ -67,13 +37,27 @@ export const NewsletterLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) =
     {
       style: {
         width: "100%",
-        maxWidth: 420,
       },
     },
+  ],
+
+  content: [
     {
-      max: sizes.MEDIUM,
       style: {
+        display: "inline-block",
+        verticalAlign: "middle",
+        textAlign: "center",
         maxWidth: 420,
+        margin: "0 40px 20px",
+      },
+    },
+  ],
+
+  title: [
+    ...TextStyles.h2,
+    {
+      style: {
+        padding: "0 0 10px",
       },
     },
   ],
@@ -81,7 +65,7 @@ export const NewsletterLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) =
   form: [
     {
       style: {
-        width: 300,
+        width: "90%",
         borderRadius: 12,
         border: "1px solid " + colors.BLUE,
         color: colors.BLUE,
@@ -96,7 +80,7 @@ export const NewsletterLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) =
   button: [
     {
       style: {
-        width: 300,
+        width: "90%",
         borderRadius: 12,
         border: "1px solid " + colors.BLUE,
         background: colors.BLUE,
