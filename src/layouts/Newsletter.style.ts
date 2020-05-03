@@ -77,6 +77,15 @@ export const NewsletterLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) =
     },
   ],
 
+  reCaptcha: [
+    {
+      style: {
+        display: "inline-block",
+        margin: "0 auto 20px",
+      },
+    },
+  ],
+
   button: [
     {
       style: {

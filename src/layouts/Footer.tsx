@@ -63,7 +63,7 @@ export const FooterLayout = BlueForest.Layout<Props, State>({
         </Kiwi.Container>
       </Kiwi.Container>
 
-      <Kiwi.Link onClick={() => { if(!state.legalsOpen) setState({ isLegalInformationsOpen: true }) }}>
+      <Kiwi.Link onClick={() => { if(!state.isLegalInformationsOpen) setState({ isLegalInformationsOpen: true }) }}>
         <Kiwi.Text id={keyPrefix} children={i18nFooter.legalInformations} style={FooterLayoutStyle.legalInformations}/>
       </Kiwi.Link>
 
