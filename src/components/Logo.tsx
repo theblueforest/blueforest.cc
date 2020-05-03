@@ -16,8 +16,10 @@ export const LogoComponent = BlueForest.Component<Props>({
 
     return <Kiwi.Container style={LogoComponentStyle.container}>
       <Kiwi.Image source={logoImage} alt="Blue Forest" style={LogoComponentStyle.logo}/>
-      <Kiwi.Text children="Blue Forest" style={LogoComponentStyle.name}/>
-      <Kiwi.Text children={i18nHeader.baseline} id={id} style={LogoComponentStyle.baseline}/>
+      <Kiwi.Container style={LogoComponentStyle.text}>
+        <Kiwi.Text children="Blue Forest" style={LogoComponentStyle.name}/>
+        <Kiwi.Text children={i18nHeader.baseline} id={id} style={LogoComponentStyle.baseline}/>
+      </Kiwi.Container>
     </Kiwi.Container>
   }
 
