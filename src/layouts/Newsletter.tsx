@@ -36,7 +36,7 @@ export const NewsletterLayout = BlueForest.Layout<Props, State>({
         <Kiwi.Text id={keyPrefix} children={i18nNewsletter.title} style={NewsletterLayoutStyle.title}/>
         <Kiwi.Text id={keyPrefix} children={i18nNewsletter.text} style={NewsletterLayoutStyle.text}/>
         <Kiwi.Form onSubmit={() => {
-          if(values.reCaptchaRef.current.getValue() === null) {
+          if(values.reCaptchaRef.current.getValue().length === 0) {
             alert("Erreur lors de la validation reCAPTCHA")
           } else {
             const xhr = new XMLHttpRequest()

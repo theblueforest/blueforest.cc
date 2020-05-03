@@ -13,7 +13,7 @@ interface Params {}
 export const HomePage = BlueForest.Page<Params>({
 
   init: () => {
-    ReactGA.initialize("UA-132336786-2", { debug: true })
+    ReactGA.initialize("UA-132336786-2")
     ReactGA.pageview(window.location.pathname + window.location.search)
   },
 
