@@ -1,4 +1,5 @@
 import * as React from "react"
+import ReactGA from "react-ga"
 import { BlueForest } from "../bundle"
 import { MethodLayout } from "../layouts/Method"
 import { TechnologiesLayout } from "../layouts/Technologies"
@@ -10,6 +11,12 @@ import { NewsletterLayout } from "../layouts/Newsletter"
 interface Params {}
 
 export const HomePage = BlueForest.Page<Params>({
+
+  init: () => {
+    ReactGA.initialize("UA-132336786-2", { debug: true })
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  },
+
   render: () => [
     <HeaderLayout key="header" keyPrefix="header"/>,
     <MethodLayout key="method" keyPrefix="method"/>,
