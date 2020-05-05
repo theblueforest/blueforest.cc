@@ -39,7 +39,7 @@ export const i18nForests = i18nData({
 
   MaoBoa: [
     {
-      fr: "mão boa propose de (re)créer du lien entre les collaborateurs et les entreprises en permettant à chacun d'être acteur d'impacts positifs. Mão boa, c’est la conviction que la force collective est essentielle pour se reconnecter aux valeurs, au temps, à l’autre.",
+      fr: "Mão boa propose de (re)créer du lien entre les collaborateurs et les entreprises en permettant à chacun d'être acteur d'impacts positifs. Mão boa, c’est la conviction que la force collective est essentielle pour se reconnecter aux valeurs, au temps, à l’autre.",
     },
     {
       fr: "**Ensemble, nous avons imaginé l’application mobile qui guide et favorise l'implication des collaborateurs dans un projet qui fait sens. L'architecture technique de l'application a été pensée pour évoluer dans le temps et s’adapter toujours plus aux besoins des utilisateurs.**",
@@ -51,7 +51,7 @@ export const i18nForests = i18nData({
       fr: "Vous ne raterez plus votre courrier ! Flag Letter est une solution connectée qui vous prévient lorsque vous recevez du courier dans votre boîte au lettre. ",
     },
     {
-      fr: "**Flag Letter et Blue Forest travaille ensemble sur le site internet et l’application mobile qui seront le support de l’expérience des utilisateurs.**",
+      fr: "**Flag Letter et Blue Forest travaillent ensemble sur le site internet et l’application mobile qui seront le support de l’expérience utilisateurs.**",
     },
   ],
 

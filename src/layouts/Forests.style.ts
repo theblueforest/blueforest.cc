@@ -67,9 +67,20 @@ export const ForestsLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => (
       max: sizes.LARGE,
       style: {
         width: "75%",
+        padding: "30px 50px",
+      },
+    },
+
+    {
+      max: sizes.MEDIUM,
+      style: {
+        width: "80%",
+        padding: "40px 30px",
       }
     }
   ],
+
+
 
   cardImage: [
     {
