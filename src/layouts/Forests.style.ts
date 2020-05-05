@@ -75,7 +75,7 @@ export const ForestsLayoutStyle = BlueForest.StyleSheet(({ sizes, colors }) => (
       max: sizes.MEDIUM,
       style: {
         width: "80%",
-        padding: "40px 30px",
+        padding: "30px 20px",
       }
     }
   ],
