@@ -8,7 +8,8 @@
   "scripts": {
     "start": "kiwi start",
     "test": "kiwi test",
-    "build": "kiwi build"
+    "build": "kiwi build",
+    "deploy": "kiwi build && docker build -t theblueforest/website . && docker push theblueforest/website"
   },
   "bundles": {
     "kiwi-bundle": {
