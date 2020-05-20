@@ -31,6 +31,16 @@ export const AnatomyLayoutStyle = BlueForest.StyleSheet(({ colors, sizes }) => (
         paddingBottom: "50px",
       },
     },
+
+    {
+    max: sizes.LARGE,
+      style: {
+        width: "100%",
+      },
+    },
+
   ],
+
+
 
 }))
