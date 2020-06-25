@@ -55,4 +55,34 @@ export const i18nForests = i18nData({
     },
   ],
 
+  CoursdeFrance: [
+  {
+    fr: "Prépas concours à Marseille depuis 1968. Cours de France se compose d’une équipe expérimentée et bienveillante qui a pour objectif la réussite de ses élèves. ",
+  },
+  {
+    fr: "**...**",
+  },
+
+  ],
+
+  MonsieurProf: [
+    {
+      fr: "....",
+    },
+    {
+      fr: "**...**",
+    },
+  
+  ],
+  
+  IZIHOME: [
+  {
+    fr: "IZIHOME est un service simple, économique et pérenne de location de votre bien. ",
+  },
+  {
+    fr: "**IZIHOME et Blue Forest collaborent ensemble sur les différentes interfaces nécessaires pour communiquer avec leurs clients : formulaire d’éligibilité, formulaire de tarification et site internet.**",
+  },
+
+],
+
 })
