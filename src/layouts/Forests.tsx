@@ -7,6 +7,9 @@ import MaoBoa from "../../assets/companies/MaoBoa.png"
 import Qapex from "../../assets/companies/Qapex.png"
 import ERMImage from "../../assets/companies/ERM.png"
 import FlagLetter from "../../assets/companies/FlagLetter.png"
+import IZIHOME from "../../assets/companies/IZIHOME.png"
+import CoursdeFrance from "../../assets/companies/CoursdeFrance.png"
+import MonsieurProf from "../../assets/companies/MonsieurProf.png"
 import { ForestsLayoutStyle } from "./Forests.style"
 import { TextStyles } from "../styles/text.style"
 
@@ -59,6 +62,24 @@ export const ForestsLayout = BlueForest.Layout<Props, State>({
         onClick={() => { setState({ selected: 4 }) }}
       />
 
+      <Kiwi.Image
+        source={IZIHOME}
+        style={ForestsLayoutStyle.image(state.selected === 5)}
+        onClick={() => { setState({ selected: 5 }) }}
+      />
+
+      <Kiwi.Image
+        source={CoursdeFrance}
+        style={ForestsLayoutStyle.image(state.selected === 6)}
+        onClick={() => { setState({ selected: 6 }) }}
+      />
+
+      <Kiwi.Image
+        source={MonsieurProf}
+        style={ForestsLayoutStyle.image(state.selected === 7)}
+        onClick={() => { setState({ selected: 7 }) }}
+      />
+
       <Kiwi.Container
         style={ForestsLayoutStyle.cardContainer}
         children={(() => {
@@ -92,6 +113,25 @@ export const ForestsLayout = BlueForest.Layout<Props, State>({
               {i18nForests.FlagLetter.map((text, index) => {
                 return <Kiwi.Text id={keyPrefix} key={index} children={text} style={TextStyles.content}/>
               })}
+              </Kiwi.Container>
+            case 5: return <Kiwi.Container style={ForestsLayoutStyle.card}>
+              <Kiwi.Image source={IZIHOME} style={ForestsLayoutStyle.cardImage}/>
+              {i18nForests.IZIHOME.map((text, index) => {
+                return <Kiwi.Text id={keyPrefix} key={index} children={text} style={TextStyles.content}/>
+              })}
+              </Kiwi.Container>
+            case 6: return <Kiwi.Container style={ForestsLayoutStyle.card}>
+              <Kiwi.Image source={CoursdeFrance} style={ForestsLayoutStyle.cardImage}/>
+              {i18nForests.CoursdeFrance.map((text, index) => {
+                return <Kiwi.Text id={keyPrefix} key={index} children={text} style={TextStyles.content}/>
+              })}
+             </Kiwi.Container>
+            case 7: return <Kiwi.Container style={ForestsLayoutStyle.card}>
+              <Kiwi.Image source={MonsieurProf} style={ForestsLayoutStyle.cardImage}/>
+              {i18nForests.MonsieurProf.map((text, index) => {
+                return <Kiwi.Text id={keyPrefix} key={index} children={text} style={TextStyles.content}/>
+              })}
+              
             </Kiwi.Container>
           }
         })()}
