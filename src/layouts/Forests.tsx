@@ -10,6 +10,7 @@ import FlagLetter from "../../assets/companies/FlagLetter.png"
 import IZIHOME from "../../assets/companies/IZIHOME.png"
 import CoursdeFrance from "../../assets/companies/CoursdeFrance.png"
 import MonsieurProf from "../../assets/companies/MonsieurProf.png"
+import LaRhumerie from "../../assets/companies/LaRhumerie.png"
 import { ForestsLayoutStyle } from "./Forests.style"
 import { TextStyles } from "../styles/text.style"
 
@@ -80,6 +81,12 @@ export const ForestsLayout = BlueForest.Layout<Props, State>({
         onClick={() => { setState({ selected: 7 }) }}
       />
 
+      <Kiwi.Image
+        source={LaRhumerie}
+        style={ForestsLayoutStyle.image(state.selected === 8)}
+        onClick={() => { setState({ selected: 8 }) }}
+      />
+
       <Kiwi.Container
         style={ForestsLayoutStyle.cardContainer}
         children={(() => {
@@ -129,6 +136,12 @@ export const ForestsLayout = BlueForest.Layout<Props, State>({
             case 7: return <Kiwi.Container style={ForestsLayoutStyle.card}>
               <Kiwi.Image source={MonsieurProf} style={ForestsLayoutStyle.cardImage}/>
               {i18nForests.MonsieurProf.map((text, index) => {
+                return <Kiwi.Text id={keyPrefix} key={index} children={text} style={TextStyles.content}/>
+              })}
+              </Kiwi.Container>
+            case 8: return <Kiwi.Container style={ForestsLayoutStyle.card}>
+              <Kiwi.Image source={LaRhumerie} style={ForestsLayoutStyle.cardImage}/>
+              {i18nForests.LaRhumerie.map((text, index) => {
                 return <Kiwi.Text id={keyPrefix} key={index} children={text} style={TextStyles.content}/>
               })}
               

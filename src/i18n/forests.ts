@@ -84,6 +84,15 @@ export const i18nForests = i18nData({
     },
   
   ],
+
+  LaRhumerie: [
+    {
+      fr: "Beach Club Marseille, restaurant, bar à cocktails, brasserie et plage privée, la Rhumerie offre à ses clients un espace pour chaque moment de la journée afin de trouver quiétude et sérénité les pieds dans le sable",
+    },
+    {
+      fr: "**La Rhumerie et Blue Forest ont co-construit le site internet de l'établissement permettant de mettre en avant les valeurs et le savoir-faire de l'équipe.**",
+    },
   
+  ],
 
 })
